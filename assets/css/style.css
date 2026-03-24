@@ -1,93 +1,188 @@
-/* Переменные темы - задаем свои цвета */
+/* Переменные из theme.json */
 :root {
-    --wp--preset--color--primary: #0066cc; /* Основной синий, можно заменить на любой */
-    --body-bg: #ffffff;
-    --text-color: #333333;
-    --header-bg: #434343;
+    --primary-color: #FF014F; /* Основной розовый из темы */
+    --contrast-color: #000000;
+    --base-color: #ffffff;
+    --text-color: #3c3e41;
+    --body-bg: #ecf0f3; /* Светло-серый фон для эффекта карт */
 }
 
+/* Общие стили */
 body {
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     color: var(--text-color);
+    background-color: var(--body-bg);
     line-height: 1.6;
 }
 
-/* Шапка сайта в стиле CV Workfolio */
-header {
-    background: var(--header-bg);
-    padding: 10px 0;
-    color: #fff;
-}
-
 .container {
-    max-width: 1140px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-nav {
+.highlight {
+    color: var(--primary-color);
+}
+
+/* Шапка и Навигация */
+header {
+    background: var(--body-bg);
+    padding: 25px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 10px 10px 19px #d1d9e6, -10px -10px 19px #ffffff;
+}
+
+.menu-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
 }
 
-nav a {
-    color: #fff;
+.logo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--contrast-color);
+}
+
+.nav-links a {
     text-decoration: none;
-    padding: 5px 15px;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-size: 13px;
     transition: 0.3s;
 }
 
-nav a:hover {
-    color: var(--wp--preset--color--primary) !important;
+.nav-links a:hover {
+    color: var(--primary-color);
 }
 
-/* Стили для блоков опыта из темы */
-.job {
-    position: relative;
-    padding: 25px;
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    padding: 80px 20px;
+    gap: 50px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
     margin-bottom: 20px;
-    background: #f9f9f9;
-    border-radius: 8px;
-    border-left: 5px solid var(--wp--preset--color--primary);
 }
 
-.year {
-    display: inline-block;
-    background: var(--wp--preset--color--primary);
-    color: #fff;
-    padding: 2px 10px;
-    border-radius: 4px;
-    font-size: 0.85em;
-    margin-bottom: 10px;
+.hero-content h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    margin: 0;
+    color: var(--contrast-color);
 }
 
-/* Кнопки как в теме */
+.location {
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.description {
+    margin: 30px 0;
+    font-size: 16px;
+    max-width: 500px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 19px #d1d9e6, -10px -10px 19px #ffffff;
+}
+
+/* Кнопки */
 .recent-btn a {
-    background: var(--wp--preset--color--primary);
-    padding: 12px 20px;
-    border-radius: 5px;
-    color: #fff;
+    background: linear-gradient(145deg, #ff014f, #d11414);
+    color: white;
+    padding: 15px 35px;
     text-decoration: none;
+    border-radius: 6px;
     font-weight: bold;
     display: inline-block;
-    transition: background 0.3s;
+    box-shadow: 10px 10px 19px #d1d9e6, -10px -10px 19px #ffffff;
+    transition: 0.4s;
 }
 
 .recent-btn a:hover {
     background: #000;
+    transform: translateY(-5px);
 }
 
-/* Адаптивность из вашего файла */
-@media screen and (max-width: 781px) {
-    nav {
-        flex-direction: column;
+/* Сетка компетенций */
+.services-section {
+    padding: 100px 20px;
+    border-top: 1px solid #dce1e4;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-title h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: var(--body-bg);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 19px #d1d9e6, -10px -10px 19px #ffffff;
+    transition: 0.5s;
+}
+
+.service-card:hover {
+    background: linear-gradient(145deg, #ffffff, #e6e9ed);
+    transform: translateY(-10px);
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column-reverse;
         text-align: center;
     }
-    .job {
-        padding-left: 15px;
+    .hero-content h1 {
+        font-size: 35px;
+    }
+    .hero-image {
+        text-align: center;
     }
 }
