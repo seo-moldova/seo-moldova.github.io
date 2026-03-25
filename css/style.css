@@ -1856,12 +1856,12 @@ footer a:hover {
     }
 }
 
-/* ===== СТРАНИЦА "ОБО МНЕ" - ПОЛНОРАЗМЕРНЫЕ ФОТО ===== */
+/* ===== СТРАНИЦА "ОБО МНЕ" - УЛУЧШЕННЫЙ ВИЗУАЛ ===== */
 
 /* Hero */
 .about-hero-new {
     text-align: center;
-    padding: 3rem 0 4rem;
+    padding: 4rem 0 5rem;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -1872,13 +1872,52 @@ footer a:hover {
     letter-spacing: 3px;
     color: #4361ee;
     margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.about-hero-label::before,
+.about-hero-label::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 1px;
+    background: #4361ee;
+    opacity: 0.3;
+}
+
+.about-hero-label::before {
+    right: calc(100% + 12px);
+}
+
+.about-hero-label::after {
+    left: calc(100% + 12px);
 }
 
 .about-hero-title {
-    font-size: 3rem;
+    font-size: 3.2rem;
     line-height: 1.2;
     margin-bottom: 1.5rem;
     color: #1a1a2e;
+    font-weight: 700;
+}
+
+.about-hero-title .highlight {
+    color: #4361ee;
+    position: relative;
+    display: inline-block;
+}
+
+.about-hero-title .highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: rgba(67, 97, 238, 0.2);
+    z-index: -1;
 }
 
 .about-hero-text {
@@ -1887,12 +1926,12 @@ footer a:hover {
     line-height: 1.7;
 }
 
-/* Общий блок с фото */
+/* Блоки с фото */
 .about-feature {
     display: flex;
     align-items: center;
     gap: 5rem;
-    padding: 4rem 0;
+    padding: 5rem 0;
     flex-wrap: wrap;
 }
 
@@ -1900,7 +1939,7 @@ footer a:hover {
     flex-direction: row-reverse;
 }
 
-/* Вертикальное фото (портрет) */
+/* Вертикальное фото */
 .about-feature-vertical .about-feature-image-vertical {
     flex: 0.8;
     max-width: 380px;
@@ -1908,11 +1947,21 @@ footer a:hover {
 
 .about-feature-photo-vertical {
     width: 100%;
-    border-radius: 24px;
+    border-radius: 28px;
     overflow: hidden;
-    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.1);
-    transition: all 0.4s ease;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
     aspect-ratio: 3 / 4;
+    position: relative;
+}
+
+.about-feature-photo-vertical::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(67, 97, 238, 0.1) 0%, rgba(67, 97, 238, 0) 50%);
+    pointer-events: none;
+    z-index: 1;
 }
 
 .about-feature-photo-vertical img {
@@ -1920,20 +1969,40 @@ footer a:hover {
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.5s ease;
 }
 
-/* Горизонтальное фото (ландшафт) */
+.about-feature-photo-vertical:hover img {
+    transform: scale(1.05);
+}
+
+.about-feature-photo-vertical:hover {
+    transform: scale(1.02);
+    box-shadow: 0 30px 55px rgba(67, 97, 238, 0.2);
+}
+
+/* Горизонтальное фото */
 .about-feature-horizontal .about-feature-image-horizontal {
     flex: 1.2;
 }
 
 .about-feature-photo-horizontal {
     width: 100%;
-    border-radius: 24px;
+    border-radius: 28px;
     overflow: hidden;
-    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.1);
-    transition: all 0.4s ease;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
     aspect-ratio: 16 / 9;
+    position: relative;
+}
+
+.about-feature-photo-horizontal::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(67, 97, 238, 0.1) 0%, rgba(67, 97, 238, 0) 50%);
+    pointer-events: none;
+    z-index: 1;
 }
 
 .about-feature-photo-horizontal img {
@@ -1941,12 +2010,16 @@ footer a:hover {
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.5s ease;
 }
 
-.about-feature-photo-vertical:hover,
+.about-feature-photo-horizontal:hover img {
+    transform: scale(1.03);
+}
+
 .about-feature-photo-horizontal:hover {
-    transform: scale(1.02);
-    box-shadow: 0 30px 50px rgba(67, 97, 238, 0.15);
+    transform: scale(1.01);
+    box-shadow: 0 30px 55px rgba(67, 97, 238, 0.2);
 }
 
 .about-feature-image {
@@ -1956,12 +2029,19 @@ footer a:hover {
 .about-feature-number {
     position: absolute;
     bottom: -20px;
-    right: 20px;
-    font-size: 5rem;
+    right: -10px;
+    font-size: 5.5rem;
     font-weight: 800;
-    color: rgba(67, 97, 238, 0.1);
+    color: rgba(67, 97, 238, 0.08);
     line-height: 1;
     pointer-events: none;
+    font-family: monospace;
+    transition: all 0.3s ease;
+}
+
+.about-feature-image:hover .about-feature-number {
+    color: rgba(67, 97, 238, 0.15);
+    transform: translateX(5px) translateY(-5px);
 }
 
 .about-feature-content {
@@ -1969,11 +2049,12 @@ footer a:hover {
 }
 
 .about-feature-category {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #4361ee;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
 
 .about-feature-title {
@@ -1981,47 +2062,53 @@ footer a:hover {
     margin-bottom: 1.5rem;
     color: #1a1a2e;
     line-height: 1.3;
+    font-weight: 600;
 }
 
 .about-feature-text {
     color: #5a5a6e;
     line-height: 1.7;
     margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 /* Цитатный блок */
 .about-quote-block {
     background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
     padding: 4rem;
-    border-radius: 32px;
+    border-radius: 40px;
     margin: 3rem 0;
     text-align: center;
     position: relative;
-    border: 1px solid #eef2f6;
+    border: 1px solid rgba(67, 97, 238, 0.1);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.02);
 }
 
 .about-quote-mark {
-    font-size: 5rem;
+    font-size: 6rem;
     color: #4361ee;
-    opacity: 0.3;
+    opacity: 0.15;
     position: absolute;
-    top: 1rem;
+    top: 1.5rem;
     left: 2rem;
     line-height: 1;
+    font-family: Georgia, serif;
 }
 
 .about-quote-category {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #4361ee;
     margin-bottom: 1rem;
+    font-weight: 600;
 }
 
 .about-quote-title {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
     color: #1a1a2e;
+    font-weight: 600;
 }
 
 .about-quote-text p {
@@ -2034,9 +2121,10 @@ footer a:hover {
 /* Простой текстовый блок */
 .about-simple-block {
     max-width: 800px;
-    margin: 3rem auto;
+    margin: 4rem auto;
     text-align: center;
     padding: 2rem 0;
+    position: relative;
 }
 
 .about-simple-number {
@@ -2044,32 +2132,36 @@ footer a:hover {
     font-weight: 600;
     color: #4361ee;
     margin-bottom: 1rem;
+    letter-spacing: 1px;
 }
 
 .about-simple-category {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #5a5a6e;
     margin-bottom: 0.8rem;
+    font-weight: 500;
 }
 
 .about-simple-title {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
     color: #1a1a2e;
+    font-weight: 600;
 }
 
 .about-simple-text p {
     color: #5a5a6e;
     line-height: 1.7;
     margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 /* Заключение */
 .about-outro {
     text-align: center;
-    padding: 4rem 0 5rem;
+    padding: 5rem 0 6rem;
     max-width: 700px;
     margin: 0 auto;
 }
@@ -2077,35 +2169,83 @@ footer a:hover {
 .about-outro-line {
     width: 60px;
     height: 2px;
-    background: #4361ee;
+    background: linear-gradient(90deg, #4361ee, #904e95);
     margin: 0 auto 2rem;
+    border-radius: 2px;
 }
 
 .about-outro-text {
     font-size: 1.1rem;
     color: #1a1a2e;
     margin-bottom: 1rem;
+    line-height: 1.6;
 }
 
 .about-outro-buttons {
     display: flex;
-    gap: 1rem;
+    gap: 1.2rem;
     justify-content: center;
     margin-top: 2rem;
     flex-wrap: wrap;
 }
 
+.about-outro-buttons .btn-primary {
+    background: #4361ee;
+    border: none;
+    padding: 0.9rem 2rem;
+}
+
+.about-outro-buttons .btn-primary:hover {
+    background: #2b3fb0;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(67, 97, 238, 0.3);
+}
+
+.about-outro-buttons .btn-outline {
+    border: 2px solid #4361ee;
+    background: transparent;
+    padding: 0.9rem 2rem;
+}
+
+.about-outro-buttons .btn-outline:hover {
+    background: #4361ee;
+    color: white;
+    transform: translateY(-3px);
+}
+
 /* Адаптация */
+@media (max-width: 992px) {
+    .about-hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .about-feature-title {
+        font-size: 1.8rem;
+    }
+    
+    .about-quote-title {
+        font-size: 1.6rem;
+    }
+    
+    .about-simple-title {
+        font-size: 1.6rem;
+    }
+}
+
 @media (max-width: 768px) {
     .about-hero-title {
-        font-size: 2rem;
+        font-size: 2.2rem;
+    }
+    
+    .about-hero-text {
+        font-size: 1rem;
     }
     
     .about-feature {
         flex-direction: column;
         gap: 2rem;
+        padding: 3rem 0;
         text-align: center;
-        padding: 2rem 0;
     }
     
     .about-feature.reverse {
@@ -2122,9 +2262,9 @@ footer a:hover {
     }
     
     .about-feature-number {
-        font-size: 3rem;
+        font-size: 3.5rem;
         bottom: -10px;
-        right: 10px;
+        right: 0;
     }
     
     .about-feature-title {
@@ -2136,29 +2276,56 @@ footer a:hover {
         padding: 2rem;
     }
     
+    .about-quote-mark {
+        font-size: 4rem;
+        top: 0.5rem;
+        left: 1rem;
+    }
+    
     .about-quote-title {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     
     .about-simple-title {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+    }
+    
+    .about-outro {
+        padding: 3rem 0 4rem;
     }
     
     .about-outro-text {
         font-size: 1rem;
     }
+    
+    .about-hero-label::before,
+    .about-hero-label::after {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
     .about-hero-title {
-        font-size: 1.6rem;
-    }
-    
-    .about-hero-text {
-        font-size: 1rem;
+        font-size: 1.8rem;
     }
     
     .about-feature-vertical .about-feature-image-vertical {
         max-width: 240px;
+    }
+    
+    .about-feature-title {
+        font-size: 1.3rem;
+    }
+    
+    .about-feature-text {
+        font-size: 0.9rem;
+    }
+    
+    .about-quote-text p {
+        font-size: 0.9rem;
+    }
+    
+    .about-simple-text p {
+        font-size: 0.9rem;
     }
 }
