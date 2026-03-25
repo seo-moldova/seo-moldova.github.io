@@ -21,67 +21,46 @@ body {
 
 /* ===== ШАПКА (НАВИГАЦИЯ) ===== */
 header {
-    background-color: #ffffff;
-    padding: 1.2rem 0;
+    background: #ffffff;
+    padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
 }
 
-nav {
+.header-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    gap: 0.8rem;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-/* Переключатель языков */
+.logo a {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #4361ee;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
 
-.lang-switcher {
+nav {
     display: flex;
-    justify-content: flex-end;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.main-nav {
+    display: flex;
+    gap: 1.8rem;
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.lang-switcher li {
-    list-style: none;
-}
-
-.lang-switcher a {
-    display: inline-block;
-    padding: 0.4rem 1rem;
-    border-radius: 30px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    text-decoration: none;
-    background: transparent;
-    color: #1a1a2e;
-    transition: all 0.3s ease;
-    border: 1px solid #e0e4f0;
-}
-
-.lang-switcher a:hover {
-    background: #f0f2f8;
-    border-color: #4361ee;
-}
-
-.lang-switcher a.active {
-    background: #4361ee;
-    color: white;
-    border-color: #4361ee;
-}
-
-/* Основная навигация */
-.main-nav {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 2rem;
-    flex-wrap: wrap;
 }
 
 .main-nav li a {
@@ -95,7 +74,67 @@ nav {
 .main-nav li a:hover,
 .main-nav li a.active {
     color: #4361ee;
-    border-bottom: 2px solid #4361ee;
+}
+
+/* Переключатель языков - стиль "табы" */
+.lang-switcher {
+    display: flex;
+    gap: 0.3rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #f0f2f8;
+    border-radius: 40px;
+    padding: 0.2rem;
+}
+
+.lang-switcher li {
+    list-style: none;
+}
+
+.lang-switcher a {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    background: transparent;
+    color: #5a5a6e;
+    transition: all 0.3s ease;
+}
+
+.lang-switcher a:hover {
+    color: #4361ee;
+}
+
+.lang-switcher a.active {
+    background: white;
+    color: #4361ee;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .main-nav {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .lang-switcher {
+        justify-content: center;
+    }
 }
 
 /* ===== HERO СЕКЦИЯ ===== */
