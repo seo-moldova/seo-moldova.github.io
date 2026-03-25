@@ -3,50 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEO-специалист | CV Workfolio</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>SEO Expert Portfolio | Результаты и Кейсы</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="\assets\css\style.css">
 </head>
 <body>
 
-    <header>
-        <div class="container">
+    <div class="top-bar">
+        <div class="container flex-between">
+            <div class="top-contacts">
+                <span><i class="fas fa-envelope"></i> support@example.com</span>
+                <span><i class="fas fa-phone-alt"></i> +123 456-7890</span>
+            </div>
+            <div class="top-socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container flex-between">
+            <div class="logo">CV <span>Workfolio</span></div>
             <nav>
-                <div class="logo">SEO MOLDAVA</div>
-                <div class="nav-links">
-                    <a href="/">Главная</a>
-                    <a href="/experience/">Опыт</a>
-                    <a href="/projects/">Проекты</a>
-                    <a href="/about/">Обо мне</a>
-                    <a href="/contacts/">Контакты</a>
-                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contacts.html">Contact Us</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
-    <main class="container">
-        <section class="hero-section">
-            
+    <section class="hero">
+        <div class="container">
             <div class="hero-content">
-                <span class="welcome">Welcome to my world</span>
-                <h1>Hi, I’m <span>SEO Expert</span></h1>
-                <h2>from Moldova.</h2>
-                <p>
-                    Я помогаю бизнесу занимать топовые позиции в поиске. Специализируюсь на техническом аудите, 
-                    проектировании семантики и стратегическом линкбилдинге. Ваш трафик — моя ответственность.
-                </p>
-                <div class="recent-btn">
-                    <a href="/projects/">Смотреть кейсы</a>
+                <p class="greeting">Hi, I Am Your Name</p>
+                <h1>A Best SEO<br>Specialist & Analyst</h1>
+                <p class="hero-desc">Увеличиваю видимость бизнеса в поиске и конвертирую трафик в лояльных клиентов.</p>
+                <a href="#" class="btn-primary">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container grid-2">
+            <div class="about-visual">
+                <div class="image-box">
+                    <img src="img/my-photo.jpg" alt="SEO Specialist Working">
+                    <div class="exp-badge">
+                        <i class="fas fa-award"></i>
+                        <span class="exp-num">5+</span>
+                        <span class="exp-text">Years<br>Experience</span>
+                    </div>
                 </div>
             </div>
-
-            <div class="hero-image">
-                <div class="img-wrapper">
-                    <img src="/assets/img/hero-photo.jpg" alt="SEO Specialist">
+            <div class="about-info">
+                <span class="subtitle">About Us</span>
+                <h2>Would You Like To Have A Creative SEO Strategy?</h2>
+                <p>Я подхожу к продвижению комплексно: от глубокого технического аудита до выстраивания контент-стратегии, которая действительно работает на продажи.</p>
+                
+                <div class="author-meta">
+                    <img src="img/avatar-small.jpg" alt="Avatar" class="mini-avatar">
+                    <div class="author-details">
+                        <strong>Ваше Имя</strong>
+                        <span>SEO Expert / Manager</span>
+                    </div>
+                    <div class="signature">
+                        <img src="img/signature.png" alt="Signature">
+                    </div>
                 </div>
+                
+                <a href="about.html" class="btn-main">Learn More</a>
             </div>
-
-        </section>
-    </main>
+        </div>
+    </section>
 
 </body>
 </html>
