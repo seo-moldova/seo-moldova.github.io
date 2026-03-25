@@ -2330,7 +2330,7 @@ footer a:hover {
     }
 }
 
-/* ===== СТРАНИЦА ПРОЕКТОВ (СТАТИЧНЫЕ КАРТОЧКИ) ===== */
+/* ===== СТРАНИЦА ПРОЕКТОВ ===== */
 
 /* Hero секция */
 .projects-hero {
@@ -2386,8 +2386,8 @@ footer a:hover {
 }
 
 .filter-btn {
-    background: #f0f2f8;
-    border: none;
+    background: transparent;
+    border: 1px solid #e0e4f0;
     padding: 0.6rem 1.4rem;
     border-radius: 40px;
     font-size: 0.9rem;
@@ -2398,12 +2398,14 @@ footer a:hover {
 }
 
 .filter-btn:hover {
-    background: #e0e4f0;
-    color: #1a1a2e;
+    background: #f0f2f8;
+    border-color: #4361ee;
+    color: #4361ee;
 }
 
 .filter-btn.active {
     background: #4361ee;
+    border-color: #4361ee;
     color: white;
 }
 
@@ -2420,17 +2422,16 @@ footer a:hover {
     display: block;
     text-decoration: none;
     background: #ffffff;
-    border-radius: 24px;
+    border-radius: 20px;
     overflow: hidden;
     transition: all 0.3s ease;
     border: 1px solid #eef2f6;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.08);
     border-color: #4361ee;
+    box-shadow: 0 15px 30px rgba(67, 97, 238, 0.08);
 }
 
 /* Изображение */
@@ -2472,11 +2473,12 @@ footer a:hover {
 /* Информация о проекте */
 .project-card-info {
     padding: 1.2rem 1.2rem 1.5rem;
+    border-top: 1px solid #eef2f6;
 }
 
 .project-card-title {
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 600;
     color: #1a1a2e;
     margin-bottom: 0.5rem;
     transition: color 0.3s ease;
@@ -2499,33 +2501,34 @@ footer a:hover {
 }
 
 .projects-cta-content {
-    background: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%);
-    border-radius: 32px;
+    background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+    border-radius: 28px;
     padding: 3rem;
     text-align: center;
-    color: white;
+    border: 1px solid #eef2f6;
 }
 
 .projects-cta-content h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: 1rem;
+    color: #1a1a2e;
 }
 
 .projects-cta-content p {
     margin-bottom: 1.5rem;
-    opacity: 0.9;
+    color: #5a5a6e;
 }
 
 .projects-cta-content .btn-primary {
-    background: white;
-    color: #4361ee;
+    background: #4361ee;
+    color: white;
     border: none;
 }
 
 .projects-cta-content .btn-primary:hover {
-    background: #f9c74f;
-    color: #1a1a2e;
+    background: #2b3fb0;
     transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
 }
 
 /* Адаптация */
@@ -2573,5 +2576,9 @@ footer a:hover {
     .project-card-category-badge {
         font-size: 0.65rem;
         padding: 0.2rem 0.6rem;
+    }
+    
+    .projects-cta-content {
+        padding: 1.5rem;
     }
 }
