@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEO Services Moldova | Ivan Pridorojnov | Search Engine Optimization Specialist</title>
-    <meta name="description" content="Professional SEO services in Moldova. Search engine optimization, Google promotion, local SEO Chisinau. Increase organic traffic and sales. Free consultation.">
-    <meta name="keywords" content="search engine positioning seo, seo moldova, seo company, local seo services, seo for companies, best seo provider, best search engine optimisation company, seo services, web searches, search optimization service, seo agency">
+    <title>SEO Services | SEO Specialist | Moldova</title>
+    <meta name="description" content="Professional SEO services in Moldova, Europe and USA. Website promotion, traffic growth, local SEO. Google optimization.">
     <meta name="author" content="Ivan Pridorojnov">
-    <link rel="canonical" href="https://your-site.com/en/">
-    <link rel="alternate" hreflang="ru" href="https://your-site.com/ru/">
-    <link rel="alternate" hreflang="ro" href="https://your-site.com/ro/">
-    <link rel="alternate" hreflang="en" href="https://your-site.com/en/">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="canonical" href="https://seo-moldova.github.io/en/index">
+    <link rel="alternate" hreflang="ru" href="https://seo-moldova.github.io/">
+    <link rel="alternate" hreflang="ro" href="https://seo-moldova.github.io/ro/index">
+    <link rel="alternate" hreflang="en" href="https://seo-moldova.github.io/en/index">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header>
         <nav>
             <ul class="lang-switcher">
-                <li><a href="../ru/">РУС</a></li>
-                <li><a href="../ro/">RO</a></li>
-                <li><a href="../en/" class="active">EN</a></li>
+                <li><a href="/index">РУС</a></li>
+                <li><a href="/ro/index">RO</a></li>
+                <li><a href="/en/index" class="active">EN</a></li>
             </ul>
             <ul class="main-nav">
                 <li><a href="index.html" class="active">Home</a></li>
@@ -32,62 +31,64 @@
     </header>
 
     <main>
+        <!-- HERO SECTION -->
         <div class="container hero">
             <div class="hero-content">
                 <span class="hero-badge">SEO Specialist in Moldova</span>
-                <h1>Get Your Website to <span class="highlight">Google's Top Positions</span> with Guaranteed Results</h1>
+                <h1>Get Your Website to TOP<br><span class="highlight">with Professionalism</span></h1>
                 <p class="hero-description">
-                    <strong>Professional SEO services in Moldova</strong> that deliver real business growth. 
-                    I help companies increase organic traffic, generate qualified leads, and boost sales through search. 
-                    <strong>First consultation is free.</strong>
+                    <strong>Comprehensive SEO services in Moldova, Europe and USA</strong> turnkey. 
+                    I increase sales through search. I work with websites of any complexity — 
+                    from landing pages to e-commerce stores. <strong>From keyword research to schema markup</strong>
                 </p>
                 <div class="hero-buttons">
                     <a href="projects.html" class="btn btn-primary">📊 View Case Studies</a>
-                    <a href="../cv/ivan-pridorojnov-cv.pdf" class="btn btn-outline" download>📄 Download CV</a>
+                    <a href="/cv/ivan-pridorojnov-cv.pdf" class="btn btn-outline" download>📄 Download CV</a>
                 </div>
             </div>
             <div class="hero-image">
                 <div class="image-placeholder">
                     <picture>
-                        <source srcset="../images/ivan-pridorojnov.webp" type="image/webp">
-                        <img src="../images/ivan-pridorojnov.jpg" alt="Ivan Pridorojnov - SEO Specialist Moldova">
+                        <source srcset="/images/ivan-pridorojnov.webp" type="image/webp">
+                        <img src="/images/ivan-pridorojnov.jpg" alt="Ivan Pridorojnov - SEO Specialist Moldova">
                     </picture>
                 </div>
             </div>
         </div>
 
+        <!-- ABOUT + STATS -->
         <div class="container about-section">
             <div class="about-left">
                 <h2>Why Choose Me</h2>
-                <h3>SEO Isn't Just My Job — It's My Passion</h3>
+                <h3>SEO is My Profession, Not a Hobby</h3>
                 <p>
-                    I'm <strong>Ivan Pridorojnov</strong>, a professional SEO specialist with over 7 years of experience. 
-                    I've successfully completed <strong>50+ projects</strong> across various industries: e-commerce, 
-                    service businesses, information portals, and local businesses in Chisinau and throughout Moldova.
+                    My name is <strong>Ivan Pridorojnov</strong>, I'm a professional SEO specialist with over 7 years of experience. 
+                    I have <strong>20+ successful projects</strong> across various niches: e-commerce, beauty, services, recruiting, information portals, 
+                    local business in Chisinau and throughout Moldova.
                 </p>
                 <p>
-                    My goal isn't just to rank your website — it's to turn search traffic into 
-                    <strong>real customers and revenue</strong>. I use only white-hat SEO techniques that deliver 
-                    sustainable, long-term results without risking Google penalties.
+                    My goal is not just to rank your website, but to turn search traffic into 
+                    <strong>real customers and revenue</strong>. I use only white-hat SEO techniques 
+                    that deliver sustainable, long-term results.
                 </p>
                 <p>
-                    <strong>What I offer:</strong> comprehensive SEO audit, keyword research, technical optimization, 
-                    content strategy, quality link building, and transparent monthly reporting.
+                    <strong>My strengths:</strong> comprehensive audit, keyword research, clustering, technical optimization, 
+                    content strategy development, proper schema markup, and analytics & conversion setup.
                 </p>
                 <a href="about.html" class="btn btn-secondary">Learn More About Me →</a>
             </div>
             <div class="about-right">
                 <div class="about-card">
                     <div class="about-name">Ivan Pridorojnov</div>
-                    <div class="about-title">SEO Specialist / Consultant</div>
+                    <div class="about-title">SEO Specialist / Google Ads Specialist</div>
                     <div class="about-stats">
                         <div class="stat">
-                            <span class="stat-number">50+</span>
+                            <span class="stat-number">20+</span>
                             <span class="stat-label">Successful Projects</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">7+</span>
-                            <span class="stat-label">Years Experience</span>
+                            <span class="stat-label">Years in SEO</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">Up to 300%</span>
@@ -98,60 +99,67 @@
             </div>
         </div>
 
+        <!-- SEO SERVICES -->
         <div class="container services-section">
             <h2>SEO Services I Provide</h2>
             <div class="services-grid">
                 <div class="service-item">
                     <h3>🔍 Technical SEO Audit</h3>
-                    <p>Comprehensive analysis of indexing, loading speed, Core Web Vitals, structured data, URL structure, and mobile-friendliness. I identify hidden issues holding your site back.</p>
+                    <p>Analysis of indexing, loading speed, Core Web Vitals, schema markup, site structure, and headings. I identify hidden issues holding your site back.</p>
                 </div>
                 <div class="service-item">
                     <h3>📊 Keyword Research & Content</h3>
-                    <p>In-depth keyword research (up to 10,000 keywords), clustering, LSI optimization. I create SEO content that both users and search engines love.</p>
+                    <p>Semantic core collection, clustering, LSI optimization. I write SEO content that people love to read, search engines appreciate, and that actually converts.</p>
                 </div>
                 <div class="service-item">
-                    <h3>🔗 Link Building</h3>
-                    <p>Crowd marketing, quality backlink acquisition, competitor link profile analysis. Only white-hat methods with zero risk of penalties.</p>
+                    <h3>🔗 Site Architecture & Structure</h3>
+                    <p>Developing logical site architecture "from scratch" or migration without traffic loss. Creating ideal page hierarchy for maximum niche coverage.</p>
                 </div>
                 <div class="service-item">
                     <h3>📈 Analytics & Reporting</h3>
-                    <p>GA4, Google Search Console, Data Studio dashboards. Clear reports with KPIs: rankings, traffic, conversions, ROI. Weekly updates.</p>
+                    <p>GA4, GSC, Data Studio, Google Tag Manager, Google Ads, Ahrefs, and Semrush. Clear dashboards with KPIs: rankings, traffic, conversions. Reports that are easy to understand.</p>
                 </div>
                 <div class="service-item">
                     <h3>📍 Local SEO</h3>
-                    <p>Google Maps optimization, Google Business Profile management. Attract customers from your neighborhood and city.</p>
+                    <p>Google Maps promotion and local area optimization. Google Business Profile management. I attract customers from your neighborhood and city, wherever you are.</p>
                 </div>
                 <div class="service-item">
                     <h3>🚀 Turnkey SEO</h3>
-                    <p>Complete website management: from audit to stable TOP-10 positions. Fixed monthly fee or performance-based pricing.</p>
+                    <p>Complete website management: from audit to ongoing support for existing projects that need attention — while you stay idle, your competitors are moving forward.</p>
                 </div>
             </div>
         </div>
 
+        <!-- PRICING & COLLABORATION SECTION -->
         <div class="container seo-prices">
             <div class="price-card">
-                <h3>💰 How Much Does SEO Cost?</h3>
-                <p>SEO pricing is always customized. I don't offer "one-size-fits-all" packages because every business is unique.</p>
-                <p><strong>Pricing factors include:</strong></p>
+                <h2>🤝 Collaboration & Employment Formats</h2>
+                <p>I'm open to various collaboration options — from one-time consultations to full SEO department management within your company.</p>
+                <h3>Ways to work with me:</h3>
                 <ul>
-                    <li>Current website condition and domain age</li>
-                    <li>Competition level and target location (Moldova / Chisinau / regions)</li>
-                    <li>Number of keywords and pages to optimize</li>
-                    <li>Scope of work: one-time audit or ongoing SEO management</li>
+                    <li>💼 <strong>Full-time / In-house Expert:</strong> Deep product immersion, building processes from scratch, and long-term work on company KPIs.</li>
+                    <li>🛠️ <strong>Project-based Hiring:</strong> Technical audit, website migration without traffic loss, or launching new SEO direction from zero.</li>
+                    <li>🌍 <strong>Freelance & Consulting:</strong> Regular website maintenance, keyword research, or one-time strategy consultations.</li>
                 </ul>
-                <p><strong>Starting budget: €300/month</strong> for local SEO campaigns. Complex projects — custom pricing.</p>
-                <a href="contacts.html" class="btn btn-primary">📩 Get a Quote →</a>
-                <p style="margin-top: 1rem; font-size: 0.9rem;">* Free consultation and preliminary audit included</p>
+                <h3>💰 SEO Pricing or Salary Expectations:</h3>
+                <ul>
+                    <li>Project scope and workload (number of regions, language versions);</li>
+                    <li>Current technical condition of the resource;</li>
+                    <li>Employment format (remote / hybrid / office).</li>
+                </ul>
+                <a href="/cv/ivan-pridorojnov-cv.pdf" class="btn btn-primary">📩 Download CV →</a>
             </div>
         </div>
 
+        <!-- CALL TO ACTION -->
         <div class="container cta-section">
             <div class="cta-card">
-                <h3>Ready to Take Your Website to the Top?</h3>
-                <p>Leave your details — I'll get back to you within 24 hours, conduct a free audit, and propose a tailored SEO strategy.</p>
+                <h2>Ready to Take Your Website to TOP?</h2>
+                <h3>Let's Discuss Your Project or Position?</h3>📈
+                <p>Leave your details — I'll get back to you within 24 hours, conduct a free audit, and propose a promotion strategy.</p>
                 <div class="cta-buttons">
-                    <a href="contacts.html" class="btn btn-primary">Contact Me Now</a>
-                    <a href="tel:+37369959638" class="btn btn-outline">📞 +373 699 59638</a>
+                    <a href="contacts.html" class="btn btn-primary">My Contacts</a>
+                    <a href="mailto:ipridorojnov@gmail.com" class="btn btn-outline">✉️ Send Email</a>
                 </div>
             </div>
         </div>
@@ -162,7 +170,6 @@
             <p>© 2025 Ivan Pridorojnov — Professional SEO Services in Moldova</p>
             <p>
                 <a href="mailto:ipridorojnov@gmail.com">ipridorojnov@gmail.com</a> | 
-                <a href="tel:+37369959638">+373 699 59638</a> | 
                 <a href="https://t.me/Iezuit" target="_blank">Telegram</a> | 
                 <a href="https://www.linkedin.com/in/ivan-pridorojnov-2197571a7/" target="_blank">LinkedIn</a>
             </p>
