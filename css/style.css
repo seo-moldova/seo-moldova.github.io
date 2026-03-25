@@ -1118,3 +1118,280 @@ footer a:hover {
         padding: 0.6rem 0.8rem;
     }
 }
+
+/* ===== СТРАНИЦА ОПЫТА ===== */
+
+/* Заголовок страницы */
+.page-header {
+    text-align: center;
+    padding: 2rem 0 1rem;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    color: #1a1a2e;
+    margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    color: #5a5a6e;
+}
+
+/* Карточки компетенций */
+.competencies-section {
+    padding: 2rem 0 3rem;
+}
+
+.competencies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.competency-card {
+    background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+    padding: 1.8rem;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #eef2f6;
+    transition: all 0.3s ease;
+}
+
+.competency-card:hover {
+    transform: translateY(-5px);
+    border-color: #4361ee;
+}
+
+.competency-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.competency-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: #1a1a2e;
+}
+
+.competency-card p {
+    color: #5a5a6e;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Таймлайн */
+.timeline-section {
+    padding: 2rem 0 3rem;
+}
+
+.timeline-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1a1a2e;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #4361ee 0%, #904e95 100%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+    padding-left: 2rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -0.5rem;
+    top: 0.5rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #4361ee;
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px #4361ee;
+}
+
+.timeline-date {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #4361ee;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.timeline-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+    color: #1a1a2e;
+}
+
+.timeline-company {
+    font-weight: 500;
+    color: #5a5a6e;
+    margin-bottom: 0.8rem;
+}
+
+.timeline-content p {
+    color: #5a5a6e;
+    line-height: 1.6;
+}
+
+/* Навыки */
+.skills-section {
+    padding: 3rem 0;
+}
+
+.skills-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #1a1a2e;
+}
+
+.skills-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    color: #5a5a6e;
+    line-height: 1.6;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.skill-category {
+    background: #ffffff;
+    padding: 1.8rem;
+    border-radius: 20px;
+    border: 1px solid #eef2f6;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+}
+
+.skill-category h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #4361ee;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eef2f6;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    position: relative;
+    color: #5a5a6e;
+    line-height: 1.5;
+}
+
+.skill-category li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4361ee;
+    font-weight: bold;
+}
+
+/* Инструменты */
+.tools-section {
+    padding: 3rem 0 4rem;
+}
+
+.tools-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #1a1a2e;
+}
+
+.tools-intro {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: #5a5a6e;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.tool-category {
+    background: #f8f9ff;
+    padding: 1.5rem;
+    border-radius: 20px;
+    border: 1px solid #eef2f6;
+}
+
+.tool-category h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #1a1a2e;
+}
+
+.tool-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.tool-tag {
+    background: white;
+    padding: 0.4rem 1rem;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    color: #4361ee;
+    border: 1px solid #e0e4f0;
+    transition: all 0.3s ease;
+}
+
+.tool-tag:hover {
+    background: #4361ee;
+    color: white;
+    border-color: #4361ee;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .timeline {
+        padding-left: 1rem;
+    }
+    
+    .timeline-item {
+        padding-left: 1.5rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+}
