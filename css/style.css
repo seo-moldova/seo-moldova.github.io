@@ -1856,3 +1856,186 @@ footer a:hover {
     }
 }
 
+/* ===== СТРАНИЦА "ОБО МНЕ" ===== */
+
+/* Hero секция */
+.about-hero {
+    text-align: center;
+    padding: 3rem 0 2rem;
+}
+
+.about-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-hero-description {
+    font-size: 1.1rem;
+    color: #5a5a6e;
+    line-height: 1.7;
+    margin-top: 1rem;
+}
+
+/* Блоки "Обо мне" */
+.about-section-block {
+    padding: 3rem 0;
+}
+
+.about-block {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.about-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.about-block-content {
+    flex: 1.2;
+}
+
+.about-block-tag {
+    display: inline-block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #4361ee;
+    background: #f0f2f8;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+}
+
+.about-block-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #1a1a2e;
+}
+
+.about-block-content p {
+    color: #5a5a6e;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.about-block-image {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image-circle {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+    box-shadow: 0 20px 35px rgba(67, 97, 238, 0.1);
+    border: 2px solid #eef2f6;
+    transition: all 0.3s ease;
+}
+
+.about-image-circle:hover {
+    transform: scale(1.02);
+    box-shadow: 0 25px 40px rgba(67, 97, 238, 0.15);
+}
+
+.about-image-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Заключительный блок */
+.about-conclusion {
+    padding: 3rem 0 5rem;
+}
+
+.conclusion-card {
+    background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+    border-radius: 32px;
+    padding: 3rem;
+    text-align: center;
+    border: 1px solid #eef2f6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.conclusion-quote {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.conclusion-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #1a1a2e;
+}
+
+.conclusion-card p {
+    color: #5a5a6e;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.conclusion-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .about-block {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .about-block.reverse {
+        flex-direction: column;
+    }
+    
+    .about-block-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .about-image-circle {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .conclusion-card {
+        padding: 2rem;
+    }
+    
+    .conclusion-card h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero h1 {
+        font-size: 1.6rem;
+    }
+    
+    .about-block-tag {
+        font-size: 0.7rem;
+    }
+    
+    .about-image-circle {
+        width: 180px;
+        height: 180px;
+    }
+}
+
