@@ -37,12 +37,14 @@ nav {
 }
 
 /* Переключатель языков */
+
 .lang-switcher {
     display: flex;
     justify-content: flex-end;
     gap: 0.5rem;
     list-style: none;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .lang-switcher li {
@@ -51,24 +53,26 @@ nav {
 
 .lang-switcher a {
     display: inline-block;
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
+    padding: 0.4rem 1rem;
+    border-radius: 30px;
     font-size: 0.85rem;
     font-weight: 600;
-    background: #e9ecef;
-    color: #1a1a2e;
     text-decoration: none;
+    background: transparent;
+    color: #1a1a2e;
     transition: all 0.3s ease;
+    border: 1px solid #e0e4f0;
 }
 
 .lang-switcher a:hover {
-    background: #4361ee;
-    color: white;
+    background: #f0f2f8;
+    border-color: #4361ee;
 }
 
 .lang-switcher a.active {
     background: #4361ee;
     color: white;
+    border-color: #4361ee;
 }
 
 /* Основная навигация */
