@@ -1121,8 +1121,6 @@ footer a:hover {
 
 /* ===== СТРАНИЦА ОПЫТА ===== */
 
-/* ===== СТРАНИЦА ОПЫТА ===== */
-
 /* Hero секция страницы */
 .page-hero {
     display: flex;
@@ -1565,4 +1563,40 @@ footer a:hover {
     .timeline-card:hover {
         transform: translateX(0);
     }
+}
+/* Дополнительная адаптация для таймлайна на маленьких экранах */
+@media (max-width: 640px) {
+    .career-timeline {
+        padding-left: 0;
+    }
+    
+    .timeline-line {
+        left: 12px;
+    }
+    
+    .timeline-node {
+        padding-left: 40px;
+    }
+    
+    .timeline-marker {
+        left: 4px;
+        width: 14px;
+        height: 14px;
+    }
+    
+    .timeline-card {
+        padding: 1.2rem;
+    }
+    
+    .timeline-card h3 {
+        font-size: 1.1rem;
+    }
+}
+.experience-stats-circle {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-stats-circle:hover {
+    transform: scale(1.02);
+    box-shadow: 0 25px 40px rgba(67, 97, 238, 0.2);
 }
