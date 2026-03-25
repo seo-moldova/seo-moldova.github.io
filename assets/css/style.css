@@ -1,81 +1,60 @@
-/* Переменные */
+/* Переменные цветов */
 :root {
-    --accent: #ff005c; /* Розовый акцент */
-    --dark-grey: #333;
-    --light-grey: #777;
+    --accent: #ff014f; /* Розовый цвет со скрина */
+    --dark: #111111;
     --white: #ffffff;
 }
 
-* { box-sizing: border-box; }
-
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    color: var(--dark-grey);
-    line-height: 1.6;
-}
-
-h1, h2, .logo { font-family: 'Montserrat', sans-serif; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
 
 .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 .flex-between { display: flex; justify-content: space-between; align-items: center; }
-.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; padding: 100px 0; }
 
-/* 1. Top Bar */
-.top-bar { background: #1a1a1a; color: #ccc; padding: 10px 0; font-size: 13px; }
+/* Top Bar */
+.top-bar { 
+    background: var(--dark); 
+    color: #fff; 
+    padding: 10px 0; 
+    font-size: 14px; 
+}
 .top-contacts span { margin-right: 20px; }
 .top-contacts i { color: var(--accent); margin-right: 8px; }
-.top-socials a { color: #ccc; margin-left: 15px; text-decoration: none; transition: 0.3s; }
+.top-socials a { color: #fff; margin-left: 15px; text-decoration: none; transition: 0.3s; }
 .top-socials a:hover { color: var(--accent); }
 
-/* 2. Header */
-.main-header { background: var(--white); padding: 20px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-.logo { font-size: 24px; font-weight: bold; }
-.logo span { color: var(--accent); }
+/* Header & Logo */
+.main-header { 
+    padding: 15px 0; 
+    background: var(--white); 
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05); 
+}
+.logo-area { display: flex; align-items: center; gap: 12px; }
+.site-logo { height: 45px; width: auto; } /* Размер твоей картинки-логотипа */
+.logo-text { font-size: 24px; font-weight: bold; font-family: 'Montserrat'; color: #000; }
+.logo-text span { color: var(--accent); }
+
+/* Navigation */
 .nav-menu { list-style: none; display: flex; gap: 25px; margin: 0; }
-.nav-menu a { text-decoration: none; color: #111; font-weight: 500; }
+.nav-menu a { text-decoration: none; color: #333; font-weight: 500; transition: 0.3s; }
 .nav-menu a:hover, .nav-menu a.active { color: var(--accent); }
 
-/* 3. Hero Section */
+/* Hero Section */
 .hero {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('img/hero-bg.jpg');
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    height: 75vh;
     display: flex;
     align-items: center;
-    color: var(--white);
+    color: #fff;
 }
-.hero-content h1 { font-size: 52px; line-height: 1.2; margin: 15px 0; }
-.hero-desc { max-width: 500px; margin-bottom: 30px; font-size: 18px; }
-.btn-primary { background: var(--accent); color: white; padding: 15px 35px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; }
-
-/* 4. About Section */
-.about-visual { position: relative; }
-.image-box img { width: 100%; border-radius: 25px; }
-.exp-badge {
-    position: absolute;
-    bottom: 25px;
-    right: -20px;
-    background: var(--accent);
-    color: white;
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
+.hero-content h1 { font-size: 54px; margin: 15px 0; font-family: 'Montserrat'; }
+.btn-primary { 
+    background: var(--accent); 
+    color: #fff; 
+    padding: 15px 35px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    display: inline-block; 
 }
-.exp-badge i { font-size: 24px; margin-bottom: 5px; }
-.exp-num { font-size: 32px; font-weight: bold; display: block; }
-.exp-text { font-size: 12px; line-height: 1.2; text-transform: uppercase; }
-
-.subtitle { color: var(--accent); font-weight: bold; font-size: 14px; text-transform: uppercase; }
-.about-info h2 { font-size: 34px; margin: 15px 0 25px; }
-.about-info p { color: var(--light-grey); margin-bottom: 30px; }
-
-/* Author Meta */
-.author-meta { display: flex; align-items: center; gap: 15px; margin-bottom: 30px; }
-.mini-avatar { width: 55px; height: 55px; border-radius: 50%; object-fit: cover; }
-.author-details strong { display: block; font-size: 17px; }
-.author-details span { color: var(--light-grey); font-size: 14px; }
-.signature img { max-width: 120px; margin-left: 20px; opacity: 0.7; }
-
-.btn-main { background: var(--accent); color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; }
