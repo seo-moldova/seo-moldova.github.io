@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicii SEO Moldova | Ivan Pridorojnov | Promovare SEO site-uri</title>
+    <meta name="description" content="Servicii profesionale de promovare SEO în Moldova. Optimizare site-uri pentru Google, creștere trafic organic, SEO local Chișinău. Consultație gratuită.">
+    <meta name="keywords" content="optimizare seo, servicii seo, seo agency, servicii seo local, promovare seo, optimizare seo site, optimizare pentru motoare de cautare, firma seo, optimizare seo pret, oferta seo, servicii seo pret, servicii seo moldova">
+    <meta name="author" content="Ivan Pridorojnov">
+    <link rel="canonical" href="https://vaș-site.ro/ro/">
+    <link rel="alternate" hreflang="ru" href="https://vaș-site.ro/ru/">
+    <link rel="alternate" hreflang="ro" href="https://vaș-site.ro/ro/">
+    <link rel="alternate" hreflang="en" href="https://vaș-site.ro/en/">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="lang-switcher">
+                <li><a href="../ru/">РУС</a></li>
+                <li><a href="../ro/" class="active">RO</a></li>
+                <li><a href="../en/">EN</a></li>
+            </ul>
+            <ul class="main-nav">
+                <li><a href="index.html" class="active">Acasă</a></li>
+                <li><a href="experience.html">Experiență</a></li>
+                <li><a href="projects.html">Proiecte</a></li>
+                <li><a href="about.html">Despre mine</a></li>
+                <li><a href="contacts.html">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container hero">
+            <div class="hero-content">
+                <span class="hero-badge">Specialist SEO în Moldova</span>
+                <h1>Promovare SEO <span class="highlight">cu rezultate garantate</span> în Moldova</h1>
+                <p class="hero-description">
+                    <strong>Servicii complete de optimizare SEO pentru site-ul dvs.</strong> 
+                    Creștem vizibilitatea în Google, atragem clienți reali și creștem vânzările. 
+                    <strong>Prima consultație — gratuită.</strong>
+                </p>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn btn-primary">📊 Vezi proiectele mele</a>
+                    <a href="../cv/ivan-pridorojnov-cv.pdf" class="btn btn-outline" download>📄 Descarcă CV</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <picture>
+                        <source srcset="../images/ivan-pridorojnov.webp" type="image/webp">
+                        <img src="../images/ivan-pridorojnov.jpg" alt="Ivan Pridorojnov - Specialist SEO Moldova">
+                    </picture>
+                </div>
+            </div>
+        </div>
+
+        <div class="container about-section">
+            <div class="about-left">
+                <h2>De ce să mă alegi pe mine</h2>
+                <h3>Optimizare SEO — profesia mea, nu un hobby</h3>
+                <p>
+                    Numele meu este <strong>Ivan Pridorojnov</strong>, specialist SEO cu peste 7 ani de experiență. 
+                    În spatele meu sunt <strong>peste 50 de proiecte de succes</strong> în diverse domenii: e-commerce, servicii, 
+                    portaluri de informații, afaceri locale în Chișinău și în toată Moldova.
+                </p>
+                <p>
+                    Scopul meu nu este doar să aduc site-ul în TOP, ci să transform traficul organic în 
+                    <strong>clienți reali și vânzări</strong>. Folosesc doar metode albe de promovare, care oferă rezultate pe termen lung.
+                </p>
+                <p>
+                    <strong>Ce ofer:</strong> audit SEO complet, colectarea nucleului semantic, optimizare tehnică, 
+                    strategie de conținut, link building de calitate și raportare lunară transparentă.
+                </p>
+                <a href="about.html" class="btn btn-secondary">Mai multe despre mine →</a>
+            </div>
+            <div class="about-right">
+                <div class="about-card">
+                    <div class="about-name">Ivan Pridorojnov</div>
+                    <div class="about-title">Specialist SEO / Consultant</div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">proiecte finalizate</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">7+</span>
+                            <span class="stat-label">ani experiență</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">până la 300%</span>
+                            <span class="stat-label">creștere trafic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container services-section">
+            <h2>Servicii de promovare SEO</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>🔍 Audit SEO tehnic</h3>
+                    <p>Analiză indexare, viteză încărcare, Core Web Vitals, microdate, adaptare mobil. Identific problemele ascunse care împiedică site-ul să crească.</p>
+                </div>
+                <div class="service-item">
+                    <h3>📊 Semantică & conținut</h3>
+                    <p>Colectarea nucleului semantic (până la 10.000 de cuvinte cheie), clusterizare, optimizare LSI. Texte SEO care atrag atât utilizatorii, cât și motoarele de căutare.</p>
+                </div>
+                <div class="service-item">
+                    <h3>🔗 Link building</h3>
+                    <p>Crowd marketing, lucru cu donatori de calitate, analiza profilului de link-uri al competitorilor. Doar metode albe, fără riscuri.</p>
+                </div>
+                <div class="service-item">
+                    <h3>📈 Analiză & raportare</h3>
+                    <p>GA4, Yandex.Metrica, GSC, Data Studio. Dashboard-uri clare cu KPI: poziții, trafic, conversii, ROI. Rapoarte săptămânale.</p>
+                </div>
+                <div class="service-item">
+                    <h3>📍 SEO local</h3>
+                    <p>Promovare în Google Maps și Google Business Profile. Atrag clienți din zona dvs. și din întreg orașul.</p>
+                </div>
+                <div class="service-item">
+                    <h3>🚀 SEO la cheie</h3>
+                    <p>Întreținere completă a site-ului: de la audit până la poziții stabile în TOP-10. Preț fix sau plata în funcție de rezultate.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container seo-prices">
+            <div class="price-card">
+                <h3>💰 Cât costă promovarea SEO?</h3>
+                <p>Prețul optimizării SEO se calculează individual. Nu ofer pachete "standard", pentru că fiecare afacere este unică.</p>
+                <p><strong>Factori care influențează prețul:</strong></p>
+                <ul>
+                    <li>Starea actuală a site-ului și vechimea acestuia</li>
+                    <li>Concurența în nișă și regiunea de promovare (Moldova / Chișinău)</li>
+                    <li>Numărul de cuvinte cheie și pagini de optimizat</li>
+                    <li>Volumul de muncă: audit unic sau întreținere completă</li>
+                </ul>
+                <p><strong>Bugetul începe de la 300 euro/lună</strong> pentru promovare locală. Pentru proiecte complexe — calcul individual.</p>
+                <a href="contacts.html" class="btn btn-primary">📩 Calculează prețul →</a>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">* Consultație gratuită și audit preliminar — la cerere</p>
+            </div>
+        </div>
+
+        <div class="container cta-section">
+            <div class="cta-card">
+                <h3>Ești gata să aduci site-ul în TOP?</h3>
+                <p>Lasă o cerere — voi contacta în 24 de ore, voi face un audit gratuit și voi propune o strategie de promovare.</p>
+                <div class="cta-buttons">
+                    <a href="contacts.html" class="btn btn-primary">Contactează-mă</a>
+                    <a href="tel:+37369959638" class="btn btn-outline">📞 +373 699 59638</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Ivan Pridorojnov — Servicii SEO profesionale în Moldova</p>
+            <p>
+                <a href="mailto:ipridorojnov@gmail.com">ipridorojnov@gmail.com</a> | 
+                <a href="tel:+37369959638">+373 699 59638</a> | 
+                <a href="https://t.me/Iezuit" target="_blank">Telegram</a> | 
+                <a href="https://www.linkedin.com/in/ivan-pridorojnov-2197571a7/" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

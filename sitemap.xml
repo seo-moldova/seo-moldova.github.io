@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://ваш-сайт.ru/ru/</loc>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ваш-сайт.ru/ru/"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://ваш-сайт.ru/ro/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ваш-сайт.ru/en/"/>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://ваш-сайт.ru/ro/</loc>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ваш-сайт.ru/ru/"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://ваш-сайт.ru/ro/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ваш-сайт.ru/en/"/>
+    </url>
+    <url>
+        <loc>https://ваш-сайт.ru/en/</loc>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ваш-сайт.ru/ru/"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://ваш-сайт.ru/ro/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ваш-сайт.ru/en/"/>
+    </url>
+</urlset>
