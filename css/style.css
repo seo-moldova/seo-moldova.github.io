@@ -400,7 +400,7 @@ nav {
 
 .service-item {
     background: #ffffff;
-    padding: 2rem;
+    padding: 2rem 1.8rem;
     border-radius: 20px;
     text-align: left;
     transition: all 0.3s ease;
