@@ -251,7 +251,7 @@ nav {
     aspect-ratio: 1 / 1;
 }
 
-/* ===== СЕКЦИЯ "ОБО МНЕ" ===== */
+/* ===== СЕКЦИЯ "ОБО МНЕ" - ИДЕАЛЬНАЯ СИММЕТРИЯ ===== */
 .about-section {
     display: flex;
     gap: 5rem;
@@ -259,11 +259,21 @@ nav {
     flex-wrap: wrap;
     border-top: 1px solid #eef2f6;
     margin-top: 2rem;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 .about-left {
     flex: 1.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.about-right {
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .about-left h2 {
@@ -272,6 +282,7 @@ nav {
     letter-spacing: 2px;
     color: #4361ee;
     margin-bottom: 1rem;
+    margin-top: 0;
 }
 
 .about-left h3 {
@@ -287,11 +298,16 @@ nav {
     line-height: 1.7;
 }
 
-.about-right {
-    flex: 0.7;
+.about-left p:last-of-type {
+    margin-bottom: 1.5rem;
 }
 
-/* Карточка статистики - улучшенная */
+.about-left .btn-secondary {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+}
+
+/* Карточка статистики - идеальное выравнивание */
 .about-card {
     background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
     padding: 2rem 1.8rem;
@@ -299,10 +315,14 @@ nav {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
     border: 1px solid #eef2f6;
     text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about-name {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
     color: #1a1a2e;
@@ -312,15 +332,15 @@ nav {
     color: #4361ee;
     font-weight: 500;
     font-size: 0.9rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
     padding-bottom: 1rem;
     border-bottom: 2px solid #e0e4f0;
 }
 
 .about-stats {
     display: flex;
-    justify-content: space-around;
-    gap: 1rem;
+    justify-content: space-between;
+    gap: 1.2rem;
     flex-wrap: wrap;
 }
 
@@ -331,17 +351,19 @@ nav {
 
 .stat-number {
     display: block;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 800;
     color: #4361ee;
     line-height: 1.2;
+    margin-bottom: 0.3rem;
 }
 
 .stat-label {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     color: #5a5a6e;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.8px;
+    font-weight: 500;
 }
 
 /* ===== СЕКЦИЯ УСЛУГ ===== */
@@ -731,23 +753,35 @@ footer a:hover {
         text-align: center;
         gap: 2rem;
         padding: 2rem 0;
+        align-items: center;
+    }
+    
+    .about-left {
+        text-align: center;
     }
     
     .about-left h3 {
         font-size: 1.5rem;
     }
     
-    .about-stats {
-        justify-content: center;
+    .about-left .btn-secondary {
+        align-self: center;
+        margin: 1rem auto 0;
     }
     
     .about-card {
         max-width: 320px;
         margin: 0 auto;
+        height: auto;
+    }
+    
+    .about-stats {
+        justify-content: center;
+        gap: 1.5rem;
     }
     
     .stat-number {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
     
     .services-section {
