@@ -343,7 +343,7 @@ nav {
 .about-stats {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
 }
@@ -372,6 +372,7 @@ nav {
     letter-spacing: 0.8px;
     font-weight: 600;
     line-height: 1.3;
+    white-space: nowrap;
 }
 
 .stat:last-child .stat-number {
