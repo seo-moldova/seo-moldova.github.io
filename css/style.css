@@ -3225,3 +3225,125 @@ footer a:hover {
         margin-bottom: 0;
     }
 }
+
+/* ===== КЛЮЧЕВЫЕ ДОСТИЖЕНИЯ - ИТОГОВЫЙ БЛОК ===== */
+
+.achievements-final {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+    border-radius: 24px;
+    border: 1px solid #eef2f6;
+}
+
+.achievements-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.achievements-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.achievements-header h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 0.3rem;
+}
+
+.achievements-header p {
+    font-size: 0.85rem;
+    color: #5a5a6e;
+}
+
+.achievements-final-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.achievement-final-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    border: 1px solid #eef2f6;
+}
+
+.achievement-final-card:hover {
+    transform: translateY(-3px);
+    border-color: #4361ee;
+    box-shadow: 0 8px 20px rgba(67, 97, 238, 0.08);
+}
+
+.achievement-final-icon {
+    font-size: 1.8rem;
+    min-width: 48px;
+    text-align: center;
+}
+
+.achievement-final-content {
+    flex: 1;
+}
+
+.achievement-final-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4361ee;
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.achievement-final-text {
+    font-size: 0.85rem;
+    color: #5a5a6e;
+    line-height: 1.5;
+}
+
+.achievement-final-text strong {
+    color: #1a1a2e;
+    font-weight: 600;
+}
+
+/* Адаптация */
+@media (max-width: 768px) {
+    .achievements-final {
+        padding: 1.5rem;
+    }
+    
+    .achievements-final-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+    
+    .achievement-final-card {
+        padding: 0.8rem;
+    }
+    
+    .achievement-final-icon {
+        font-size: 1.5rem;
+        min-width: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .achievements-final {
+        padding: 1rem;
+    }
+    
+    .achievement-final-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .achievement-final-title {
+        text-align: center;
+    }
+}
