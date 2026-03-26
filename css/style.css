@@ -3347,3 +3347,154 @@ footer a:hover {
         text-align: center;
     }
 }
+
+/* ===== МОДАЛЬНОЕ ОКНО ДЛЯ УВЕЛИЧЕНИЯ ИЗОБРАЖЕНИЯ ===== */
+
+/* Контейнер с кликабельным изображением */
+.screenshot-clickable {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.screenshot-clickable img {
+    width: 100%;
+    border-radius: 16px;
+    transition: transform 0.2s ease;
+}
+
+.screenshot-clickable:hover img {
+    transform: scale(1.01);
+}
+
+.screenshot-clickable:hover .zoom-hint {
+    opacity: 1;
+}
+
+.zoom-hint {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    backdrop-filter: blur(4px);
+}
+
+/* Модальное окно */
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    cursor: pointer;
+}
+
+.modal-content {
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    cursor: default;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    z-index: 1001;
+}
+
+.modal-close:hover {
+    color: #4361ee;
+}
+
+.modal-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9rem;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 8px 16px;
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 30px;
+    pointer-events: none;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .zoom-hint {
+        font-size: 0.6rem;
+        padding: 0.2rem 0.6rem;
+    }
+    
+    .modal-close {
+        top: 15px;
+        right: 20px;
+        font-size: 35px;
+    }
+    
+    .modal-caption {
+        font-size: 0.75rem;
+        bottom: 15px;
+    }
+}
+
+// Функция открытия модального окна
+function openModal(imageSrc) {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    const captionText = document.getElementById('modalCaption');
+    
+    modal.style.display = 'block';
+    modalImg.src = imageSrc;
+    
+    // Добавляем подпись из alt или из caption
+    const imgElement = document.querySelector('.screenshot-clickable img');
+    const altText = imgElement ? imgElement.alt : 'Google Search Console результаты';
+    captionText.innerHTML = altText;
+    
+    // Блокируем скролл страницы
+    document.body.style.overflow = 'hidden';
+}
+
+// Функция закрытия модального окна
+function closeModal() {
+    const modal = document.getElementById('imageModal');
+    modal.style.display = 'none';
+    
+    // Возвращаем скролл страницы
+    document.body.style.overflow = 'auto';
+}
+
+// Закрытие по Escape
+document.addEventListener('keydown', function(event) {
+    const modal = document.getElementById('imageModal');
+    if (event.key === 'Escape' && modal.style.display === 'block') {
+        closeModal();
+    }
+});
