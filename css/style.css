@@ -2582,3 +2582,565 @@ footer a:hover {
         padding: 1.5rem;
     }
 }
+
+/* ===== СТРАНИЦА КЕЙСА (ДЕТАЛЬНАЯ) ===== */
+
+.case-detail {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 0 4rem;
+}
+
+/* Навигация назад */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #5a5a6e;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    color: #4361ee;
+    transform: translateX(-5px);
+}
+
+/* Хлебные крошки */
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+    color: #5a5a6e;
+}
+
+.breadcrumbs a {
+    color: #5a5a6e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumbs a:hover {
+    color: #4361ee;
+}
+
+.breadcrumbs .current {
+    color: #4361ee;
+}
+
+/* Шапка кейса */
+.case-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.case-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+}
+
+.case-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 1rem;
+}
+
+.case-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.meta-item {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.meta-label {
+    color: #5a5a6e;
+}
+
+.meta-value {
+    color: #4361ee;
+    font-weight: 500;
+}
+
+.case-description {
+    font-size: 1.1rem;
+    color: #5a5a6e;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Секции кейса */
+.case-section {
+    margin-bottom: 3rem;
+    background: #ffffff;
+    border-radius: 24px;
+    border: 1px solid #eef2f6;
+    overflow: hidden;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1.2rem 1.8rem;
+    background: #f8f9ff;
+    border-bottom: 1px solid #eef2f6;
+}
+
+.section-icon {
+    font-size: 1.5rem;
+}
+
+.section-header h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+.section-content {
+    padding: 1.8rem;
+}
+
+/* Список вызовов */
+.challenge-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.challenge-list li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    position: relative;
+    color: #5a5a6e;
+}
+
+.challenge-list li::before {
+    content: "⚠️";
+    position: absolute;
+    left: -0.5rem;
+    top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Скриншот */
+.case-screenshot .screenshot-container {
+    padding: 1.8rem;
+}
+
+.screenshot-container img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.screenshot-caption {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #5a5a6e;
+    margin-top: 1rem;
+}
+
+/* Направления работ */
+.work-directions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.direction-card {
+    background: #f8f9ff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.direction-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.direction-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.direction-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    color: #4361ee;
+}
+
+.direction-card p {
+    font-size: 0.9rem;
+    color: #5a5a6e;
+    line-height: 1.5;
+}
+
+/* Детальный список задач */
+.tasks-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1.8rem;
+}
+
+.tasks-column h3 {
+    font-size: 1rem;
+    color: #4361ee;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eef2f6;
+}
+
+.tasks-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tasks-column li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    position: relative;
+    color: #5a5a6e;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.tasks-column li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #4361ee;
+}
+
+/* Результаты */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1.8rem;
+    background: #f8f9ff;
+}
+
+.result-card {
+    text-align: center;
+    padding: 1rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+}
+
+.result-number {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #4361ee;
+    line-height: 1.2;
+}
+
+.result-text {
+    font-size: 0.8rem;
+    color: #5a5a6e;
+    margin-top: 0.5rem;
+}
+
+.results-description {
+    padding: 1.5rem 1.8rem;
+    border-bottom: 1px solid #eef2f6;
+}
+
+.results-description p {
+    color: #5a5a6e;
+    line-height: 1.7;
+}
+
+/* Скрин аналитики */
+.analytics-screenshot {
+    padding: 1.8rem;
+    border-top: 1px solid #eef2f6;
+}
+
+.analytics-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.analytics-icon {
+    font-size: 1.2rem;
+}
+
+.analytics-header h3 {
+    font-size: 1rem;
+    color: #1a1a2e;
+}
+
+.analytics-screenshot img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.analytics-caption {
+    font-size: 0.85rem;
+    color: #5a5a6e;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.results-list-detailed {
+    padding: 1.5rem 1.8rem;
+    border-top: 1px solid #eef2f6;
+}
+
+.results-list-detailed h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #1a1a2e;
+}
+
+.results-list-detailed ul {
+    list-style: none;
+    padding: 0;
+}
+
+.results-list-detailed li {
+    padding: 0.4rem 0 0.4rem 1.5rem;
+    position: relative;
+    color: #5a5a6e;
+    line-height: 1.6;
+}
+
+.results-list-detailed li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4361ee;
+    font-weight: bold;
+}
+
+/* Футер кейса */
+.case-footer {
+    margin: 3rem 0 2rem;
+    text-align: center;
+}
+
+.btn-visit-site {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: #4361ee;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.btn-visit-site:hover {
+    background: #2b3fb0;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(67, 97, 238, 0.3);
+}
+
+.trust-elements {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+    background: #f8f9ff;
+    border-radius: 50px;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: #5a5a6e;
+}
+
+.trust-icon {
+    width: 20px;
+    height: 20px;
+    background: #4361ee;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+}
+
+/* Навигация между проектами */
+.case-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+    padding-top: 2rem;
+    border-top: 1px solid #eef2f6;
+}
+
+.nav-prev,
+.nav-next {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #5a5a6e;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.nav-prev:hover,
+.nav-next:hover {
+    color: #4361ee;
+}
+
+.nav-prev:hover {
+    transform: translateX(-5px);
+}
+
+.nav-next:hover {
+    transform: translateX(5px);
+}
+
+/* CTA блок */
+.case-cta {
+    background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+    border-radius: 24px;
+    padding: 3rem;
+    text-align: center;
+    border: 1px solid #eef2f6;
+    margin-top: 2rem;
+}
+
+.case-cta h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1a1a2e;
+}
+
+.case-cta p {
+    color: #5a5a6e;
+    margin-bottom: 1.5rem;
+}
+
+/* Адаптация */
+@media (max-width: 768px) {
+    .case-title {
+        font-size: 2rem;
+    }
+    
+    .case-meta {
+        gap: 1rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.1rem;
+    }
+    
+    .work-directions {
+        grid-template-columns: 1fr;
+    }
+    
+    .tasks-list {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .results-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .trust-elements {
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        gap: 1rem;
+    }
+    
+    .case-navigation {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .case-cta {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .case-title {
+        font-size: 1.6rem;
+    }
+    
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-content {
+        padding: 1rem;
+    }
+}
+
+/* ===== ХЛЕБНЫЕ КРОШКИ ===== */
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    font-size: 0.85rem;
+    color: #5a5a6e;
+    padding: 0.5rem 0;
+}
+
+.breadcrumbs a {
+    color: #5a5a6e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumbs a:hover {
+    color: #4361ee;
+}
+
+.breadcrumbs .separator {
+    color: #cbd5e1;
+    font-size: 0.75rem;
+}
+
+.breadcrumbs .current {
+    color: #4361ee;
+    font-weight: 500;
+}
