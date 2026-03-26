@@ -3464,37 +3464,3 @@ footer a:hover {
     }
 }
 
-// Функция открытия модального окна
-function openModal(imageSrc) {
-    const modal = document.getElementById('imageModal');
-    const modalImg = document.getElementById('modalImage');
-    const captionText = document.getElementById('modalCaption');
-    
-    modal.style.display = 'block';
-    modalImg.src = imageSrc;
-    
-    // Добавляем подпись из alt или из caption
-    const imgElement = document.querySelector('.screenshot-clickable img');
-    const altText = imgElement ? imgElement.alt : 'Google Search Console результаты';
-    captionText.innerHTML = altText;
-    
-    // Блокируем скролл страницы
-    document.body.style.overflow = 'hidden';
-}
-
-// Функция закрытия модального окна
-function closeModal() {
-    const modal = document.getElementById('imageModal');
-    modal.style.display = 'none';
-    
-    // Возвращаем скролл страницы
-    document.body.style.overflow = 'auto';
-}
-
-// Закрытие по Escape
-document.addEventListener('keydown', function(event) {
-    const modal = document.getElementById('imageModal');
-    if (event.key === 'Escape' && modal.style.display === 'block') {
-        closeModal();
-    }
-});
