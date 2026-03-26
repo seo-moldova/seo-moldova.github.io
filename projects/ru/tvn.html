@@ -7,10 +7,10 @@
     <meta name="description" content="Кейс по SEO оптимизации новостного портала TVN, MD. Результаты: +60% кликов, +30% показов, улучшение позиций с 15 до 11,2. Техническая поддержка и оптимизация контента.">
     <meta name="keywords" content="seo кейс, seo новостного сайта, техническая поддержка сайта, оптимизация контента, мониторинг индексации, seo результаты, рост трафика">
     <meta name="author" content="Придорожнов Иван">
-    <link rel="canonical" href="https://seo-moldova.github.io/projects/tvn.html">
-    <link rel="alternate" hreflang="ru" href="https://seo-moldova.github.io/projects/tvn.html">
-    <link rel="alternate" hreflang="ro" href="https://seo-moldova.github.io/ro/projects/tvn.html">
-    <link rel="alternate" hreflang="en" href="https://seo-moldova.github.io/en/projects/tvn.html">
+    <link rel="canonical" href="https://seo-moldova.github.io/projects/ru/tvn.html">
+    <link rel="alternate" hreflang="ru" href="https://seo-moldova.github.io/projects/ru/tvn.html">
+    <link rel="alternate" hreflang="ro" href="https://seo-moldova.github.io/projects/ro/tvn.html">
+    <link rel="alternate" hreflang="en" href="https://seo-moldova.github.io/projects/en/tvn.html">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -28,9 +28,9 @@
                     <li><a href="/contacts.html">Контакты</a></li>
                 </ul>
                 <ul class="lang-switcher">
-                    <li><a href="/projects/tvn.html" class="active">РУС</a></li>
-                    <li><a href="/ro/projects/tvn.html">RO</a></li>
-                    <li><a href="/en/projects/tvn.html">EN</a></li>
+                    <li><a href="/projects/ru/tvn.html" class="active">РУС</a></li>
+                    <li><a href="/projects/ro/tvn.html">RO</a></li>
+                    <li><a href="/projects/en/tvn.html">EN</a></li>
                 </ul>
             </nav>
         </div>
@@ -355,20 +355,27 @@
         </div>
     </footer>
 
+    <!-- МОДАЛЬНОЕ ОКНО ДЛЯ УВЕЛИЧЕНИЯ ИЗОБРАЖЕНИЯ -->
+    <div id="imageModal" class="image-modal" onclick="closeModal()">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-caption" id="modalCaption"></div>
+    </div>
+
     <script>
         // Список всех проектов (для универсальной навигации)
         const allProjects = [
-            { name: "TVN, MD", url: "/projects/tvn.html", category: "media" },
-            { name: "Bursa Muncii, MD", url: "/projects/bursa-muncii.html", category: "recruiting" },
-            { name: "CETAROM, MD", url: "/projects/cetarom.html", category: "agency" },
-            { name: "Strand, MD", url: "/projects/strand.html", category: "recruiting" },
-            { name: "Andiva, MD", url: "/projects/andiva.html", category: "recruiting" },
-            { name: "LorEmAEsthetic, MD", url: "/projects/loremaesthetic.html", category: "ecommerce" },
-            { name: "TaxOnest, MD", url: "/projects/taxonest.html", category: "agency" },
-            { name: "Lista, MD", url: "/projects/lista.html", category: "platform" },
-            { name: "MobileStyles, USA", url: "/projects/mobilestyles.html", category: "platform" },
-            { name: "ULS, USA", url: "/projects/uls.html", category: "agency" },
-            { name: "ExportPortal, Global", url: "/projects/exportportal.html", category: "platform" }
+            { name: "TVN, MD", url: "/projects/ru/tvn.html", category: "media" },
+            { name: "Bursa Muncii, MD", url: "/projects/ru/bursa-muncii.html", category: "recruiting" },
+            { name: "CETAROM, MD", url: "/projects/ru/cetarom.html", category: "agency" },
+            { name: "Strand, MD", url: "/projects/ru/strand.html", category: "recruiting" },
+            { name: "Andiva, MD", url: "/projects/ru/andiva.html", category: "recruiting" },
+            { name: "LorEmAEsthetic, MD", url: "/projects/ru/loremaesthetic.html", category: "ecommerce" },
+            { name: "TaxOnest, MD", url: "/projects/ru/taxonest.html", category: "agency" },
+            { name: "Lista, MD", url: "/projects/ru/lista.html", category: "platform" },
+            { name: "MobileStyles, USA", url: "/projects/ru/mobilestyles.html", category: "platform" },
+            { name: "ULS, USA", url: "/projects/ru/uls.html", category: "agency" },
+            { name: "ExportPortal, Global", url: "/projects/ru/exportportal.html", category: "platform" }
         ];
 
         // Получить индекс текущего проекта
