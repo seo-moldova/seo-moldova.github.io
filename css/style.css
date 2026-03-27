@@ -3697,3 +3697,73 @@ footer a:hover {
         font-size: 1.2rem;
     }
 }
+/* Инфо-поддержка */
+.info-support {
+    margin: 1.5rem 0;
+}
+
+.info-support h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.info-card {
+    background: #f8f9ff;
+    border-radius: 16px;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #eef2f6;
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-3px);
+    border-color: #4361ee;
+}
+
+.info-query {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 0.5rem;
+}
+
+.info-position {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #4361ee;
+    margin-bottom: 0.2rem;
+}
+
+.info-volume {
+    font-size: 0.7rem;
+    color: #5a5a6e;
+}
+
+.info-note {
+    font-size: 0.85rem;
+    color: #5a5a6e;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background: #ffffff;
+    border-radius: 12px;
+    border-left: 3px solid #4361ee;
+}
+
+@media (max-width: 768px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+}
