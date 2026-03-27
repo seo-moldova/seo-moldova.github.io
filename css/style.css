@@ -3464,3 +3464,29 @@ footer a:hover {
     }
 }
 
+/* Вызовы в едином стиле */
+.challenges-wrapper {
+    margin-top: 2rem;
+}
+
+.section-header-inline {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eef2f6;
+}
+
+.section-icon-inline {
+    font-size: 1.3rem;
+}
+
+.challenges-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4361ee;
+    margin: 0;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
