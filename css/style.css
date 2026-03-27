@@ -3490,3 +3490,69 @@ footer a:hover {
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
+
+/* Этапы роста */
+.growth-stages {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin: 1.5rem 0;
+}
+
+.stage-card {
+    display: flex;
+    gap: 1.2rem;
+    background: #f8f9ff;
+    border-radius: 16px;
+    padding: 1.2rem;
+    border: 1px solid #eef2f6;
+    transition: all 0.3s ease;
+}
+
+.stage-card:hover {
+    transform: translateX(5px);
+    border-color: #4361ee;
+}
+
+.stage-number {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #4361ee;
+    line-height: 1;
+    min-width: 50px;
+}
+
+.stage-content h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 0.5rem;
+}
+
+.stage-content p {
+    font-size: 0.9rem;
+    color: #5a5a6e;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.highlight-summary {
+    background: #ffffff;
+    padding: 1rem 1.2rem;
+    border-radius: 12px;
+    border-left: 3px solid #4361ee;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .stage-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .stage-number {
+        text-align: center;
+    }
+}
+
