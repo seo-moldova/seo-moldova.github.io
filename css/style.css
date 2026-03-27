@@ -3556,3 +3556,81 @@ footer a:hover {
     }
 }
 
+/* Анализ интента */
+.intent-analysis {
+    margin: 1.5rem 0;
+}
+
+.intent-analysis h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.intent-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.intent-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.2rem;
+    text-align: center;
+    border: 1px solid #eef2f6;
+    transition: all 0.3s ease;
+}
+
+.intent-card:hover {
+    transform: translateY(-3px);
+    border-color: #4361ee;
+}
+
+.intent-card.commercial {
+    border-top: 3px solid #4361ee;
+}
+
+.intent-card.navigational {
+    border-top: 3px solid #f9c74f;
+}
+
+.intent-card.informational {
+    border-top: 3px solid #90be6d;
+}
+
+.intent-percent {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #4361ee;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.intent-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 0.5rem;
+}
+
+.intent-desc {
+    font-size: 0.75rem;
+    color: #5a5a6e;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .intent-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+    
+    .intent-percent {
+        font-size: 1.4rem;
+    }
+}
+
