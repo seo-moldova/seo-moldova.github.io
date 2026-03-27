@@ -3767,3 +3767,65 @@ footer a:hover {
         gap: 0.8rem;
     }
 }
+
+/* GSC динамика */
+.gsc-dynamics {
+    margin: 1.5rem 0;
+}
+
+.gsc-dynamics h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.gsc-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.gsc-card {
+    background: #f8f9ff;
+    border-radius: 16px;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #eef2f6;
+    transition: all 0.3s ease;
+}
+
+.gsc-card:hover {
+    transform: translateY(-3px);
+    border-color: #4361ee;
+}
+
+.gsc-period {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #4361ee;
+    margin-bottom: 0.5rem;
+}
+
+.gsc-result {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #1a1a2e;
+    margin-bottom: 0.3rem;
+}
+
+.gsc-desc {
+    font-size: 0.7rem;
+    color: #5a5a6e;
+}
+
+@media (max-width: 768px) {
+    .gsc-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+}
+
