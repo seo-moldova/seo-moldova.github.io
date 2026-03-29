@@ -2346,8 +2346,10 @@ footer a:hover {
 .projects-hero-description {
     font-size: 1.1rem;
     color: #5a5a6e;
-    margin: 1rem 0 2rem;
+    margin: 1rem auto 2rem;
     line-height: 1.7;
+    max-width: 600px;
+    text-align: center;
 }
 
 .projects-stats {
