@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | Ivan Pridorojnov | SEO Specialist | 7+ years experience</title>
+    <meta name="description" content="Resume of an SEO specialist with 7+ years of experience. Key skills, work experience, cases and achievements.">
+    <meta name="author" content="Ivan Pridorojnov">
+    <link rel="canonical" href="https://seo-moldova.github.io/en/cv.html">
+    <link rel="alternate" hreflang="ru" href="https://seo-moldova.github.io/cv.html">
+    <link rel="alternate" hreflang="ro" href="https://seo-moldova.github.io/ro/cv.html">
+    <link rel="alternate" hreflang="en" href="https://seo-moldova.github.io/en/cv.html">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        /* CV PAGE STYLES — same as in the Russian version */
+        .cv-page { background: #f5f7fc; padding: 3rem 0 5rem; }
+        .cv-card { max-width: 1100px; margin: 0 auto; background: #ffffff; border-radius: 32px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15); overflow: hidden; }
+        .cv-header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 3rem; color: white; }
+        .cv-header-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem; }
+        .cv-title h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; color: white; }
+        .cv-title .cv-subtitle { font-size: 1.1rem; color: #a0a0b0; margin-bottom: 0.5rem; }
+        .cv-title .cv-location { font-size: 0.9rem; color: #a0a0b0; display: flex; align-items: center; gap: 0.5rem; }
+        .cv-photo { width: 120px; height: 120px; border-radius: 50%; overflow: hidden; border: 3px solid #4361ee; background: #ffffff; }
+        .cv-photo img { width: 100%; height: 100%; object-fit: cover; }
+        .cv-contacts { text-align: right; }
+        .cv-contacts p { margin-bottom: 0.5rem; }
+        .cv-contacts a { color: white; text-decoration: none; transition: color 0.3s ease; }
+        .cv-contacts a:hover { color: #f9c74f; text-decoration: underline; }
+        .cv-contacts .contact-icon { margin-right: 0.5rem; }
+        .cv-body { padding: 2.5rem 3rem; }
+        .cv-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 2.5rem; }
+        .cv-left { border-right: 1px solid #eef2f6; padding-right: 2rem; }
+        .cv-right { padding-left: 0; }
+        .cv-section { margin-bottom: 2rem; }
+        .cv-section h2 { font-size: 1.1rem; font-weight: 600; color: #4361ee; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #eef2f6; text-transform: uppercase; letter-spacing: 1px; }
+        .cv-section h3 { font-size: 1rem; font-weight: 600; color: #1a1a2e; margin-bottom: 0.3rem; }
+        .cv-section .company { font-size: 0.85rem; color: #4361ee; font-weight: 500; margin-bottom: 0.3rem; }
+        .cv-section .period { font-size: 0.75rem; color: #5a5a6e; margin-bottom: 0.5rem; }
+        .cv-section p { font-size: 0.85rem; color: #5a5a6e; line-height: 1.5; margin-bottom: 1rem; }
+        .cv-section ul { list-style: none; padding-left: 0; }
+        .cv-section li { padding: 0.4rem 0 0.4rem 1.2rem; position: relative; color: #5a5a6e; font-size: 0.85rem; line-height: 1.4; }
+        .cv-section li::before { content: "▹"; position: absolute; left: 0; color: #4361ee; }
+        .skills-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
+        .skill-tag { background: #f0f2f8; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; color: #1a1a2e; transition: all 0.3s ease; }
+        .skill-tag:hover { background: #4361ee; color: white; }
+        .tools-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.8rem; margin-top: 0.5rem; }
+        .tool-item { font-size: 0.8rem; color: #5a5a6e; padding: 0.2rem 0; display: flex; align-items: center; gap: 0.5rem; }
+        .tool-item::before { content: "✓"; color: #4361ee; font-weight: bold; }
+        .cv-buttons { display: flex; gap: 1rem; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #eef2f6; flex-wrap: wrap; }
+        .btn-cv { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.8rem 1.5rem; border-radius: 40px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease; }
+        .btn-cv-primary { background: #4361ee; color: white; }
+        .btn-cv-primary:hover { background: #2b3fb0; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3); }
+        .btn-cv-outline { border: 2px solid #4361ee; color: #4361ee; background: transparent; }
+        .btn-cv-outline:hover { background: #4361ee; color: white; transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .cv-header-content { flex-direction: column; text-align: center; }
+            .cv-contacts { text-align: center; }
+            .cv-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+            .cv-left { border-right: none; padding-right: 0; }
+            .cv-body { padding: 1.5rem; }
+            .cv-header { padding: 2rem; }
+            .cv-title h1 { font-size: 1.8rem; }
+            .cv-photo { margin: 0 auto; }
+        }
+        @media print {
+            .cv-page { background: white; padding: 0; }
+            .cv-card { box-shadow: none; }
+            .cv-buttons, header, footer, .lang-switcher, .breadcrumbs { display: none !important; }
+        }
+    </style>
+</head>
+<body>
+    <main class="cv-page">
+        <div class="container">
+            <div class="cv-card">
+                <!-- Header -->
+                <div class="cv-header">
+                    <div class="cv-header-content">
+                        <div class="cv-title">
+                            <h1>Ivan Pridorojnov</h1>
+                            <div class="cv-subtitle">SEO Specialist / Google Ads Specialist</div>
+                            <div class="cv-location">
+                                📍 Bălți, Moldova
+                            </div>
+                        </div>
+                        <div class="cv-photo">
+                            <img src="/images/ivan-pridorojnov.webp" alt="Ivan Pridorojnov - SEO Specialist">
+                        </div>
+                        <div class="cv-contacts">
+                            <p>📧 <a href="mailto:ipridorojnov@gmail.com">ipridorojnov@gmail.com</a></p>
+                            <p>💬 <a href="https://t.me/Iezuit" target="_blank">Telegram: @Iezuit</a></p>
+                            <p>🔗 <a href="https://www.linkedin.com/in/ivan-pridorojnov-2197571a7/" target="_blank">LinkedIn: Ivan Pridorojnov</a></p>
+                            <p>🌐 <a href="https://seo-moldova.github.io/" target="_blank">seo-moldova.github.io</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Body -->
+                <div class="cv-body">
+                    <div class="cv-grid">
+                        <!-- Left column -->
+                        <div class="cv-left">
+                            <!-- About me -->
+                            <div class="cv-section">
+                                <h2>📋 About me</h2>
+                                <p>SEO specialist with over 7 years of experience. I specialize in comprehensive SEO website promotion, search engine optimization, and increasing organic traffic. I work with websites of any complexity — from small blogs to large online stores and international platforms.</p>
+                            </div>
+                            <!-- Key skills -->
+                            <div class="cv-section">
+                                <h2>🎯 Key skills</h2>
+                                <ul>
+                                    <li>Technical SEO audit</li>
+                                    <li>Keyword research and semantic core clustering</li>
+                                    <li>Content strategy development</li>
+                                    <li>Google Ads, PPC, retargeting</li>
+                                    <li>Google Analytics, GTM, GSC, Looker Studio</li>
+                                    <li>JSON-LD, Schema.org markup</li>
+                                    <li>Local SEO, Google Maps promotion</li>
+                                    <li>Core Web Vitals optimization</li>
+                                </ul>
+                            </div>
+                            <!-- Tools -->
+                            <div class="cv-section">
+                                <h2>🛠️ Tools</h2>
+                                <div class="tools-grid">
+                                    <div class="tool-item">Google Ads</div>
+                                    <div class="tool-item">Google Analytics</div>
+                                    <div class="tool-item">Google Tag Manager</div>
+                                    <div class="tool-item">Google Search Console</div>
+                                    <div class="tool-item">Looker Studio</div>
+                                    <div class="tool-item">SEMrush</div>
+                                    <div class="tool-item">Ahrefs</div>
+                                    <div class="tool-item">Screaming Frog</div>
+                                    <div class="tool-item">MOZ</div>
+                                    <div class="tool-item">Serpstat</div>
+                                    <div class="tool-item">Key Collector</div>
+                                    <div class="tool-item">Keys.so</div>
+                                    <div class="tool-item">Long Tail Pro</div>
+                                    <div class="tool-item">Ubersuggest</div>
+                                    <div class="tool-item">Schema Validator</div>
+                                    <div class="tool-item">JSON-LD Generator</div>
+                                </div>
+                            </div>
+                            <!-- Languages -->
+                            <div class="cv-section">
+                                <h2>🌍 Languages</h2>
+                                <ul>
+                                    <li><strong>Russian</strong> — native</li>
+                                    <li><strong>Romanian</strong> — fluent</li>
+                                    <li><strong>English</strong> — professional (B2-C1)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Right column -->
+                        <div class="cv-right">
+                            <!-- Work experience -->
+                            <div class="cv-section">
+                                <h2>💼 Work experience</h2>
+                               
+                                <div class="experience-item">
+                                    <h3>SEO and Google Ads Strategist</h3>
+                                    <div class="company">Association of Recruitment Agencies (ARA)</div>
+                                    <div class="period">2023 — 2025</div>
+                                    <p>Strategic planning of SEO and SEM promotion. Staff recruitment, cross-department coordination, task setting and results control.</p>
+                                </div>
+                               
+                                <div class="experience-item">
+                                    <h3>Senior SEO and PPC Specialist</h3>
+                                    <div class="company">USA Link System</div>
+                                    <div class="period">2022 — 2023</div>
+                                    <p>Strategic planning of SEO and SEM, content strategies, creation of guidelines for copywriters, link-building strategies, launching and analyzing PPC campaigns.</p>
+                                </div>
+                               
+                                <div class="experience-item">
+                                    <h3>Middle SEO and PPC Specialist</h3>
+                                    <div class="company">USA Link System</div>
+                                    <div class="period">2021 — 2022</div>
+                                    <p>SEO audits, competitor analysis, semantic research, link mass building, JSON-LD, GTM, conversion setup, cross-platform advertising campaigns.</p>
+                                </div>
+                               
+                                <div class="experience-item">
+                                    <h3>Middle SEO Specialist (Candidate)</h3>
+                                    <div class="company">USA Link System</div>
+                                    <div class="period">2020 — 2021</div>
+                                    <p>SEO audit of internal projects, task setting for developers, content plans, semantic core collection, traffic monitoring, copywriter training.</p>
+                                </div>
+                               
+                                <div class="experience-item">
+                                    <h3>SEO Content Manager</h3>
+                                    <div class="company">SITESBUN</div>
+                                    <div class="period">2018 — 2020</div>
+                                    <p>Project management on WordPress, SEO content audit, hiring and training copywriters, SMM, competitor analysis, semantic research.</p>
+                                </div>
+                               
+                                <div class="experience-item">
+                                    <h3>SEO Copywriter</h3>
+                                    <div class="company">SITESBUN</div>
+                                    <div class="period">2017 — 2018</div>
+                                    <p>Writing informational and promotional articles, SEO optimization, development of meta tags, titles and descriptions.</p>
+                                </div>
+                            </div>
+                            <!-- Tech stack -->
+                            <div class="cv-section">
+                                <h2>⚡ Tech stack</h2>
+                                <div class="skills-tags">
+                                    <span class="skill-tag">SEO</span>
+                                    <span class="skill-tag">PPC</span>
+                                    <span class="skill-tag">Google Ads</span>
+                                    <span class="skill-tag">Google Analytics</span>
+                                    <span class="skill-tag">GTM</span>
+                                    <span class="skill-tag">JSON-LD</span>
+                                    <span class="skill-tag">Schema.org</span>
+                                    <span class="skill-tag">HTML/CSS</span>
+                                    <span class="skill-tag">WordPress</span>
+                                    <span class="skill-tag">Ahrefs</span>
+                                    <span class="skill-tag">SEMrush</span>
+                                    <span class="skill-tag">Screaming Frog</span>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="cv-buttons" style="justify-content: center;">
+                                <a href="https://seo-moldova.github.io/" class="btn-cv btn-cv-outline">
+                                    📊 More details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
