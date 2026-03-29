@@ -1,3 +1,26 @@
+# robots.txt для seo-moldova.github.io
+
 User-agent: *
 Allow: /
-Sitemap: https://ваш-сайт.ru/sitemap.xml
+
+# Запрещаем индексацию служебных папок (если есть)
+Disallow: /css/
+Disallow: /js/
+Disallow: /images/
+Disallow: /cv/
+
+# Указываем путь к карте сайта
+Sitemap: https://seo-moldova.github.io/sitemap.xml
+
+# Основные правила для поисковых систем
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Yandex
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
