@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV | Придорожнов Иван | SEO специалист | 7+ лет опыта</title>
-    <meta name="description" content="Резюме SEO специалиста с опытом 7+ лет. Ключевые навыки, опыт работы, образование, кейсы и достижения.">
+    <meta name="description" content="Резюме SEO специалиста с опытом 7+ лет. Ключевые навыки, опыт работы, кейсы и достижения.">
     <meta name="author" content="Придорожнов Иван">
     <link rel="canonical" href="https://seo-moldova.github.io/cv.html">
     <link rel="alternate" hreflang="ru" href="https://seo-moldova.github.io/cv.html">
@@ -37,7 +37,7 @@
         .cv-header-content {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
+            align-items: center;
             flex-wrap: wrap;
             gap: 2rem;
         }
@@ -52,7 +52,7 @@
         .cv-title .cv-subtitle {
             font-size: 1.1rem;
             color: #a0a0b0;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
         }
         
         .cv-title .cv-location {
@@ -63,28 +63,43 @@
             gap: 0.5rem;
         }
         
-        .cv-contacts {
-            text-align: right;
+        .cv-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #4361ee;
+            background: #ffffff;
         }
         
-        .cv-contacts p {
-            margin-bottom: 0.5rem;
+        .cv-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         
-        .cv-contacts a {
-            color: #4361ee;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .cv-contacts a:hover {
-            color: #f9c74f;
-            text-decoration: underline;
-        }
-        
-        .cv-contacts .contact-icon {
-            margin-right: 0.5rem;
-        }
+.cv-contacts {
+    text-align: right;
+}
+
+.cv-contacts p {
+    margin-bottom: 0.5rem;
+}
+
+.cv-contacts a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.cv-contacts a:hover {
+    color: #f9c74f;
+    text-decoration: underline;
+}
+
+.cv-contacts .contact-icon {
+    margin-right: 0.5rem;
+}
         
         /* Body CV */
         .cv-body {
@@ -320,6 +335,10 @@
             .cv-title h1 {
                 font-size: 1.8rem;
             }
+            
+            .cv-photo {
+                margin: 0 auto;
+            }
         }
         
         @media print {
@@ -341,28 +360,6 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <a href="/index.html">ИВАН ПРИДОРОЖНОВ</a>
-            </div>
-            <nav>
-                <ul class="main-nav">
-                    <li><a href="/index.html">Главная</a></li>
-                    <li><a href="/experience.html">Опыт</a></li>
-                    <li><a href="/projects.html">Проекты</a></li>
-                    <li><a href="/about.html">Обо мне</a></li>
-                    <li><a href="/contacts.html">Контакты</a></li>
-                </ul>
-                <ul class="lang-switcher">
-                    <li><a href="/cv.html" class="active">РУС</a></li>
-                    <li><a href="/ro/cv.html">RO</a></li>
-                    <li><a href="/en/cv.html">EN</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
     <main class="cv-page">
         <div class="container">
             <div class="cv-card">
@@ -375,6 +372,9 @@
                             <div class="cv-location">
                                 📍 Молдова, Бельцы
                             </div>
+                        </div>
+                        <div class="cv-photo">
+                            <img src="/images/ivan-pridorojnov.webp" alt="Иван Придорожнов - SEO специалист">
                         </div>
                         <div class="cv-contacts">
                             <p>📧 <a href="mailto:ipridorojnov@gmail.com">ipridorojnov@gmail.com</a></p>
@@ -430,7 +430,6 @@
                                     <div class="tool-item">Long Tail Pro</div>
                                     <div class="tool-item">Ubersuggest</div>
                                     <div class="tool-item">Schema Validator</div>
-                                    <div class="tool-item">JSON-LD Generator</div>
                                 </div>
                             </div>
 
@@ -439,8 +438,8 @@
                                 <h2>🌍 Языки</h2>
                                 <ul>
                                     <li><strong>Русский</strong> — родной</li>
-                                    <li><strong>Румынский</strong> — свободно</li>
-                                    <li><strong>Английский</strong> — профессиональный (B2-C1)</li>
+                                    <li><strong>Румынский</strong> — письменный свободно</li>
+                                    <li><strong>Английский</strong> — письменный профессиональный (B2-C1)</li>
                                 </ul>
                             </div>
 
@@ -517,16 +516,6 @@
                                 </div>
                             </div>
 
-                            <!-- Образование и сертификаты -->
-                            <div class="cv-section">
-                                <h2>📚 Образование и сертификаты</h2>
-                                <ul>
-                                    <li>Google Analytics Individual Qualification</li>
-                                    <li>Google Ads Certification</li>
-                                    <li>SEO курсы и воркшопы (постоянное повышение квалификации)</li>
-                                </ul>
-                            </div>
-
                             <!-- Технологический стек -->
                             <div class="cv-section">
                                 <h2>⚡ Технологический стек</h2>
@@ -539,8 +528,6 @@
                                     <span class="skill-tag">JSON-LD</span>
                                     <span class="skill-tag">Schema.org</span>
                                     <span class="skill-tag">HTML/CSS</span>
-                                    <span class="skill-tag">JavaScript</span>
-                                    <span class="skill-tag">Python (базовый)</span>
                                     <span class="skill-tag">WordPress</span>
                                     <span class="skill-tag">Ahrefs</span>
                                     <span class="skill-tag">SEMrush</span>
@@ -552,13 +539,7 @@
 
                     <!-- Buttons -->
                     <div class="cv-buttons">
-                        <a href="/cv/ivan-pridorojnov-cv.pdf" class="btn-cv btn-cv-primary" download>
-                            📄 Скачать CV (PDF)
-                        </a>
-                        <a href="/contacts.html" class="btn-cv btn-cv-outline">
-                            📞 Связаться со мной
-                        </a>
-                        <a href="/projects.html" class="btn-cv btn-cv-outline">
+                        <a href="https://seo-moldova.github.io/projects.html" class="btn-cv btn-cv-outline">
                             📊 Посмотреть проекты
                         </a>
                     </div>
