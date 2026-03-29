@@ -2635,7 +2635,8 @@ footer a:hover {
     color: #4361ee;
 }
 
-/* Шапка кейса */
+/* ===== ШАПКА КЕЙСА (ЦЕНТРИРОВАННАЯ) ===== */
+
 .case-header {
     margin-bottom: 3rem;
     text-align: center;
@@ -4058,7 +4059,6 @@ footer a:hover {
 
 /* 4. Единый стиль для описания */
 .page-hero-description,
-.case-description,
 .projects-hero-description,
 .about-hero-text {
     font-size: 1.1rem !important;
