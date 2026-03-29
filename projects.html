@@ -255,13 +255,11 @@
         </div>
     </footer>
 
-    <script>
-    // Фильтрация проектов
+<script>
+    // Фильтрация проектов с перестройкой порядка
     const filterButtons = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
-
-    console.log('Найдено кнопок фильтра:', filterButtons.length);
-    console.log('Найдено карточек проектов:', projectCards.length);
+    const projectsGrid = document.getElementById('projects-grid');
+    const projectCards = Array.from(document.querySelectorAll('.project-card'));
 
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
@@ -269,33 +267,37 @@
             button.classList.add('active');
             
             const filterValue = button.getAttribute('data-filter');
-            console.log('Выбран фильтр:', filterValue);
             
-            let visibleCount = 0;
-            
-            projectCards.forEach(card => {
-                const cardCategory = card.getAttribute('data-category');
-                console.log('Карточка:', card.querySelector('.project-card-title')?.innerText, 'Категория:', cardCategory);
-                
-                if (filterValue === 'all' || cardCategory === filterValue) {
-                    card.style.display = 'block';
-                    setTimeout(() => {
-                        card.style.opacity = '1';
-                        card.style.transform = 'scale(1)';
-                    }, 10);
-                    visibleCount++;
-                } else {
-                    card.style.opacity = '0';
-                    card.style.transform = 'scale(0.95)';
-                    setTimeout(() => {
-                        card.style.display = 'none';
-                    }, 200);
-                }
+            // Фильтруем карточки
+            const visibleCards = projectCards.filter(card => {
+                return filterValue === 'all' || card.getAttribute('data-category') === filterValue;
             });
             
-            console.log('Видимых карточек:', visibleCount);
+            const hiddenCards = projectCards.filter(card => {
+                return filterValue !== 'all' && card.getAttribute('data-category') !== filterValue;
+            });
+            
+            // Перестраиваем порядок: сначала видимые, потом скрытые
+            projectsGrid.innerHTML = '';
+            
+            visibleCards.forEach(card => {
+                card.style.display = 'block';
+                card.style.opacity = '1';
+                card.style.transform = 'scale(1)';
+                projectsGrid.appendChild(card);
+            });
+            
+            hiddenCards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    card.style.display = 'none';
+                }, 200);
+                projectsGrid.appendChild(card);
+            });
         });
     });
 </script>
+
 </body>
 </html>
