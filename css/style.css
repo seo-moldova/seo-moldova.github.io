@@ -3890,9 +3890,14 @@ footer a:hover {
     }
 }
 
-/* ===== ЕДИНАЯ HERO СЕКЦИЯ ДЛЯ ВСЕХ СТРАНИЦ ===== */
+/* ===== УНИФИЦИРОВАННЫЕ HERO-СЕКЦИИ ДЛЯ ВСЕХ СТРАНИЦ ===== */
 
-.page-hero {
+/* Применяем единый стиль ко всем hero-блокам */
+.hero,
+.page-hero,
+.about-hero-new,
+.contacts-hero,
+.projects-hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -3901,17 +3906,26 @@ footer a:hover {
     flex-wrap: wrap;
 }
 
-.page-hero-content {
+.hero-content,
+.page-hero-content,
+.about-hero-content,
+.contacts-hero-content,
+.projects-hero-content {
     flex: 1.2;
 }
 
+.hero-image,
 .page-hero-image {
     flex: 0.8;
     display: flex;
     justify-content: center;
 }
 
-.page-badge {
+/* Единый стиль для бейджей */
+.hero-badge,
+.page-badge,
+.about-hero-label,
+.case-badge {
     display: inline-block;
     background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
     color: #4361ee;
@@ -3922,7 +3936,12 @@ footer a:hover {
     margin-bottom: 1.2rem;
 }
 
-.page-hero-title {
+/* Единый стиль для заголовков */
+.hero-content h1,
+.page-hero-content h1,
+.about-hero-title,
+.contacts-hero-content h1,
+.projects-hero-content h1 {
     font-size: 2.8rem;
     line-height: 1.2;
     margin-bottom: 1.2rem;
@@ -3930,13 +3949,18 @@ footer a:hover {
     font-weight: 700;
 }
 
-.page-hero-title .highlight {
+/* Единый стиль для выделения */
+.hero-content h1 .highlight,
+.page-hero-content .highlight,
+.about-hero-title .highlight {
     color: #4361ee;
     position: relative;
     display: inline-block;
 }
 
-.page-hero-title .highlight::after {
+.hero-content h1 .highlight::after,
+.page-hero-content .highlight::after,
+.about-hero-title .highlight::after {
     content: '';
     position: absolute;
     bottom: 8px;
@@ -3947,124 +3971,45 @@ footer a:hover {
     z-index: -1;
 }
 
-.page-hero-description {
+/* Единый стиль для описания */
+.hero-description,
+.page-hero-description,
+.about-hero-text,
+.contacts-hero-description,
+.projects-hero-description {
     font-size: 1.1rem;
     color: #5a5a6e;
     margin-bottom: 2rem;
     line-height: 1.7;
-    max-width: 600px;
+    max-width: 550px;
 }
 
-/* Круг для статистики */
-.experience-stats-circle {
-    width: 200px;
-    height: 200px;
-    background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 20px 35px rgba(67, 97, 238, 0.15);
-    border: 2px solid #eef2f6;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.experience-stats-circle:hover {
-    transform: scale(1.02);
-    box-shadow: 0 25px 40px rgba(67, 97, 238, 0.2);
-}
-
-.circle-content {
-    text-align: center;
-}
-
-.circle-number {
-    display: block;
-    font-size: 3rem;
-    font-weight: 800;
-    color: #4361ee;
-    line-height: 1;
-}
-
-.circle-text {
-    font-size: 0.9rem;
-    color: #5a5a6e;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* Мини-статистика для страницы опыта */
-.hero-stats-mini {
-    display: flex;
-    gap: 2rem;
-    margin-top: 1.5rem;
-}
-
-.hero-stat {
-    text-align: center;
-}
-
-.hero-stat-number {
-    display: block;
-    font-size: 1.8rem;
-    font-weight: 800;
-    color: #4361ee;
-    line-height: 1.2;
-}
-
-.hero-stat-label {
-    font-size: 0.7rem;
-    color: #5a5a6e;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-/* Адаптация */
+/* Адаптация для мобильных */
 @media (max-width: 768px) {
-    .page-hero {
+    .hero,
+    .page-hero,
+    .about-hero-new,
+    .contacts-hero,
+    .projects-hero {
         flex-direction: column;
         text-align: center;
         gap: 2rem;
     }
     
-    .page-hero-description {
+    .hero-description,
+    .page-hero-description,
+    .about-hero-text,
+    .contacts-hero-description,
+    .projects-hero-description {
         margin-left: auto;
         margin-right: auto;
     }
     
-    .page-hero-title {
+    .hero-content h1,
+    .page-hero-content h1,
+    .about-hero-title,
+    .contacts-hero-content h1,
+    .projects-hero-content h1 {
         font-size: 2rem;
-    }
-    
-    .hero-stats-mini {
-        justify-content: center;
-    }
-    
-    .experience-stats-circle {
-        width: 160px;
-        height: 160px;
-    }
-    
-    .circle-number {
-        font-size: 2.2rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .page-hero-title {
-        font-size: 1.6rem;
-    }
-    
-    .page-badge {
-        font-size: 0.7rem;
-    }
-    
-    .experience-stats-circle {
-        width: 140px;
-        height: 140px;
-    }
-    
-    .circle-number {
-        font-size: 1.8rem;
     }
 }
