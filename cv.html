@@ -3,84 +3,339 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV | Придорожнов Иван | SEO специалист</title>
-    <meta name="description" content="Резюме SEO специалиста с опытом 7+ лет. Ключевые навыки, опыт работы, образование.">
+    <title>CV | Придорожнов Иван | SEO специалист | 7+ лет опыта</title>
+    <meta name="description" content="Резюме SEO специалиста с опытом 7+ лет. Ключевые навыки, опыт работы, образование, кейсы и достижения.">
+    <meta name="author" content="Придорожнов Иван">
+    <link rel="canonical" href="https://seo-moldova.github.io/cv.html">
+    <link rel="alternate" hreflang="ru" href="https://seo-moldova.github.io/cv.html">
+    <link rel="alternate" hreflang="ro" href="https://seo-moldova.github.io/ro/cv.html">
+    <link rel="alternate" hreflang="en" href="https://seo-moldova.github.io/en/cv.html">
     <link rel="stylesheet" href="/css/style.css">
     <style>
-        .cv-container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 3rem 2rem;
-            background: white;
-            border-radius: 24px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        /* CV PAGE STYLES */
+        .cv-page {
+            background: #f5f7fc;
+            padding: 3rem 0 5rem;
         }
+        
+        .cv-card {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 32px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+        
+        /* Header CV */
         .cv-header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 3rem;
+            color: white;
+        }
+        
+        .cv-header-content {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             flex-wrap: wrap;
-            gap: 1rem;
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 2px solid #eef2f6;
+            gap: 2rem;
         }
-        .cv-header h1 {
-            font-size: 2rem;
-            color: #1a1a2e;
+        
+        .cv-title h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: white;
         }
-        .cv-header p {
-            color: #5a5a6e;
+        
+        .cv-title .cv-subtitle {
+            font-size: 1.1rem;
+            color: #a0a0b0;
+            margin-bottom: 1rem;
         }
+        
+        .cv-title .cv-location {
+            font-size: 0.9rem;
+            color: #a0a0b0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .cv-contacts {
+            text-align: right;
+        }
+        
+        .cv-contacts p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .cv-contacts a {
+            color: #4361ee;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .cv-contacts a:hover {
+            color: #f9c74f;
+            text-decoration: underline;
+        }
+        
+        .cv-contacts .contact-icon {
+            margin-right: 0.5rem;
+        }
+        
+        /* Body CV */
+        .cv-body {
+            padding: 2.5rem 3rem;
+        }
+        
+        /* Grid layout */
+        .cv-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 2.5rem;
+        }
+        
+        /* Left column */
+        .cv-left {
+            border-right: 1px solid #eef2f6;
+            padding-right: 2rem;
+        }
+        
+        /* Right column */
+        .cv-right {
+            padding-left: 0;
+        }
+        
+        /* Sections */
         .cv-section {
             margin-bottom: 2rem;
         }
+        
         .cv-section h2 {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
+            font-weight: 600;
             color: #4361ee;
             margin-bottom: 1rem;
             padding-bottom: 0.5rem;
-            border-bottom: 1px solid #eef2f6;
+            border-bottom: 2px solid #eef2f6;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
+        
+        .cv-section h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            margin-bottom: 0.3rem;
+        }
+        
+        .cv-section .company {
+            font-size: 0.85rem;
+            color: #4361ee;
+            font-weight: 500;
+            margin-bottom: 0.3rem;
+        }
+        
+        .cv-section .period {
+            font-size: 0.75rem;
+            color: #5a5a6e;
+            margin-bottom: 0.5rem;
+        }
+        
+        .cv-section p {
+            font-size: 0.85rem;
+            color: #5a5a6e;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+        
         .cv-section ul {
             list-style: none;
             padding-left: 0;
         }
+        
         .cv-section li {
-            padding: 0.3rem 0 0.3rem 1.2rem;
+            padding: 0.4rem 0 0.4rem 1.2rem;
             position: relative;
             color: #5a5a6e;
+            font-size: 0.85rem;
+            line-height: 1.4;
         }
+        
         .cv-section li::before {
             content: "▹";
             position: absolute;
             left: 0;
             color: #4361ee;
         }
-        .btn-download {
+        
+        /* Skills tags */
+        .skills-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        .skill-tag {
+            background: #f0f2f8;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            color: #1a1a2e;
+            transition: all 0.3s ease;
+        }
+        
+        .skill-tag:hover {
+            background: #4361ee;
+            color: white;
+        }
+        
+        /* Tools grid */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.8rem;
+            margin-top: 0.5rem;
+        }
+        
+        .tool-item {
+            font-size: 0.8rem;
+            color: #5a5a6e;
+            padding: 0.2rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .tool-item::before {
+            content: "✓";
+            color: #4361ee;
+            font-weight: bold;
+        }
+        
+        /* Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 0.8rem;
+            background: #f8f9ff;
+            border-radius: 12px;
+        }
+        
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #4361ee;
+        }
+        
+        .stat-label {
+            font-size: 0.7rem;
+            color: #5a5a6e;
+        }
+        
+        /* Buttons */
+        .cv-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #eef2f6;
+            flex-wrap: wrap;
+        }
+        
+        .btn-cv {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            background: #4361ee;
-            color: white;
             padding: 0.8rem 1.5rem;
             border-radius: 40px;
             text-decoration: none;
             font-weight: 600;
-            margin-top: 1rem;
+            font-size: 0.9rem;
             transition: all 0.3s ease;
         }
-        .btn-download:hover {
+        
+        .btn-cv-primary {
+            background: #4361ee;
+            color: white;
+        }
+        
+        .btn-cv-primary:hover {
             background: #2b3fb0;
             transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
         }
-        @media print {
-            .btn-download, header, footer, .lang-switcher, .breadcrumbs {
-                display: none !important;
+        
+        .btn-cv-outline {
+            border: 2px solid #4361ee;
+            color: #4361ee;
+            background: transparent;
+        }
+        
+        .btn-cv-outline:hover {
+            background: #4361ee;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .cv-header-content {
+                flex-direction: column;
+                text-align: center;
             }
-            .cv-container {
+            
+            .cv-contacts {
+                text-align: center;
+            }
+            
+            .cv-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .cv-left {
+                border-right: none;
+                padding-right: 0;
+            }
+            
+            .cv-body {
+                padding: 1.5rem;
+            }
+            
+            .cv-header {
+                padding: 2rem;
+            }
+            
+            .cv-title h1 {
+                font-size: 1.8rem;
+            }
+        }
+        
+        @media print {
+            .cv-page {
+                background: white;
                 padding: 0;
+            }
+            .cv-card {
                 box-shadow: none;
+            }
+            .cv-buttons,
+            header,
+            footer,
+            .lang-switcher,
+            .breadcrumbs {
+                display: none !important;
             }
         }
     </style>
@@ -108,74 +363,206 @@
         </div>
     </header>
 
-    <main>
+    <main class="cv-page">
         <div class="container">
-            <div class="cv-container">
+            <div class="cv-card">
+                <!-- Header -->
                 <div class="cv-header">
-                    <div>
-                        <h1>Иван Придорожнов</h1>
-                        <p>SEO-специалист / Google Ads специалист</p>
+                    <div class="cv-header-content">
+                        <div class="cv-title">
+                            <h1>Иван Придорожнов</h1>
+                            <div class="cv-subtitle">SEO-специалист / Google Ads специалист</div>
+                            <div class="cv-location">
+                                📍 Молдова, Бельцы
+                            </div>
+                        </div>
+                        <div class="cv-contacts">
+                            <p>📧 <a href="mailto:ipridorojnov@gmail.com">ipridorojnov@gmail.com</a></p>
+                            <p>💬 <a href="https://t.me/Iezuit" target="_blank">Telegram: @Iezuit</a></p>
+                            <p>🔗 <a href="https://www.linkedin.com/in/ivan-pridorojnov-2197571a7/" target="_blank">LinkedIn: Ivan Pridorojnov</a></p>
+                            <p>🌐 <a href="https://seo-moldova.github.io/" target="_blank">seo-moldova.github.io</a></p>
+                        </div>
                     </div>
-                    <div>
-                        <p>📧 ipridorojnov@gmail.com</p>
-                        <p>📞 +373 699 59638</p>
-                        <p>📍 Молдова, Бельцы</p>
+                </div>
+
+                <!-- Body -->
+                <div class="cv-body">
+                    <div class="cv-grid">
+                        <!-- Left column -->
+                        <div class="cv-left">
+                            <!-- О себе -->
+                            <div class="cv-section">
+                                <h2>📋 О себе</h2>
+                                <p>SEO-специалист с опытом более 7 лет. Специализируюсь на комплексном SEO продвижении сайтов, поисковой оптимизации и увеличении органического трафика. Работаю с сайтами любой сложности — от небольших блогов до крупных интернет-магазинов и международных платформ.</p>
+                            </div>
+
+                            <!-- Ключевые навыки -->
+                            <div class="cv-section">
+                                <h2>🎯 Ключевые навыки</h2>
+                                <ul>
+                                    <li>Технический SEO аудит</li>
+                                    <li>Сбор и кластеризация семантического ядра</li>
+                                    <li>Разработка контент-стратегий</li>
+                                    <li>Google Ads, PPC, ретаргетинг</li>
+                                    <li>Google Analytics, GTM, GSC, Looker Studio</li>
+                                    <li>JSON-LD, микроразметка Schema.org</li>
+                                    <li>Локальное SEO, продвижение в Google Maps</li>
+                                    <li>Оптимизация Core Web Vitals</li>
+                                </ul>
+                            </div>
+
+                            <!-- Инструменты -->
+                            <div class="cv-section">
+                                <h2>🛠️ Инструменты</h2>
+                                <div class="tools-grid">
+                                    <div class="tool-item">Google Ads</div>
+                                    <div class="tool-item">Google Analytics</div>
+                                    <div class="tool-item">Google Tag Manager</div>
+                                    <div class="tool-item">Google Search Console</div>
+                                    <div class="tool-item">Looker Studio</div>
+                                    <div class="tool-item">SEMrush</div>
+                                    <div class="tool-item">Ahrefs</div>
+                                    <div class="tool-item">Screaming Frog</div>
+                                    <div class="tool-item">MOZ</div>
+                                    <div class="tool-item">Serpstat</div>
+                                    <div class="tool-item">Key Collector</div>
+                                    <div class="tool-item">Keys.so</div>
+                                    <div class="tool-item">Long Tail Pro</div>
+                                    <div class="tool-item">Ubersuggest</div>
+                                    <div class="tool-item">Schema Validator</div>
+                                    <div class="tool-item">JSON-LD Generator</div>
+                                </div>
+                            </div>
+
+                            <!-- Языки -->
+                            <div class="cv-section">
+                                <h2>🌍 Языки</h2>
+                                <ul>
+                                    <li><strong>Русский</strong> — родной</li>
+                                    <li><strong>Румынский</strong> — свободно</li>
+                                    <li><strong>Английский</strong> — профессиональный (B2-C1)</li>
+                                </ul>
+                            </div>
+
+                            <!-- Ключевые достижения -->
+                            <div class="cv-section">
+                                <h2>🏆 Ключевые достижения</h2>
+                                <div class="stats-grid">
+                                    <div class="stat-item">
+                                        <div class="stat-number">20+</div>
+                                        <div class="stat-label">проектов</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-number">7+</div>
+                                        <div class="stat-label">лет опыта</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-number">300%+</div>
+                                        <div class="stat-label">рост трафика</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-number">10x</div>
+                                        <div class="stat-label">рост видимости</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right column -->
+                        <div class="cv-right">
+                            <!-- Опыт работы -->
+                            <div class="cv-section">
+                                <h2>💼 Опыт работы</h2>
+                                
+                                <div class="experience-item">
+                                    <h3>SEO и Google Ads стратег</h3>
+                                    <div class="company">Association of Recruitment Agencies (ARA)</div>
+                                    <div class="period">2023 — 2025</div>
+                                    <p>Стратегическое планирование SEO и SEM продвижения. Найм персонала, кросс-департаментская координация, постановка задач и контроль результатов.</p>
+                                </div>
+                                
+                                <div class="experience-item">
+                                    <h3>Senior SEO и PPC специалист</h3>
+                                    <div class="company">USA Link System</div>
+                                    <div class="period">2022 — 2023</div>
+                                    <p>Стратегическое планирование SEO и SEM, контент-стратегии, создание гайдлайнов для копирайтеров, ссылочные стратегии, запуск и анализ PPC рекламы.</p>
+                                </div>
+                                
+                                <div class="experience-item">
+                                    <h3>Middle SEO и PPC специалист</h3>
+                                    <div class="company">USA Link System</div>
+                                    <div class="period">2021 — 2022</div>
+                                    <p>SEO аудиты, анализ конкурентов, сбор семантики, наращивание ссылочной массы, JSON-LD, GTM, настройка конверсий, кросс-платформенные рекламные кампании.</p>
+                                </div>
+                                
+                                <div class="experience-item">
+                                    <h3>Кандидат Middle SEO специалист</h3>
+                                    <div class="company">USA Link System</div>
+                                    <div class="period">2020 — 2021</div>
+                                    <p>SEO аудит внутренних проектов, постановка задач разработчикам, контент-планы, сбор семантического ядра, мониторинг трафика, обучение копирайтеров.</p>
+                                </div>
+                                
+                                <div class="experience-item">
+                                    <h3>SEO контент-менеджер</h3>
+                                    <div class="company">SITESBUN</div>
+                                    <div class="period">2018 — 2020</div>
+                                    <p>Управление проектами на WordPress, SEO-аудит контента, найм и обучение копирайтеров, SMM, анализ конкурентов, сбор семантики.</p>
+                                </div>
+                                
+                                <div class="experience-item">
+                                    <h3>SEO копирайтер</h3>
+                                    <div class="company">SITESBUN</div>
+                                    <div class="period">2017 — 2018</div>
+                                    <p>Написание информационных и рекламных статей, SEO-оптимизация, разработка метатегов, заголовков и описаний.</p>
+                                </div>
+                            </div>
+
+                            <!-- Образование и сертификаты -->
+                            <div class="cv-section">
+                                <h2>📚 Образование и сертификаты</h2>
+                                <ul>
+                                    <li>Google Analytics Individual Qualification</li>
+                                    <li>Google Ads Certification</li>
+                                    <li>SEO курсы и воркшопы (постоянное повышение квалификации)</li>
+                                </ul>
+                            </div>
+
+                            <!-- Технологический стек -->
+                            <div class="cv-section">
+                                <h2>⚡ Технологический стек</h2>
+                                <div class="skills-tags">
+                                    <span class="skill-tag">SEO</span>
+                                    <span class="skill-tag">PPC</span>
+                                    <span class="skill-tag">Google Ads</span>
+                                    <span class="skill-tag">Google Analytics</span>
+                                    <span class="skill-tag">GTM</span>
+                                    <span class="skill-tag">JSON-LD</span>
+                                    <span class="skill-tag">Schema.org</span>
+                                    <span class="skill-tag">HTML/CSS</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">Python (базовый)</span>
+                                    <span class="skill-tag">WordPress</span>
+                                    <span class="skill-tag">Ahrefs</span>
+                                    <span class="skill-tag">SEMrush</span>
+                                    <span class="skill-tag">Screaming Frog</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="cv-buttons">
+                        <a href="/cv/ivan-pridorojnov-cv.pdf" class="btn-cv btn-cv-primary" download>
+                            📄 Скачать CV (PDF)
+                        </a>
+                        <a href="/contacts.html" class="btn-cv btn-cv-outline">
+                            📞 Связаться со мной
+                        </a>
+                        <a href="/projects.html" class="btn-cv btn-cv-outline">
+                            📊 Посмотреть проекты
+                        </a>
                     </div>
                 </div>
-
-                <div class="cv-section">
-                    <h2>📋 О себе</h2>
-                    <p>SEO-специалист с опытом более 7 лет. Специализируюсь на комплексном SEO продвижении сайтов, поисковой оптимизации и увеличении органического трафика. Работаю с сайтами любой сложности — от небольших блогов до крупных интернет-магазинов и международных платформ.</p>
-                </div>
-
-                <div class="cv-section">
-                    <h2>💼 Опыт работы</h2>
-                    <ul>
-                        <li><strong>SEO и Google Ads стратег</strong> — Association of Recruitment Agencies (ARA) / 2023 — 2025</li>
-                        <li><strong>Senior SEO и PPC специалист</strong> — USA Link System / 2022 — 2023</li>
-                        <li><strong>Middle SEO и PPC специалист</strong> — USA Link System / 2021 — 2022</li>
-                        <li><strong>Кандидат Middle SEO специалист</strong> — USA Link System / 2020 — 2021</li>
-                        <li><strong>SEO контент-менеджер</strong> — SITESBUN / 2018 — 2020</li>
-                        <li><strong>SEO копирайтер</strong> — SITESBUN / 2017 — 2018</li>
-                    </ul>
-                </div>
-
-                <div class="cv-section">
-                    <h2>🎯 Ключевые навыки</h2>
-                    <ul>
-                        <li>Технический SEO аудит</li>
-                        <li>Сбор и кластеризация семантического ядра</li>
-                        <li>Разработка контент-стратегий</li>
-                        <li>Google Ads, PPC, ретаргетинг</li>
-                        <li>Google Analytics, GTM, GSC, Looker Studio</li>
-                        <li>JSON-LD, микроразметка Schema.org</li>
-                        <li>Локальное SEO, продвижение в Google Maps</li>
-                        <li>Оптимизация Core Web Vitals</li>
-                    </ul>
-                </div>
-
-                <div class="cv-section">
-                    <h2>🛠️ Инструменты</h2>
-                    <ul>
-                        <li>Google Ads, Google Analytics, Tag Manager, Search Console, Looker Studio</li>
-                        <li>SEMrush, Ahrefs, Screaming Frog, MOZ, Serpstat, SEOquake</li>
-                        <li>Key Collector, Keys.so, Long Tail Pro, Ubersuggest</li>
-                        <li>Schema Validator, JSON-LD Generator, Snippet Optimizer</li>
-                    </ul>
-                </div>
-
-                <div class="cv-section">
-                    <h2>🌍 Языки</h2>
-                    <ul>
-                        <li>Русский — родной</li>
-                        <li>Румынский — свободно</li>
-                        <li>Английский — профессиональный (B2-C1)</li>
-                    </ul>
-                </div>
-
-                <a href="/cv/ivan-pridorojnov-cv.pdf" class="btn-download" download>
-                    📄 Скачать CV (PDF)
-                </a>
             </div>
         </div>
     </main>
