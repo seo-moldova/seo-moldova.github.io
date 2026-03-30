@@ -1,13 +1,50 @@
-// js/seo-schema.js
+// js/seo-schema.js — единый скрипт для всех языков
 (function() {
     const path = window.location.pathname;
+    
+    // Определяем язык по URL
+    let lang = 'ru';
+    let langPrefix = '';
+    if (path.startsWith('/ro/')) {
+        lang = 'ro';
+        langPrefix = '/ro';
+    } else if (path.startsWith('/en/')) {
+        lang = 'en';
+        langPrefix = '/en';
+    }
+    
+    // Переводы для BreadcrumbList
+    const translations = {
+        ru: {
+            home: "Главная",
+            projects: "Проекты",
+            experience: "Опыт",
+            about: "Обо мне",
+            contacts: "Контакты"
+        },
+        ro: {
+            home: "Acasă",
+            projects: "Proiecte",
+            experience: "Experiență",
+            about: "Despre mine",
+            contacts: "Contacte"
+        },
+        en: {
+            home: "Home",
+            projects: "Projects",
+            experience: "Experience",
+            about: "About",
+            contacts: "Contact"
+        }
+    };
+    
+    const t = translations[lang];
     
     // ===== ОБНОВЛЕНИЕ OPEN GRAPH =====
     const pageTitle = document.title;
     const pageDescription = document.querySelector('meta[name="description"]')?.getAttribute('content') || "";
     const pageUrl = window.location.href;
     
-    // Обновляем OG теги
     const ogTitle = document.querySelector('meta[property="og:title"]');
     const ogDescription = document.querySelector('meta[property="og:description"]');
     const ogUrl = document.querySelector('meta[property="og:url"]');
@@ -29,11 +66,14 @@
             "name": pageTitle,
             "description": pageDescription,
             "url": pageUrl,
-            "isPartOf": { "@id": "https://seo-moldova.github.io/#website" }
+            "isPartOf": { "@id": "https://seo-moldova.github.io/#website" },
+            "inLanguage": lang
         };
         
         // Определяем тип страницы
-        if (path === '/' || path === '/index.html') {
+        const cleanPath = path.replace(langPrefix, '');
+        
+        if (cleanPath === '/' || cleanPath === '/index.html') {
             currentPage["@type"] = "WebSite";
             currentPage["potentialAction"] = {
                 "@type": "SearchAction",
@@ -44,35 +84,27 @@
                 "query-input": "required name=search_term_string"
             };
         } 
-        else if (path.includes('/projects/') && !path.includes('/projects.html')) {
+        else if (cleanPath.includes('/projects/') && !cleanPath.includes('/projects.html')) {
             currentPage["@type"] = "CreativeWork";
             currentPage["author"] = { "@id": "https://seo-moldova.github.io/#person" };
             currentPage["datePublished"] = "2025-03-29";
             
-            // Добавляем изображение для проекта
-            const projectFile = path.split('/').pop().replace('.html', '');
+            const projectFile = cleanPath.split('/').pop().replace('.html', '');
             currentPage["image"] = `https://seo-moldova.github.io/images/projects/${projectFile}-main.webp`;
+            currentPage["inLanguage"] = lang;
         }
-        else if (path.includes('/projects.html')) {
+        else if (cleanPath.includes('/projects.html')) {
             currentPage["@type"] = "CollectionPage";
             currentPage["numberOfItems"] = 12;
         }
-        else if (path.includes('/about.html')) {
+        else if (cleanPath.includes('/about.html')) {
             currentPage["@type"] = "ProfilePage";
             currentPage["mainEntity"] = { "@id": "https://seo-moldova.github.io/#person" };
         }
-        else if (path.includes('/experience.html')) {
+        else if (cleanPath.includes('/experience.html')) {
             currentPage["@type"] = "ProfilePage";
-            currentPage["mainEntity"] = {
-                "@type": "ItemList",
-                "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "SEO и Google Ads стратег (ARA, 2023-2025)" },
-                    { "@type": "ListItem", "position": 2, "name": "Senior SEO и PPC специалист (USA Link System, 2022-2023)" },
-                    { "@type": "ListItem", "position": 3, "name": "Middle SEO и PPC специалист (USA Link System, 2021-2022)" }
-                ]
-            };
         }
-        else if (path.includes('/contacts.html')) {
+        else if (cleanPath.includes('/contacts.html')) {
             currentPage["@type"] = "ContactPage";
             currentPage["mainEntity"] = {
                 "@type": "ContactPoint",
@@ -87,7 +119,6 @@
         try {
             const existingData = JSON.parse(jsonLdScript.textContent);
             if (existingData["@graph"]) {
-                // Удаляем старую запись о текущей странице, если есть
                 const filteredGraph = existingData["@graph"].filter(item => 
                     item["@type"] !== "WebPage" && 
                     item["@type"] !== "WebSite" && 
@@ -110,36 +141,86 @@
     breadcrumbScript.type = 'application/ld+json';
     
     const breadcrumbItems = [
-        { position: 1, name: "Главная", item: "https://seo-moldova.github.io/" }
+        { position: 1, name: t.home, item: `https://seo-moldova.github.io${langPrefix}/` }
     ];
     
-    if (path.includes('/projects.html') || path.includes('/projects/')) {
-        breadcrumbItems.push({ position: 2, name: "Проекты", item: "https://seo-moldova.github.io/projects.html" });
+    const cleanPath = path.replace(langPrefix, '');
+    
+    if (cleanPath.includes('/projects.html') || cleanPath.includes('/projects/')) {
+        breadcrumbItems.push({ 
+            position: 2, 
+            name: t.projects, 
+            item: `https://seo-moldova.github.io${langPrefix}/projects.html` 
+        });
     }
-    if (path.includes('/projects/') && !path.includes('/projects.html')) {
-        let projectName = path.split('/').pop().replace('.html', '').replace(/-/g, ' ');
-        if (projectName === 'tvn') projectName = 'TVN, MD';
-        if (projectName === 'bursa muncii') projectName = 'Bursa Muncii, MD';
-        if (projectName === 'cetarom') projectName = 'CETAROM, MD';
-        if (projectName === 'strand') projectName = 'Strand, MD';
-        if (projectName === 'andiva') projectName = 'Andiva, MD';
-        if (projectName === 'loremaesthetic') projectName = 'LorEmAEsthetic, MD';
-        if (projectName === 'taxonest') projectName = 'TaxOnest, MD';
-        if (projectName === 'lista') projectName = 'Lista, MD';
-        if (projectName === 'mobilestyles') projectName = 'MobileStyles, USA';
-        if (projectName === 'uls') projectName = 'ULS, USA';
-        if (projectName === 'exportportal') projectName = 'ExportPortal, Global';
-        if (projectName === 'vinrecords') projectName = 'VinRecords, CA';
-        breadcrumbItems.push({ position: 3, name: projectName, item: window.location.href });
+    if (cleanPath.includes('/projects/') && !cleanPath.includes('/projects.html')) {
+        let projectName = cleanPath.split('/').pop().replace('.html', '').replace(/-/g, ' ');
+        
+        // Переводы названий проектов
+        const projectNames = {
+            ru: {
+                tvn: "TVN, MD",
+                'bursa-muncii': "Bursa Muncii, MD",
+                cetarom: "CETAROM, MD",
+                strand: "Strand, MD",
+                andiva: "Andiva, MD",
+                loremaesthetic: "LorEmAEsthetic, MD",
+                taxonest: "TaxOnest, MD",
+                lista: "Lista, MD",
+                mobilestyles: "MobileStyles, USA",
+                uls: "ULS, USA",
+                exportportal: "ExportPortal, Global",
+                vinrecords: "VinRecords, CA"
+            },
+            ro: {
+                tvn: "TVN, MD",
+                'bursa-muncii': "Bursa Muncii, MD",
+                cetarom: "CETAROM, MD",
+                strand: "Strand, MD",
+                andiva: "Andiva, MD",
+                loremaesthetic: "LorEmAEsthetic, MD",
+                taxonest: "TaxOnest, MD",
+                lista: "Lista, MD",
+                mobilestyles: "MobileStyles, USA",
+                uls: "ULS, USA",
+                exportportal: "ExportPortal, Global",
+                vinrecords: "VinRecords, CA"
+            },
+            en: {
+                tvn: "TVN, MD",
+                'bursa-muncii': "Bursa Muncii, MD",
+                cetarom: "CETAROM, MD",
+                strand: "Strand, MD",
+                andiva: "Andiva, MD",
+                loremaesthetic: "LorEmAEsthetic, MD",
+                taxonest: "TaxOnest, MD",
+                lista: "Lista, MD",
+                mobilestyles: "MobileStyles, USA",
+                uls: "ULS, USA",
+                exportportal: "ExportPortal, Global",
+                vinrecords: "VinRecords, CA"
+            }
+        };
+        
+        const projectKey = cleanPath.split('/').pop().replace('.html', '');
+        if (projectNames[lang] && projectNames[lang][projectKey]) {
+            projectName = projectNames[lang][projectKey];
+        }
+        
+        breadcrumbItems.push({ 
+            position: 3, 
+            name: projectName, 
+            item: window.location.href 
+        });
     }
-    if (path.includes('/experience.html')) {
-        breadcrumbItems.push({ position: 2, name: "Опыт", item: "https://seo-moldova.github.io/experience.html" });
+    if (cleanPath.includes('/experience.html')) {
+        breadcrumbItems.push({ position: 2, name: t.experience, item: `https://seo-moldova.github.io${langPrefix}/experience.html` });
     }
-    if (path.includes('/about.html')) {
-        breadcrumbItems.push({ position: 2, name: "Обо мне", item: "https://seo-moldova.github.io/about.html" });
+    if (cleanPath.includes('/about.html')) {
+        breadcrumbItems.push({ position: 2, name: t.about, item: `https://seo-moldova.github.io${langPrefix}/about.html` });
     }
-    if (path.includes('/contacts.html')) {
-        breadcrumbItems.push({ position: 2, name: "Контакты", item: "https://seo-moldova.github.io/contacts.html" });
+    if (cleanPath.includes('/contacts.html')) {
+        breadcrumbItems.push({ position: 2, name: t.contacts, item: `https://seo-moldova.github.io${langPrefix}/contacts.html` });
     }
     
     breadcrumbScript.textContent = JSON.stringify({
