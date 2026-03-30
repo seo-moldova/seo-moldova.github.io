@@ -1,4 +1,4 @@
-// js/seo-schema.js — единый скрипт для всех языков
+// js/seo-schema.js — только JSON-LD
 (function() {
     const path = window.location.pathname;
     
@@ -13,59 +13,15 @@
         langPrefix = '/en';
     }
     
-    // Переводы для BreadcrumbList
-    const translations = {
-        ru: {
-            home: "Главная",
-            projects: "Проекты",
-            experience: "Опыт",
-            about: "Обо мне",
-            contacts: "Контакты"
-        },
-        ro: {
-            home: "Acasă",
-            projects: "Proiecte",
-            experience: "Experiență",
-            about: "Despre mine",
-            contacts: "Contacte"
-        },
-        en: {
-            home: "Home",
-            projects: "Projects",
-            experience: "Experience",
-            about: "About",
-            contacts: "Contact"
-        }
-    };
-    
-    const t = translations[lang];
-    
-    // ===== ОБНОВЛЕНИЕ OPEN GRAPH =====
-    const pageTitle = document.title;
-    const pageDescription = document.querySelector('meta[name="description"]')?.getAttribute('content') || "";
-    const pageUrl = window.location.href;
-    
-    const ogTitle = document.querySelector('meta[property="og:title"]');
-    const ogDescription = document.querySelector('meta[property="og:description"]');
-    const ogUrl = document.querySelector('meta[property="og:url"]');
-    const twitterTitle = document.querySelector('meta[name="twitter:title"]');
-    const twitterDescription = document.querySelector('meta[name="twitter:description"]');
-    
-    if (ogTitle) ogTitle.setAttribute('content', pageTitle);
-    if (twitterTitle) twitterTitle.setAttribute('content', pageTitle);
-    if (ogDescription) ogDescription.setAttribute('content', pageDescription);
-    if (twitterDescription) twitterDescription.setAttribute('content', pageDescription);
-    if (ogUrl) ogUrl.setAttribute('content', pageUrl);
-    
     // ===== ДИНАМИЧЕСКОЕ ОБНОВЛЕНИЕ JSON-LD =====
     const jsonLdScript = document.getElementById('jsonld-script');
     
     if (jsonLdScript) {
         let currentPage = {
             "@type": "WebPage",
-            "name": pageTitle,
-            "description": pageDescription,
-            "url": pageUrl,
+            "name": document.title,
+            "description": document.querySelector('meta[name="description"]')?.getAttribute('content') || "",
+            "url": window.location.href,
             "isPartOf": { "@id": "https://seo-moldova.github.io/#website" },
             "inLanguage": lang
         };
@@ -135,104 +91,4 @@
             console.log('JSON-LD update error:', e);
         }
     }
-    
-    // ===== BREADCRUMBLIST =====
-    const breadcrumbScript = document.createElement('script');
-    breadcrumbScript.type = 'application/ld+json';
-    
-    const breadcrumbItems = [
-        { position: 1, name: t.home, item: `https://seo-moldova.github.io${langPrefix}/` }
-    ];
-    
-    const cleanPath = path.replace(langPrefix, '');
-    
-    if (cleanPath.includes('/projects.html') || cleanPath.includes('/projects/')) {
-        breadcrumbItems.push({ 
-            position: 2, 
-            name: t.projects, 
-            item: `https://seo-moldova.github.io${langPrefix}/projects.html` 
-        });
-    }
-    if (cleanPath.includes('/projects/') && !cleanPath.includes('/projects.html')) {
-        let projectName = cleanPath.split('/').pop().replace('.html', '').replace(/-/g, ' ');
-        
-        // Переводы названий проектов
-        const projectNames = {
-            ru: {
-                tvn: "TVN, MD",
-                'bursa-muncii': "Bursa Muncii, MD",
-                cetarom: "CETAROM, MD",
-                strand: "Strand, MD",
-                andiva: "Andiva, MD",
-                loremaesthetic: "LorEmAEsthetic, MD",
-                taxonest: "TaxOnest, MD",
-                lista: "Lista, MD",
-                mobilestyles: "MobileStyles, USA",
-                uls: "ULS, USA",
-                exportportal: "ExportPortal, Global",
-                vinrecords: "VinRecords, CA"
-            },
-            ro: {
-                tvn: "TVN, MD",
-                'bursa-muncii': "Bursa Muncii, MD",
-                cetarom: "CETAROM, MD",
-                strand: "Strand, MD",
-                andiva: "Andiva, MD",
-                loremaesthetic: "LorEmAEsthetic, MD",
-                taxonest: "TaxOnest, MD",
-                lista: "Lista, MD",
-                mobilestyles: "MobileStyles, USA",
-                uls: "ULS, USA",
-                exportportal: "ExportPortal, Global",
-                vinrecords: "VinRecords, CA"
-            },
-            en: {
-                tvn: "TVN, MD",
-                'bursa-muncii': "Bursa Muncii, MD",
-                cetarom: "CETAROM, MD",
-                strand: "Strand, MD",
-                andiva: "Andiva, MD",
-                loremaesthetic: "LorEmAEsthetic, MD",
-                taxonest: "TaxOnest, MD",
-                lista: "Lista, MD",
-                mobilestyles: "MobileStyles, USA",
-                uls: "ULS, USA",
-                exportportal: "ExportPortal, Global",
-                vinrecords: "VinRecords, CA"
-            }
-        };
-        
-        const projectKey = cleanPath.split('/').pop().replace('.html', '');
-        if (projectNames[lang] && projectNames[lang][projectKey]) {
-            projectName = projectNames[lang][projectKey];
-        }
-        
-        breadcrumbItems.push({ 
-            position: 3, 
-            name: projectName, 
-            item: window.location.href 
-        });
-    }
-    if (cleanPath.includes('/experience.html')) {
-        breadcrumbItems.push({ position: 2, name: t.experience, item: `https://seo-moldova.github.io${langPrefix}/experience.html` });
-    }
-    if (cleanPath.includes('/about.html')) {
-        breadcrumbItems.push({ position: 2, name: t.about, item: `https://seo-moldova.github.io${langPrefix}/about.html` });
-    }
-    if (cleanPath.includes('/contacts.html')) {
-        breadcrumbItems.push({ position: 2, name: t.contacts, item: `https://seo-moldova.github.io${langPrefix}/contacts.html` });
-    }
-    
-    breadcrumbScript.textContent = JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": breadcrumbItems.map(item => ({
-            "@type": "ListItem",
-            "position": item.position,
-            "name": item.name,
-            "item": item.item
-        }))
-    });
-    
-    document.head.appendChild(breadcrumbScript);
 })();
