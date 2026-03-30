@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>OG Image Generator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #1a1a2e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Segoe UI', 'Poppins', system-ui, -apple-system, sans-serif;
+        }
+        
+        /* Контейнер 1200×630 (OG стандарт) */
+        .og-image {
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(135deg, #0f0c29 0%, #1a1a2e 50%, #16213e 100%);
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        /* Декоративные элементы */
+        .bg-accent {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(67, 97, 238, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            top: -150px;
+            right: -150px;
+        }
+        
+        .bg-accent-2 {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(67, 97, 238, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            bottom: -100px;
+            left: 200px;
+        }
+        
+        /* Левая часть — текст */
+        .og-left {
+            flex: 1;
+            padding: 60px 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 2;
+        }
+        
+        .og-label {
+            display: inline-block;
+            background: rgba(67, 97, 238, 0.2);
+            color: #4361ee;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            width: fit-content;
+        }
+        
+        .og-name {
+            font-size: 48px;
+            font-weight: 800;
+            color: white;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        
+        .og-title {
+            font-size: 20px;
+            font-weight: 500;
+            color: #4361ee;
+            margin-bottom: 20px;
+        }
+        
+        .og-description {
+            font-size: 14px;
+            color: #a0a0b0;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            max-width: 480px;
+        }
+        
+        .og-stats {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .og-stat {
+            text-align: left;
+        }
+        
+        .og-stat-number {
+            display: block;
+            font-size: 28px;
+            font-weight: 800;
+            color: #4361ee;
+            line-height: 1;
+        }
+        
+        .og-stat-label {
+            font-size: 10px;
+            color: #a0a0b0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .og-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #4361ee;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 40px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            width: fit-content;
+        }
+        
+        .og-site {
+            font-size: 11px;
+            color: #5a5a6e;
+            margin-top: 20px;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Правая часть — фото */
+        .og-right {
+            flex: 0.9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+        }
+        
+        .og-photo {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #4361ee 0%, #904e95 100%);
+            padding: 5px;
+            box-shadow: 0 20px 35px rgba(67, 97, 238, 0.3);
+        }
+        
+        .og-photo-inner {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: #1e2a3a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        /* Здесь будет ваше фото — замените URL */
+        .og-photo-inner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Плейсхолдер, если фото нет */
+        .photo-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #2a2a4a 0%, #1a1a3a 100%);
+        }
+        
+        .photo-placeholder span {
+            font-size: 80px;
+            font-weight: 700;
+            color: #4361ee;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="og-image">
+        <div class="bg-accent"></div>
+        <div class="bg-accent-2"></div>
+        
+        <div class="og-left">
+            <div class="og-label">SEO специалист</div>
+            <div class="og-name">Придорожнов<br>Иван</div>
+            <div class="og-title">Профессиональное SEO продвижение</div>
+            <div class="og-description">
+                SEO продвижение сайтов в поисковых системах, контент-менеджмент и аналитика. 7+ лет опыта, 20+ успешных проектов.
+            </div>
+            <div class="og-stats">
+                <div class="og-stat">
+                    <span class="og-stat-number">7+</span>
+                    <span class="og-stat-label">лет опыта</span>
+                </div>
+                <div class="og-stat">
+                    <span class="og-stat-number">20+</span>
+                    <span class="og-stat-label">проектов</span>
+                </div>
+                <div class="og-stat">
+                    <span class="og-stat-number">+300%</span>
+                    <span class="og-stat-label">рост трафика</span>
+                </div>
+            </div>
+            <div class="og-button">📊 Посмотреть проекты →</div>
+            <div class="og-site">seo-moldova.github.io</div>
+        </div>
+        
+        <div class="og-right">
+            <div class="og-photo">
+                <div class="og-photo-inner">
+                    <!-- ЗАМЕНИТЕ ЭТУ СТРОКУ НА ВАШЕ ФОТО -->
+                    <img src="/images/ivan-pridorojnov.webp" alt="Иван Придорожнов">
+                    <!-- Если фото не загружается, будет показан плейсхолдер -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
