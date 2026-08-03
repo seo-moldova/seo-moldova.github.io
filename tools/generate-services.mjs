@@ -8,7 +8,7 @@ const origin = 'https://seo-moldova.github.io';
 const locale = {
   ru: {
     htmlLang: 'ru', home: '/', experience: '/experience.html', projects: '/projects.html', about: '/about.html', contacts: '/contacts.html',
-    nav: ['Главная', 'Опыт', 'Услуги', 'Проекты', 'Обо мне', 'Контакты'], servicesHome: '/services/ru/seo-promotion.html',
+    nav: ['Главная', 'Опыт', 'Услуги', 'Проекты', 'Обо мне', 'Контакты'], servicesHome: '/#services', servicePicker: 'Выберите услугу',
     label: 'SEO-услуга', fitTitle: 'Когда эта услуга нужна', deliverTitle: 'Что входит в работу', processTitle: 'Как проходит работа',
     casesTitle: 'Релевантные кейсы', faqTitle: 'Частые вопросы', contactTitle: 'Обсудим задачу вашего сайта',
     contactText: 'Пришлите адрес сайта, регион продвижения и краткое описание задачи. Я отвечу в течение 24 часов и предложу следующий шаг.',
@@ -22,7 +22,7 @@ const locale = {
   },
   ro: {
     htmlLang: 'ro', home: '/ro/index.html', experience: '/ro/experience.html', projects: '/ro/projects.html', about: '/ro/about.html', contacts: '/ro/contacts.html',
-    nav: ['Acasă', 'Experiență', 'Servicii', 'Proiecte', 'Despre mine', 'Contacte'], servicesHome: '/services/ro/promovare-seo.html',
+    nav: ['Acasă', 'Experiență', 'Servicii', 'Proiecte', 'Despre mine', 'Contacte'], servicesHome: '/ro/index.html#services', servicePicker: 'Alegeți serviciul',
     label: 'Serviciu SEO', fitTitle: 'Când este potrivit serviciul', deliverTitle: 'Ce include lucrul', processTitle: 'Cum decurge colaborarea',
     casesTitle: 'Studii de caz relevante', faqTitle: 'Întrebări frecvente', contactTitle: 'Să discutăm provocarea site-ului',
     contactText: 'Trimiteți adresa site-ului, regiunea vizată și o scurtă descriere a obiectivului. Voi răspunde în 24 de ore cu următorul pas recomandat.',
@@ -36,7 +36,7 @@ const locale = {
   },
   en: {
     htmlLang: 'en', home: '/en/index.html', experience: '/en/experience.html', projects: '/en/projects.html', about: '/en/about.html', contacts: '/en/contacts.html',
-    nav: ['Home', 'Experience', 'Services', 'Projects', 'About', 'Contact'], servicesHome: '/services/en/seo-services.html',
+    nav: ['Home', 'Experience', 'Services', 'Projects', 'About', 'Contact'], servicesHome: '/en/index.html#services', servicePicker: 'Choose a service',
     label: 'SEO service', fitTitle: 'When this service is a fit', deliverTitle: 'What the work includes', processTitle: 'How the engagement works',
     casesTitle: 'Relevant case studies', faqTitle: 'Common questions', contactTitle: 'Let’s discuss your website challenge',
     contactText: 'Send the website, target market and a short description of the goal. I will reply within 24 hours with a recommended next step.',
@@ -230,6 +230,11 @@ function render(key, lang) {
   const navLinks = [ui.home, ui.experience, ui.servicesHome, ui.projects, ui.about, ui.contacts]
     .map((href, index) => `<li><a href="${href}"${index === 2 ? ' class="active"' : ''}>${ui.nav[index]}</a></li>`).join('\n                    ');
   const langLinks = Object.keys(locale).map(code => `<li><a href="${serviceUrl(key, code).replace(origin, '')}"${code === lang ? ' class="active"' : ''}>${code === 'ru' ? 'РУС' : code.toUpperCase()}</a></li>`).join('\n                    ');
+  const serviceLinks = Object.keys(services).map(serviceKey => {
+    const href = serviceUrl(serviceKey, lang).replace(origin, '');
+    const title = services[serviceKey].copy[lang].title;
+    return `<a href="${href}"${serviceKey === key ? ' aria-current="page"' : ''}>${title}</a>`;
+  }).join('');
 
   return `<!DOCTYPE html>
 <html lang="${ui.htmlLang}">
@@ -277,11 +282,17 @@ ${alternates}
     <main>
         <section class="service-hero">
             <div class="container">
-                <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="${ui.home}">${ui.nav[0]}</a><span class="separator">/</span><span>${ui.breadcrumb}</span><span class="separator">/</span><span class="current">${copy.title}</span></nav>
+                <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="${ui.home}">${ui.nav[0]}</a><span class="separator">/</span><a href="${ui.servicesHome}">${ui.breadcrumb}</a><span class="separator">/</span><span class="current">${copy.title}</span></nav>
                 <span class="section-kicker">${ui.label}</span>
                 <h1>${copy.title}</h1>
                 <p>${copy.intro}</p>
                 <div class="hero-buttons"><a href="${ui.contacts}" class="btn btn-primary">${ui.contactButton}</a><a href="${ui.projects}" class="btn btn-outline">${ui.allCases}</a></div>
+            </div>
+        </section>
+        <section class="service-switcher-section">
+            <div class="container">
+                <span class="section-kicker">${ui.servicePicker}</span>
+                <nav class="service-switcher" aria-label="${ui.servicePicker}">${serviceLinks}</nav>
             </div>
         </section>
         <section class="container service-fit">

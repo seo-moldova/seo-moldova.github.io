@@ -61,13 +61,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
     closeButton?.setAttribute('aria-label', currentLabels.close);
 
-    document.querySelectorAll('.screenshot-clickable').forEach((container) => {
+    const screenshotContainers = new Set(document.querySelectorAll(
+        '.screenshot-clickable, .screenshot-container, .analytics-screenshot'
+    ));
+
+    screenshotContainers.forEach((container) => {
         const image = container.querySelector('img');
         if (!image) return;
 
+        container.classList.add('screenshot-clickable');
         container.setAttribute('role', 'button');
         container.setAttribute('tabindex', '0');
         container.setAttribute('aria-label', `${currentLabels.open}: ${image.alt}`);
+
+        if (!container.hasAttribute('onclick')) {
+            container.addEventListener('click', () => {
+                openModal(image.currentSrc || image.src);
+            });
+        }
+
         container.addEventListener('keydown', (event) => {
             if (event.key === 'Enter' || event.key === ' ') {
                 event.preventDefault();

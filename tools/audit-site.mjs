@@ -43,7 +43,8 @@ const browser = await chromium.launch({
 const findings = [];
 const profiles = [
   { name: 'desktop', viewport: { width: 1440, height: 1000 } },
-  { name: 'mobile', viewport: { width: 390, height: 844 } }
+  { name: 'mobile', viewport: { width: 390, height: 844 } },
+  { name: 'narrow-mobile', viewport: { width: 360, height: 760 } }
 ];
 
 for (const profile of profiles) {
@@ -128,10 +129,40 @@ const interactionChecks = [
   async () => {
     const page = await browser.newPage({ viewport: { width: 390, height: 844 } });
     await page.goto(`${base}/services/ru/seo-promotion.html`, { waitUntil: 'domcontentloaded' });
+    const serviceLinks = await page.locator('.service-switcher a').count();
+    const currentService = await page.locator('.service-switcher a[aria-current="page"]').count();
     await page.locator('.faq-list summary').first().click();
     const expanded = await page.locator('.faq-list details').first().getAttribute('open') !== null;
     await page.close();
-    if (!expanded) findings.push({ profile: 'interaction', path: '/services/ru/seo-promotion.html', errors: ['FAQ did not expand'] });
+    if (!expanded || serviceLinks !== 4 || currentService !== 1) {
+      findings.push({ profile: 'interaction', path: '/services/ru/seo-promotion.html', errors: [`FAQ expanded: ${expanded}, service links: ${serviceLinks}, current: ${currentService}`] });
+    }
+  },
+  async () => {
+    const page = await browser.newPage({ viewport: { width: 390, height: 844 } });
+    await page.goto(`${base}/`, { waitUntil: 'domcontentloaded' });
+    const serviceCards = await page.locator('.home-services .service-item').count();
+    const linkedCards = await page.locator('.home-services a.service-item').count();
+    await page.close();
+    if (serviceCards !== 4 || linkedCards !== 4) {
+      findings.push({ profile: 'interaction', path: '/', errors: [`service cards: ${serviceCards}, linked cards: ${linkedCards}`] });
+    }
+  },
+  async () => {
+    const context = await browser.newContext({ viewport: { width: 390, height: 844 } });
+    await context.addInitScript(() => localStorage.setItem('analytics-consent', 'declined'));
+    const page = await context.newPage();
+    await page.goto(`${base}/projects/ru/tvn.html`, { waitUntil: 'domcontentloaded' });
+    const preview = page.locator('.case-screenshot .screenshot-container');
+    const previewHeight = await preview.locator('img').evaluate(image => image.getBoundingClientRect().height);
+    await preview.click();
+    const modalOpen = await page.locator('#imageModal').getAttribute('aria-hidden') === 'false';
+    await page.keyboard.press('Escape');
+    const modalClosed = await page.locator('#imageModal').getAttribute('aria-hidden') === 'true';
+    await context.close();
+    if (previewHeight > 282 || !modalOpen || !modalClosed) {
+      findings.push({ profile: 'interaction', path: '/projects/ru/tvn.html', errors: [`preview height: ${previewHeight}, modal open: ${modalOpen}, modal closed: ${modalClosed}`] });
+    }
   },
   async () => {
     const context = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 390, height: 844 } });

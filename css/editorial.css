@@ -25,6 +25,17 @@
 
 html {
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3,
+.case-title {
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
 }
 
 body {
@@ -359,6 +370,7 @@ select {
     border-radius: 0;
     background: var(--ink);
     box-shadow: none;
+    overflow: hidden;
 }
 
 .home-hero .image-placeholder::before {
@@ -608,6 +620,10 @@ select {
     border-left: 2px solid var(--line);
 }
 
+.home-services .services-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .service-item,
 .collab-card,
 .expertise-card {
@@ -780,6 +796,46 @@ select {
     color: var(--ink);
 }
 
+/* Service navigation keeps the four offers connected as one system. */
+.service-switcher-section {
+    padding: 1.4rem 0;
+    border-bottom: 2px solid var(--line);
+    background: var(--yellow);
+}
+
+.service-switcher-section .section-kicker {
+    margin-bottom: 0.8rem;
+    color: var(--ink);
+}
+
+.service-switcher {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    border-top: 2px solid var(--line);
+    border-left: 2px solid var(--line);
+}
+
+.service-switcher a {
+    display: flex;
+    min-height: 72px;
+    align-items: center;
+    padding: 1rem;
+    border-right: 2px solid var(--line);
+    border-bottom: 2px solid var(--line);
+    color: var(--ink);
+    font-family: var(--display);
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.service-switcher a:hover,
+.service-switcher a[aria-current="page"] {
+    background: var(--ink);
+    color: #fff;
+}
+
 /* Project archive */
 .projects-stats {
     justify-content: flex-start;
@@ -847,8 +903,18 @@ select {
 
 .project-image,
 .project-card-image {
+    aspect-ratio: 16 / 10 !important;
     border-bottom: 2px solid var(--line);
     border-radius: 0;
+    overflow: hidden;
+}
+
+.project-image img,
+.project-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
 }
 
 .project-card-content {
@@ -1307,6 +1373,10 @@ summary:focus-visible {
         font-size: 0.7rem;
     }
 
+    .home-services .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .home-hero .hero-content {
         padding: 55px 38px 42px;
     }
@@ -1379,6 +1449,10 @@ summary:focus-visible {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .service-switcher {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .service-hero .breadcrumbs {
         display: flex;
         flex-direction: row;
@@ -1435,16 +1509,28 @@ summary:focus-visible {
     }
 
     .home-hero .hero-content h1 {
-        font-size: clamp(2.15rem, 9vw, 2.7rem);
+        font-size: clamp(30px, 9vw, 36px);
         line-height: 0.95;
         text-align: left;
         overflow-wrap: normal;
         word-break: normal;
-        hyphens: auto;
+        hyphens: none;
     }
 
     .home-hero .hero-description {
-        font-size: 1.02rem;
+        font-size: 16px;
+    }
+
+    .home-about {
+        width: 100%;
+        min-width: 0;
+        flex-direction: column;
+    }
+
+    .home-about .about-left,
+    .home-about .about-right {
+        width: 100%;
+        min-width: 0;
     }
 
     .home-hero .hero-buttons,
@@ -1492,6 +1578,19 @@ summary:focus-visible {
         min-height: 220px;
     }
 
+    .featured-case {
+        display: flex;
+        width: 100%;
+        min-width: 0;
+        flex-direction: column;
+    }
+
+    .featured-case-media,
+    .featured-case-body {
+        width: 100%;
+        min-width: 0;
+    }
+
     .featured-case-body {
         padding: 1.35rem;
     }
@@ -1509,26 +1608,34 @@ summary:focus-visible {
     .service-hero h1,
     .case-title,
     .case-header h1 {
-        font-size: clamp(2.3rem, 11vw, 3.6rem);
+        font-size: clamp(31px, 9.5vw, 42px);
         overflow-wrap: normal;
         word-break: normal;
-        hyphens: auto;
+        hyphens: none;
     }
 
     .service-hero h1 {
-        font-size: clamp(2.3rem, 10.5vw, 3.2rem);
+        font-size: clamp(30px, 8.5vw, 38px);
         line-height: 0.92;
+    }
+
+    .service-hero > .container > p {
+        font-size: 17px;
+        line-height: 1.6;
+        overflow-wrap: break-word;
+        hyphens: none;
     }
 
     .case-title,
     .case-header h1 {
-        font-size: clamp(2.15rem, 10vw, 3rem);
+        font-size: clamp(30px, 9vw, 40px);
         overflow-wrap: normal;
         word-break: normal;
+        hyphens: none;
     }
 
     .case-header {
-        padding: 3rem 0;
+        padding: 2rem 16px;
     }
 
     .case-header .case-badge {
@@ -1540,8 +1647,22 @@ summary:focus-visible {
     }
 
     .case-header .case-description {
-        font-size: 1rem;
+        max-width: 100%;
+        font-size: 16px !important;
         line-height: 1.55;
+        overflow-wrap: break-word;
+        word-break: normal;
+        hyphens: none;
+    }
+
+    .case-header .meta-value,
+    .case-section .section-content p,
+    .case-section .goal-description p {
+        font-size: 16px !important;
+        line-height: 1.6;
+        overflow-wrap: break-word;
+        word-break: normal;
+        hyphens: none;
     }
 
     .projects-stats {
@@ -1559,6 +1680,50 @@ summary:focus-visible {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .home-services .services-grid,
+    .service-switcher {
+        grid-template-columns: 1fr;
+    }
+
+    .case-screenshot .screenshot-container img,
+    .analytics-screenshot img,
+    .screenshot-clickable img {
+        width: 100%;
+        height: auto;
+        max-height: 280px;
+        object-fit: contain;
+        object-position: top center;
+        background: #fff;
+    }
+
+    .image-modal {
+        overflow: auto;
+        padding: 72px 12px 48px;
+        cursor: default;
+    }
+
+    .image-modal .modal-content {
+        position: static;
+        min-width: 900px;
+        width: auto;
+        max-width: none;
+        max-height: none;
+        margin: 0;
+        transform: none;
+        border-radius: 0;
+    }
+
+    .image-modal .modal-close {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        background: var(--red);
+    }
+
+    .image-modal .modal-caption {
+        position: fixed;
     }
 
     .legal-page h1 {
