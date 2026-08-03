@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W9MHRR5XNT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-W9MHRR5XNT');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Обо мне | Придорожнов Иван | SEO Бельцы</title>
@@ -19,7 +10,10 @@
     <link rel="alternate" hreflang="ru" href="https://seo-moldova.github.io/about.html">
     <link rel="alternate" hreflang="ro" href="https://seo-moldova.github.io/ro/about.html">
     <link rel="alternate" hreflang="en" href="https://seo-moldova.github.io/en/about.html">
+<link rel="alternate" hreflang="x-default" href="https://seo-moldova.github.io/en/about.html">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/portfolio.css">
+    <link rel="stylesheet" href="/css/editorial.css">
     <!-- ===== FAVICON ===== -->
 <link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
@@ -33,16 +27,18 @@
 <meta property="og:site_name" content="Иван Придорожнов | SEO портфолио">
 <meta property="og:locale" content="ru_RU">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Иван Придорожнов — SEO специалист в Молдове">
-<meta property="og:description" content="Профессиональное SEO продвижение сайтов, PPC, контент-стратегии. 7+ лет опыта, 20+ успешных проектов.">
-<meta property="og:url" content="https://seo-moldova.github.io/">
+<meta property="og:title" content="Обо мне | Придорожнов Иван | SEO Бельцы">
+<meta property="og:description" content="SEO специалист из Молдовы, Бельцы. 7+ лет опыта. Увлечения: психология, философия, спорт.">
+<meta property="og:url" content="https://seo-moldova.github.io/about.html">
 <meta property="og:image" content="https://seo-moldova.github.io/images/og-image-ru.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Обо мне | Придорожнов Иван | SEO Бельцы">
+<meta name="twitter:image:alt" content="Обо мне | Придорожнов Иван | SEO Бельцы">
+<meta name="twitter:image" content="https://seo-moldova.github.io/images/og-image-ru.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@ivan_pridorojnov">
-<meta name="twitter:title" content="Иван Придорожнов — SEO специалист в Молдове">
-<meta name="twitter:description" content="Профессиональное SEO продвижение сайтов, PPC, контент-стратегии. 7+ лет опыта, 20+ успешных проектов.">
+<meta name="twitter:title" content="Обо мне | Придорожнов Иван | SEO Бельцы">
+<meta name="twitter:description" content="SEO специалист из Молдовы, Бельцы. 7+ лет опыта. Увлечения: психология, философия, спорт.">
 
 <!-- ===== БАЗОВЫЙ JSON-LD ===== -->
 <script type="application/ld+json" id="jsonld-script">
@@ -85,7 +81,8 @@
 </script>
 
 <!-- ===== СКРИПТ ДЛЯ ДИНАМИЧЕСКОЙ РАЗМЕТКИ ===== -->
-<script src="/js/seo-schema.js"></script>
+<script src="/js/seo-schema.js" defer></script>
+<script src="/js/site.js" defer></script>
 </head>
 <body>
     <header>
@@ -97,6 +94,7 @@
                 <ul class="main-nav">
                     <li><a href="/index.html">Главная</a></li>
                     <li><a href="/experience.html">Опыт</a></li>
+                    <li><a href="/services/ru/seo-promotion.html">Услуги</a></li>
                     <li><a href="/projects.html">Проекты</a></li>
                     <li><a href="/about.html" class="active">Обо мне</a></li>
                     <li><a href="/contacts.html">Контакты</a></li>
@@ -131,7 +129,7 @@
             <div class="about-feature about-feature-vertical">
                 <div class="about-feature-image about-feature-image-vertical">
                     <div class="about-feature-photo about-feature-photo-vertical">
-                        <img src="/images/1.webp" alt="Бельцы, детство">
+                        <img src="/images/1.webp" alt="Бельцы, детство" width="854" height="1280" decoding="async" loading="lazy">
                     </div>
                     <div class="about-feature-number">01</div>
                 </div>
@@ -163,7 +161,7 @@
             <div class="about-feature about-feature-horizontal reverse">
                 <div class="about-feature-image about-feature-image-horizontal">
                     <div class="about-feature-photo about-feature-photo-horizontal">
-                        <img src="/images/2.webp" alt="Мой кот">
+                        <img src="/images/2.webp" alt="Мой кот" width="1280" height="960" decoding="async" loading="lazy">
                     </div>
                     <div class="about-feature-number">03</div>
                 </div>
@@ -205,12 +203,13 @@
 
     <footer>
         <div class="container">
-            <p>© 2025 Придорожнов Иван — SEO продвижение сайтов в Молдове</p>
+            <p>© 2026 Придорожнов Иван — SEO продвижение сайтов в Молдове</p>
             <p>
                 <a href="mailto:ipridorojnov@gmail.com">ipridorojnov@gmail.com</a> |
-                <a href="https://t.me/Iezuit" target="_blank">Telegram</a> |
-                <a href="https://www.linkedin.com/in/ivan-pridorojnov-2197571a7/" target="_blank">LinkedIn</a>
+                <a href="https://t.me/Iezuit" target="_blank" rel="noopener noreferrer">Telegram</a> |
+                <a href="https://www.linkedin.com/in/ivan-pridorojnov-2197571a7/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </p>
+            <p class="footer-privacy"><a href="/privacy.html">Политика конфиденциальности</a></p>
         </div>
     </footer>
 </body>

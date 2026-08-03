@@ -2,8 +2,12 @@
 (function() {
     const path = window.location.pathname;
     
-    // Определяем язык по URL
-    let lang = 'ru';
+    // Берём язык из разметки: языковые каталоги кейсов находятся после /projects/.
+    let lang = (document.documentElement.lang || 'ru').toLowerCase().split('-')[0];
+    if (!['ru', 'ro', 'en'].includes(lang)) {
+        lang = 'ru';
+    }
+
     let langPrefix = '';
     if (path.startsWith('/ro/')) {
         lang = 'ro';
@@ -21,7 +25,7 @@
             "@type": "WebPage",
             "name": document.title,
             "description": document.querySelector('meta[name="description"]')?.getAttribute('content') || "",
-            "url": window.location.href,
+            "url": document.querySelector('link[rel="canonical"]')?.href || window.location.href,
             "isPartOf": { "@id": "https://seo-moldova.github.io/#website" },
             "inLanguage": lang
         };
@@ -31,22 +35,13 @@
         
         if (cleanPath === '/' || cleanPath === '/index.html') {
             currentPage["@type"] = "WebSite";
-            currentPage["potentialAction"] = {
-                "@type": "SearchAction",
-                "target": {
-                    "@type": "EntryPoint",
-                    "urlTemplate": "https://seo-moldova.github.io/search?q={search_term_string}"
-                },
-                "query-input": "required name=search_term_string"
-            };
         } 
         else if (cleanPath.includes('/projects/') && !cleanPath.includes('/projects.html')) {
             currentPage["@type"] = "CreativeWork";
             currentPage["author"] = { "@id": "https://seo-moldova.github.io/#person" };
-            currentPage["datePublished"] = "2025-03-29";
             
             const projectFile = cleanPath.split('/').pop().replace('.html', '');
-            currentPage["image"] = `https://seo-moldova.github.io/images/projects/${projectFile}-main.webp`;
+            currentPage["image"] = `https://seo-moldova.github.io/images/og/projects/${projectFile}.png`;
             currentPage["inLanguage"] = lang;
         }
         else if (cleanPath.includes('/projects.html')) {

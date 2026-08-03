@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W9MHRR5XNT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-W9MHRR5XNT');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SEO Кейсы | Портфолио | Молдова, Бельцы </title>
@@ -19,7 +10,10 @@
     <link rel="alternate" hreflang="ru" href="https://seo-moldova.github.io/projects.html">
     <link rel="alternate" hreflang="ro" href="https://seo-moldova.github.io/ro/projects.html">
     <link rel="alternate" hreflang="en" href="https://seo-moldova.github.io/en/projects.html">
+<link rel="alternate" hreflang="x-default" href="https://seo-moldova.github.io/en/projects.html">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/portfolio.css">
+    <link rel="stylesheet" href="/css/editorial.css">
     <!-- ===== FAVICON ===== -->
 <link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
@@ -33,16 +27,18 @@
 <meta property="og:site_name" content="Иван Придорожнов | SEO портфолио">
 <meta property="og:locale" content="ru_RU">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Иван Придорожнов — SEO специалист в Молдове">
-<meta property="og:description" content="Профессиональное SEO продвижение сайтов, PPC, контент-стратегии. 7+ лет опыта, 20+ успешных проектов.">
-<meta property="og:url" content="https://seo-moldova.github.io/">
+<meta property="og:title" content="SEO Кейсы | Портфолио | Молдова, Бельцы">
+<meta property="og:description" content="Портфолио SEO специалиста. 20+ успешных проектов: новостные порталы, рекрутинговые сайты, e-commerce, платформы. Кейсы с результатами.">
+<meta property="og:url" content="https://seo-moldova.github.io/projects.html">
 <meta property="og:image" content="https://seo-moldova.github.io/images/og-image-ru.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SEO Кейсы | Портфолио | Молдова, Бельцы">
+<meta name="twitter:image:alt" content="SEO Кейсы | Портфолио | Молдова, Бельцы">
+<meta name="twitter:image" content="https://seo-moldova.github.io/images/og-image-ru.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@ivan_pridorojnov">
-<meta name="twitter:title" content="Иван Придорожнов — SEO специалист в Молдове">
-<meta name="twitter:description" content="Профессиональное SEO продвижение сайтов, PPC, контент-стратегии. 7+ лет опыта, 20+ успешных проектов.">
+<meta name="twitter:title" content="SEO Кейсы | Портфолио | Молдова, Бельцы">
+<meta name="twitter:description" content="Портфолио SEO специалиста. 20+ успешных проектов: новостные порталы, рекрутинговые сайты, e-commerce, платформы. Кейсы с результатами.">
 
 <!-- ===== БАЗОВЫЙ JSON-LD ===== -->
 <script type="application/ld+json" id="jsonld-script">
@@ -85,7 +81,8 @@
 </script>
 
 <!-- ===== СКРИПТ ДЛЯ ДИНАМИЧЕСКОЙ РАЗМЕТКИ ===== -->
-<script src="/js/seo-schema.js"></script>
+<script src="/js/seo-schema.js" defer></script>
+<script src="/js/site.js" defer></script>
 </head>
 <body>
     <header>
@@ -97,6 +94,7 @@
                 <ul class="main-nav">
                     <li><a href="/index.html">Главная</a></li>
                     <li><a href="/experience.html">Опыт</a></li>
+                    <li><a href="/services/ru/seo-promotion.html">Услуги</a></li>
                     <li><a href="/projects.html" class="active">Проекты</a></li>
                     <li><a href="/about.html">Обо мне</a></li>
                     <li><a href="/contacts.html">Контакты</a></li>
@@ -145,13 +143,13 @@
         <!-- ФИЛЬТР КАТЕГОРИЙ -->
         <div class="container">
             <div class="projects-filter">
-                <button class="filter-btn active" data-filter="all">Все проекты</button>
-                <button class="filter-btn" data-filter="media">Медиа</button>
-                <button class="filter-btn" data-filter="recruiting">Рекрутинг</button>
-                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
-                <button class="filter-btn" data-filter="agency">Агентства</button>
-                <button class="filter-btn" data-filter="platform">Платформы</button>
-                <button class="filter-btn" data-filter="auto">Авто</button>
+                <button class="filter-btn active" aria-pressed="true" data-filter="all">Все проекты</button>
+                <button class="filter-btn" aria-pressed="false" data-filter="media">Медиа</button>
+                <button class="filter-btn" aria-pressed="false" data-filter="recruiting">Рекрутинг</button>
+                <button class="filter-btn" aria-pressed="false" data-filter="ecommerce">E-commerce</button>
+                <button class="filter-btn" aria-pressed="false" data-filter="agency">Агентства</button>
+                <button class="filter-btn" aria-pressed="false" data-filter="platform">Платформы</button>
+                <button class="filter-btn" aria-pressed="false" data-filter="auto">Авто</button>
             </div>
         </div>
 
@@ -163,7 +161,7 @@
                 <!-- VR, CA -->
                 <a href="/projects/ru/vinrecords.html" class="project-card" data-category="auto">
                     <div class="project-card-image">
-                        <img src="/images/projects/vinrecords-main.webp" alt="vinrecords, CA">
+                        <img src="/images/projects/vinrecords-main.webp" alt="vinrecords, CA" width="1187" height="1159" decoding="async" loading="lazy">
                         <div class="project-card-category-badge">Авто</div>
                     </div>
                     <div class="project-card-info">
@@ -175,7 +173,7 @@
                 <!-- TVN, MD -->
                 <a href="/projects/ru/tvn.html" class="project-card" data-category="media">
                     <div class="project-card-image">
-                        <img src="/images/projects/tvn-thumb.webp" alt="TVN, MD">
+                        <img src="/images/projects/tvn-thumb.webp" alt="TVN, MD" width="1192" height="767" decoding="async" loading="lazy">
                         <div class="project-card-category-badge">Медиа</div>
                     </div>
                     <div class="project-card-info">
@@ -187,7 +185,7 @@
                 <!-- Bursa Muncii, MD -->
                 <a href="/projects/ru/bursa-muncii.html" class="project-card" data-category="recruiting">
                     <div class="project-card-image">
-                        <img src="/images/projects/bursa-muncii-thumb.webp" alt="Bursa Muncii, MD">
+                        <img src="/images/projects/bursa-muncii-thumb.webp" alt="Bursa Muncii, MD" width="1190" height="1239" decoding="async" loading="lazy">
                         <div class="project-card-category-badge">Рекрутинг</div>
                     </div>
                     <div class="project-card-info">
@@ -199,7 +197,7 @@
                 <!-- CETAROM, MD -->
                 <a href="/projects/ru/cetarom.html" class="project-card" data-category="agency">
                     <div class="project-card-image">
-                        <img src="/images/projects/cetarom-thumb.webp" alt="CETAROM, MD">
+                        <img src="/images/projects/cetarom-thumb.webp" alt="CETAROM, MD" width="1000" height="1000" decoding="async" loading="lazy">
                         <div class="project-card-category-badge">Юридические услуги</div>
                     </div>
                     <div class="project-card-info">
@@ -211,7 +209,7 @@
                 <!-- Strand, MD -->
                 <a href="/projects/ru/strand.html" class="project-card" data-category="recruiting">
                     <div class="project-card-image">
-                        <img src="/images/projects/strand-thumb.webp" alt="Strand, MD">
+                        <img src="/images/projects/strand-thumb.webp" alt="Strand, MD" width="1196" height="1167" decoding="async" loading="lazy">
                         <div class="project-card-category-badge">Рекрутинг</div>
                     </div>
                     <div class="project-card-info">
@@ -223,7 +221,7 @@
                 <!-- Andiva, MD -->
                 <a href="/projects/ru/andiva.html" class="project-card" data-category="recruiting">
                     <div class="project-card-image">
-                        <img src="/images/projects/andiva-thumb.webp" alt="Andiva, MD">
+                        <img src="/images/projects/andiva-thumb.webp" alt="Andiva, MD" width="1177" height="1064" decoding="async" loading="lazy">
                         <div class="project-card-category-badge">Рекрутинг</div>
                     </div>
                     <div class="project-card-info">
@@ -235,7 +233,7 @@
                 <!-- LorEmAEsthetic, MD -->
                 <a href="/projects/ru/loremaesthetic.html" class="project-card" data-category="ecommerce">
                     <div class="project-card-image">
-                        <img src="/images/projects/loremaesthetic-thumb.webp" alt="LorEmAEsthetic, MD">
+                        <img src="/images/projects/loremaesthetic-thumb.webp" alt="LorEmAEsthetic, MD" width="1202" height="1249" decoding="async" loading="lazy">
                         <div class="project-card-category-badge">E-commerce</div>
                     </div>
                     <div class="project-card-info">
@@ -247,7 +245,7 @@
                 <!-- TaxOnest, MD -->
                 <a href="/projects/ru/taxonest.html" class="project-card" data-category="agency">
                     <div class="project-card-image">
-                        <img src="/images/projects/taxonest-thumb.webp" alt="TaxOnest, MD">
+                        <img src="/images/projects/taxonest-thumb.webp" alt="TaxOnest, MD" width="1110" height="1193" decoding="async" loading="lazy">
                         <div class="project-card-category-badge">Финансовые услуги</div>
                     </div>
                     <div class="project-card-info">
@@ -259,7 +257,7 @@
                 <!-- Lista, MD -->
                 <a href="/projects/ru/lista.html" class="project-card" data-category="platform">
                     <div class="project-card-image">
-                        <img src="/images/projects/lista-thumb.webp" alt="Lista, MD">
+                        <img src="/images/projects/lista-thumb.webp" alt="Lista, MD" width="1113" height="942" decoding="async" loading="lazy">
                         <div class="project-card-category-badge">Платформа</div>
                     </div>
                     <div class="project-card-info">
@@ -271,7 +269,7 @@
                 <!-- MobileStyles, USA -->
                 <a href="/projects/ru/mobilestyles.html" class="project-card" data-category="platform">
                     <div class="project-card-image">
-                        <img src="/images/projects/mobilestyles-thumb.webp" alt="MobileStyles, USA">
+                        <img src="/images/projects/mobilestyles-thumb.webp" alt="MobileStyles, USA" width="1138" height="1106" decoding="async" loading="lazy">
                         <div class="project-card-category-badge">Букинг-приложение</div>
                     </div>
                     <div class="project-card-info">
@@ -283,7 +281,7 @@
                 <!-- ULS, USA -->
                 <a href="/projects/ru/uls.html" class="project-card" data-category="agency">
                     <div class="project-card-image">
-                        <img src="/images/projects/uls-thumb.webp" alt="ULS, USA">
+                        <img src="/images/projects/uls-thumb.webp" alt="ULS, USA" width="920" height="800" decoding="async" loading="lazy">
                         <div class="project-card-category-badge">Маркетинг-агентство</div>
                     </div>
                     <div class="project-card-info">
@@ -295,7 +293,7 @@
                 <!-- ExportPortal, Global -->
                 <a href="/projects/ru/exportportal.html" class="project-card" data-category="platform">
                     <div class="project-card-image">
-                        <img src="/images/projects/exportportal-thumb.webp" alt="ExportPortal, Global">
+                        <img src="/images/projects/exportportal-thumb.webp" alt="ExportPortal, Global" width="934" height="1003" decoding="async" loading="lazy">
                         <div class="project-card-category-badge">Международная платформа</div>
                     </div>
                     <div class="project-card-info">
@@ -321,54 +319,31 @@
 
     <footer>
         <div class="container">
-            <p>© 2025 Придорожнов Иван — SEO продвижение сайтов в Молдове</p>
+            <p>© 2026 Придорожнов Иван — SEO продвижение сайтов в Молдове</p>
             <p>
                 <a href="mailto:ipridorojnov@gmail.com">ipridorojnov@gmail.com</a> |
-                <a href="https://t.me/Iezuit" target="_blank">Telegram</a> |
-                <a href="https://www.linkedin.com/in/ivan-pridorojnov-2197571a7/" target="_blank">LinkedIn</a>
+                <a href="https://t.me/Iezuit" target="_blank" rel="noopener noreferrer">Telegram</a> |
+                <a href="https://www.linkedin.com/in/ivan-pridorojnov-2197571a7/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </p>
+            <p class="footer-privacy"><a href="/privacy.html">Политика конфиденциальности</a></p>
         </div>
     </footer>
 
 <script>
-    // Фильтрация проектов с перестройкой порядка
     const filterButtons = document.querySelectorAll('.filter-btn');
-    const projectsGrid = document.getElementById('projects-grid');
     const projectCards = Array.from(document.querySelectorAll('.project-card'));
 
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
-            filterButtons.forEach(btn => btn.classList.remove('active'));
+            filterButtons.forEach(btn => {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-pressed', 'false');
+            });
             button.classList.add('active');
-            
+            button.setAttribute('aria-pressed', 'true');
             const filterValue = button.getAttribute('data-filter');
-            
-            // Фильтруем карточки
-            const visibleCards = projectCards.filter(card => {
-                return filterValue === 'all' || card.getAttribute('data-category') === filterValue;
-            });
-            
-            const hiddenCards = projectCards.filter(card => {
-                return filterValue !== 'all' && card.getAttribute('data-category') !== filterValue;
-            });
-            
-            // Перестраиваем порядок: сначала видимые, потом скрытые
-            projectsGrid.innerHTML = '';
-            
-            visibleCards.forEach(card => {
-                card.style.display = 'block';
-                card.style.opacity = '1';
-                card.style.transform = 'scale(1)';
-                projectsGrid.appendChild(card);
-            });
-            
-            hiddenCards.forEach(card => {
-                card.style.opacity = '0';
-                card.style.transform = 'scale(0.95)';
-                setTimeout(() => {
-                    card.style.display = 'none';
-                }, 200);
-                projectsGrid.appendChild(card);
+            projectCards.forEach(card => {
+                card.hidden = filterValue !== 'all' && card.getAttribute('data-category') !== filterValue;
             });
         });
     });
