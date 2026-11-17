@@ -41,12 +41,12 @@
             currentPage["author"] = { "@id": "https://seo-moldova.github.io/#person" };
             
             const projectFile = cleanPath.split('/').pop().replace('.html', '');
-            currentPage["image"] = `https://seo-moldova.github.io/images/og/projects/${projectFile}.png`;
+            currentPage["image"] = projectFile === "google-ads" ? "https://seo-moldova.github.io/images/og/projects/google-ads.webp" : `https://seo-moldova.github.io/images/og/projects/${projectFile}.png`;
             currentPage["inLanguage"] = lang;
         }
         else if (cleanPath.includes('/projects.html')) {
             currentPage["@type"] = "CollectionPage";
-            currentPage["numberOfItems"] = 12;
+            currentPage["numberOfItems"] = 13;
         }
         else if (cleanPath.includes('/about.html')) {
             currentPage["@type"] = "ProfilePage";
