@@ -11,7 +11,7 @@ const locale = {
     htmlLang: 'ru', home: '/', experience: '/experience.html', projects: '/projects.html', about: '/about.html', contacts: '/contacts.html',
     nav: ['Главная', 'Опыт', 'Услуги', 'Кейсы', 'Обо мне', 'Контакты'], servicesHome: '/#services', servicePicker: 'Выберите услугу',
     label: 'SEO-услуга', fitTitle: 'Когда эта услуга нужна', deliverTitle: 'Что входит в работу', processTitle: 'Как проходит работа',
-    casesTitle: 'Релевантные кейсы', faqTitle: 'Частые вопросы', contactTitle: 'Обсудим задачу вашего сайта',
+    casesTitle: 'Релевантные кейсы', faqTitle: 'Частые вопросы', contactTitle: 'Обсудим ваш проект',
     contactText: 'Пришлите адрес сайта, регион продвижения и краткое описание задачи. Я отвечу в течение 24 часов и предложу следующий шаг.',
     contactButton: 'Обсудить проект', allCases: 'Все кейсы', result: 'Результат', breadcrumb: 'Услуги', og: 'og-image-ru.png',
     process: [
@@ -24,8 +24,8 @@ const locale = {
   ro: {
     htmlLang: 'ro', home: '/ro/index.html', experience: '/ro/experience.html', projects: '/ro/projects.html', about: '/ro/about.html', contacts: '/ro/contacts.html',
     nav: ['Acasă', 'Experiență', 'Servicii', 'Studii de caz', 'Despre mine', 'Contacte'], servicesHome: '/ro/index.html#services', servicePicker: 'Alegeți serviciul',
-    label: 'Serviciu SEO', fitTitle: 'Când este potrivit serviciul', deliverTitle: 'Ce include lucrul', processTitle: 'Cum decurge colaborarea',
-    casesTitle: 'Studii de caz relevante', faqTitle: 'Întrebări frecvente', contactTitle: 'Să discutăm provocarea site-ului',
+    label: 'Serviciu SEO', fitTitle: 'Când este potrivit serviciul', deliverTitle: 'Ce include serviciul', processTitle: 'Cum lucrăm împreună',
+    casesTitle: 'Studii de caz relevante', faqTitle: 'Întrebări frecvente', contactTitle: 'Să discutăm proiectul',
     contactText: 'Trimiteți adresa site-ului, regiunea vizată și o scurtă descriere a obiectivului. Voi răspunde în 24 de ore cu următorul pas recomandat.',
     contactButton: 'Discută proiectul', allCases: 'Toate proiectele', result: 'Rezultat', breadcrumb: 'Servicii', og: 'og-image-ro.png',
     process: [
@@ -39,7 +39,7 @@ const locale = {
     htmlLang: 'en', home: '/en/index.html', experience: '/en/experience.html', projects: '/en/projects.html', about: '/en/about.html', contacts: '/en/contacts.html',
     nav: ['Home', 'Experience', 'Services', 'Case studies', 'About', 'Contact'], servicesHome: '/en/index.html#services', servicePicker: 'Choose a service',
     label: 'SEO service', fitTitle: 'When this service is a fit', deliverTitle: 'What the work includes', processTitle: 'How the engagement works',
-    casesTitle: 'Relevant case studies', faqTitle: 'Common questions', contactTitle: 'Let’s discuss your website challenge',
+    casesTitle: 'Relevant case studies', faqTitle: 'Common questions', contactTitle: 'Let’s discuss your project',
     contactText: 'Send the website, target market and a short description of the goal. I will reply within 24 hours with a recommended next step.',
     contactButton: 'Discuss the project', allCases: 'All case studies', result: 'Result', breadcrumb: 'Services', og: 'og-image-en.png',
     process: [
@@ -58,9 +58,9 @@ const services = {
       ru: {
         title: 'Технический SEO-аудит сайта', metaTitle: 'Технический SEO аудит сайта | Иван Придорожнов',
         description: 'Технический SEO-аудит: индексация, Core Web Vitals, canonical, hreflang, микроразметка, внутренняя перелинковка и приоритетный план исправлений.',
-        intro: 'Нахожу технические и структурные ограничения, которые мешают Google корректно сканировать, понимать и ранжировать сайт. Результат аудита: не список ошибок, а приоритетный план внедрения.',
+        intro: 'Нахожу технические ошибки, из-за которых Google не видит важные страницы или неправильно понимает сайт. Объясняю, как их исправить и с чего начать.',
         fit: ['Органический трафик падает или долго не растёт', 'После редизайна или миграции появились просадки', 'В индексе находятся дубли и технические URL', 'Команда готовит запуск нового сайта'],
-        deliver: ['Проверка сканирования и индексации', 'Canonical, hreflang, robots.txt и sitemap', 'Core Web Vitals и шаблоны страниц', 'Внутренняя перелинковка и глубина клика', 'Структурированные данные и HTML-семантика', 'Backlog задач с приоритетом и критериями приёмки'],
+        deliver: ['Проверка сканирования и индексации', 'Canonical, hreflang, robots.txt и sitemap', 'Core Web Vitals и шаблоны страниц', 'Внутренняя перелинковка и глубина клика', 'Структурированные данные и HTML-семантика', 'Список исправлений с приоритетами и инструкциями'],
         outcomes: ['Понятный порядок исправлений', 'Снижение технических рисков', 'Основа для дальнейшего роста'],
         cases: [['cetarom', 'CETAROM', 'Видимость выросла в 10 раз'], ['tvn', 'TVN', '+60% кликов и +30% показов']],
         faq: [['Что вы получите после аудита?', 'Документ с проблемами, доказательствами, приоритетом, рекомендациями и критериями проверки внедрения.'], ['Вы внедряете исправления?', 'Могу подготовить технические задания, работать с разработчиками и проверить результат после релиза.'], ['Сколько времени занимает аудит?', 'Срок зависит от размера и сложности сайта. После первичной оценки я фиксирую объём и этапы.']]
@@ -68,9 +68,9 @@ const services = {
       ro: {
         title: 'Audit SEO tehnic pentru site', metaTitle: 'Audit SEO tehnic pentru site | Ivan Pridorojnov',
         description: 'Audit SEO tehnic: indexare, Core Web Vitals, canonical, hreflang, microdate, legături interne și plan prioritar de remediere.',
-        intro: 'Identific limitele tehnice și structurale care împiedică Google să acceseze, să înțeleagă și să claseze corect site-ul. Livrabilul este un plan prioritar, nu doar o listă de erori.',
+        intro: 'Identific erorile tehnice care împiedică Google să găsească sau să înțeleagă paginile importante. Explic cum pot fi corectate și cu ce merită să începeți.',
         fit: ['Traficul organic scade sau stagnează', 'Migrarea ori redesignul a produs pierderi', 'În index apar duplicate și URL-uri tehnice', 'Echipa pregătește lansarea unui site nou'],
-        deliver: ['Crawl și indexare', 'Canonical, hreflang, robots.txt și sitemap', 'Core Web Vitals și șabloane', 'Legături interne și adâncimea paginilor', 'Date structurate și HTML semantic', 'Backlog prioritar cu criterii de acceptare'],
+        deliver: ['Crawl și indexare', 'Canonical, hreflang, robots.txt și sitemap', 'Core Web Vitals și șabloane', 'Legături interne și adâncimea paginilor', 'Date structurate și HTML semantic', 'Lista corecțiilor, cu priorități și instrucțiuni'],
         outcomes: ['Ordine clară a remedierilor', 'Riscuri tehnice mai mici', 'Fundație pentru creștere'],
         cases: [['cetarom', 'CETAROM', 'Vizibilitate de 10 ori mai mare'], ['tvn', 'TVN', '+60% clicuri și +30% afișări']],
         faq: [['Ce primesc după audit?', 'Un document cu probleme, dovezi, priorități, recomandări și criterii de verificare.'], ['Ajutați la implementare?', 'Pot pregăti sarcini tehnice, colabora cu dezvoltatorii și valida schimbările după lansare.'], ['Cât durează auditul?', 'Durata depinde de dimensiunea și complexitatea site-ului. Volumul este stabilit după evaluarea inițială.']]
@@ -78,9 +78,9 @@ const services = {
       en: {
         title: 'Technical SEO audit', metaTitle: 'Technical SEO Audit Services | Ivan Pridorojnov',
         description: 'Technical SEO audit covering indexing, Core Web Vitals, canonicals, hreflang, structured data, internal links and a prioritized implementation plan.',
-        intro: 'I identify the technical and structural constraints that prevent Google from crawling, understanding and ranking the website correctly. The output is a prioritized implementation plan, not a generic issue list.',
+        intro: 'I find technical problems that prevent Google from finding or understanding important pages. You get an explanation of each issue, how to fix it and which fixes to tackle first.',
         fit: ['Organic traffic is declining or has stalled', 'A redesign or migration caused losses', 'Duplicate and technical URLs appear in the index', 'The team is preparing a new website launch'],
-        deliver: ['Crawling and indexation review', 'Canonicals, hreflang, robots.txt and sitemap', 'Core Web Vitals and page templates', 'Internal linking and click depth', 'Structured data and semantic HTML', 'Prioritized backlog with acceptance criteria'],
+        deliver: ['Crawling and indexation review', 'Canonicals, hreflang, robots.txt and sitemap', 'Core Web Vitals and page templates', 'Internal linking and click depth', 'Structured data and semantic HTML', 'Prioritized fixes and implementation instructions'],
         outcomes: ['Clear implementation order', 'Lower technical risk', 'A foundation for sustainable growth'],
         cases: [['cetarom', 'CETAROM', '10× visibility growth'], ['tvn', 'TVN', '+60% clicks and +30% impressions']],
         faq: [['What do I receive after the audit?', 'A document with evidence, priorities, recommendations and acceptance criteria for each important issue.'], ['Can you support implementation?', 'Yes. I can prepare developer tasks, work with the delivery team and validate changes after release.'], ['How long does an audit take?', 'Timing depends on website size and complexity. I confirm the scope after the initial review.']]
@@ -93,32 +93,32 @@ const services = {
       ru: {
         title: 'Комплексное SEO-продвижение', metaTitle: 'SEO продвижение сайта под ключ | Иван Придорожнов',
         description: 'Комплексное SEO-продвижение: стратегия, семантика, контент, техническая оптимизация, аналитика и регулярная работа над ростом органического трафика.',
-        intro: 'Выстраиваю системную работу над органическим каналом: от исследования спроса и технического фундамента до контента, перелинковки и измерения бизнес-результата.',
-        fit: ['Нужен стабильный органический канал привлечения', 'Сайт получает показы, но мало целевых переходов', 'Нет общей SEO-стратегии и приоритетов', 'Нужно масштабировать существующий результат'],
-        deliver: ['Исследование спроса и конкурентов', 'Семантика, кластеры и карта страниц', 'Технический backlog', 'Контент-план и on-page оптимизация', 'Внутренняя перелинковка', 'GA4, GSC и регулярная отчётность'],
+        intro: 'Занимаюсь продвижением сайта в Google: изучаю спрос и конкурентов, подбираю запросы, работаю над структурой и содержанием страниц. Готовлю задания разработчикам и авторам, проверяю изменения и слежу за трафиком и заявками.',
+        fit: ['Хотите получать больше клиентов из поиска', 'Сайт получает показы, но мало целевых переходов', 'Работы по SEO ведутся без понятного плана', 'Хотите продвигать новые услуги или разделы сайта'],
+        deliver: ['Исследование спроса и конкурентов', 'Поисковые запросы и подходящие для них страницы', 'Список технических доработок', 'План материалов и оптимизация страниц', 'Внутренняя перелинковка', 'GA4, GSC и регулярная отчётность'],
         outcomes: ['Расширение поискового спроса', 'Рост целевого трафика', 'Понятная система управления SEO'],
         cases: [['strand', 'Strand', '+230% среднего трафика'], ['exportportal', 'ExportPortal', '+400% органического трафика']],
-        faq: [['Когда появятся первые результаты?', 'SEO имеет накопительный эффект. Первые изменения могут появиться после индексации внедрений, а устойчивый результат оценивается на более длинном периоде.'], ['Можно гарантировать позиции?', 'Нет. Корректно гарантировать качество работ, прозрачный процесс и измерение результата, но не конкретную позицию Google.'], ['Как строится отчётность?', 'Фиксируем исходную точку и KPI, затем отслеживаем внедрения, видимость, трафик и конверсии.']]
+        faq: [['Когда появятся первые результаты?', 'Результат зависит от состояния сайта, конкуренции и скорости внедрения правок. Первые изменения можно заметить после переобхода страниц Google, но устойчивый рост обычно требует более длительной работы.'], ['Можно гарантировать позиции?', 'Нет. Позиции зависят в том числе от конкурентов и алгоритмов Google. Я отвечаю за свою работу: анализ, рекомендации, сопровождение и проверку изменений.'], ['Как строится отчётность?', 'Фиксируем исходную точку и KPI, затем отслеживаем внедрения, видимость, трафик и конверсии.']]
       },
       ro: {
         title: 'Promovare SEO completă', metaTitle: 'Promovare SEO site-uri | Ivan Pridorojnov',
         description: 'Promovare SEO completă: strategie, semantică, conținut, optimizare tehnică, analiză și lucru continuu pentru creșterea traficului organic.',
-        intro: 'Construiesc un canal organic sistematic: de la cercetarea cererii și fundația tehnică până la conținut, legături interne și măsurarea rezultatului de business.',
-        fit: ['Este necesar un canal organic stabil', 'Site-ul are afișări, dar puține vizite relevante', 'Lipsește strategia și ordinea priorităților', 'Rezultatele existente trebuie scalate'],
-        deliver: ['Cercetarea cererii și concurenților', 'Semantică, clustere și hartă de pagini', 'Backlog tehnic', 'Plan editorial și optimizare on-page', 'Legături interne', 'GA4, GSC și raportare regulată'],
+        intro: 'Mă ocup de promovarea site-ului în Google: analizez căutările și concurenții, aleg cuvintele-cheie și îmbunătățesc structura și conținutul. Pregătesc cerințe pentru dezvoltatori și autori, verific modificările și urmăresc traficul și cererile primite.',
+        fit: ['Doriți mai mulți clienți din căutările Google', 'Site-ul are afișări, dar puține vizite relevante', 'Lipsește strategia și ordinea priorităților', 'Doriți să promovați servicii sau secțiuni noi'],
+        deliver: ['Cercetarea cererii și concurenților', 'Cuvinte-cheie grupate și paginile potrivite', 'Lista modificărilor tehnice', 'Plan de conținut și optimizarea paginilor', 'Legături interne', 'GA4, GSC și raportare regulată'],
         outcomes: ['Acoperire mai mare a cererii', 'Creșterea traficului relevant', 'Sistem clar de administrare SEO'],
         cases: [['strand', 'Strand', '+230% trafic mediu'], ['exportportal', 'ExportPortal', '+400% trafic organic']],
-        faq: [['Când apar primele rezultate?', 'SEO are efect cumulativ. Primele schimbări pot apărea după indexarea implementărilor, iar rezultatul stabil se evaluează pe o perioadă mai lungă.'], ['Puteți garanta poziții?', 'Nu. Pot fi garantate calitatea lucrului, procesul transparent și măsurarea, nu o poziție exactă în Google.'], ['Cum funcționează raportarea?', 'Stabilim punctul inițial și KPI, apoi urmărim implementările, vizibilitatea, traficul și conversiile.']]
+        faq: [['Când apar primele rezultate?', 'Rezultatul depinde de starea site-ului, concurență și ritmul modificărilor. Primele schimbări pot apărea după ce Google recitește paginile, dar o creștere stabilă necesită de obicei mai mult timp.'], ['Puteți garanta poziții?', 'Nu. Pozițiile depind și de concurență și de algoritmii Google. Răspund pentru analiza, recomandările, sprijinul și verificările pe care le fac.'], ['Cum funcționează raportarea?', 'Stabilim punctul inițial și KPI, apoi urmărim implementările, vizibilitatea, traficul și conversiile.']]
       },
       en: {
         title: 'Ongoing SEO services', metaTitle: 'Ongoing SEO Services | Ivan Pridorojnov',
         description: 'Ongoing SEO services covering strategy, keyword research, content, technical optimization, analytics and continuous organic traffic growth.',
-        intro: 'I build a systematic organic acquisition channel, from demand research and the technical foundation to content, internal linking and measurement of business outcomes.',
-        fit: ['You need a sustainable organic acquisition channel', 'The site earns impressions but few qualified visits', 'There is no shared SEO strategy or priority order', 'Existing organic performance needs to scale'],
-        deliver: ['Demand and competitor research', 'Keywords, clusters and page map', 'Technical backlog', 'Content plan and on-page optimization', 'Internal linking', 'GA4, GSC and regular reporting'],
-        outcomes: ['Broader search demand coverage', 'More qualified organic traffic', 'A clear SEO operating system'],
+        intro: 'I handle the work needed to improve your visibility in Google: keyword and competitor research, site structure, content and technical fixes. I prepare tasks for developers and writers, review the changes and track traffic and enquiries.',
+        fit: ['You want more customers to find you through Google', 'The site earns impressions but few qualified visits', 'There is no shared SEO strategy or priority order', 'You want to promote new services or website sections'],
+        deliver: ['Demand and competitor research', 'Keywords, clusters and page map', 'Technical improvements', 'Content plan and on-page optimization', 'Internal linking', 'GA4, GSC and regular reporting'],
+        outcomes: ['Broader search demand coverage', 'More qualified organic traffic', 'An organized SEO plan'],
         cases: [['strand', 'Strand', '+230% average traffic'], ['exportportal', 'ExportPortal', '+400% organic traffic']],
-        faq: [['When should I expect results?', 'SEO compounds over time. Early movement may follow indexation of changes, while sustainable impact needs a longer measurement period.'], ['Can you guarantee rankings?', 'No. It is reasonable to guarantee work quality, a transparent process and measurement, but not a specific Google position.'], ['How does reporting work?', 'We agree on a baseline and KPIs, then track implementation, visibility, traffic and conversions.']]
+        faq: [['When should I expect results?', 'Timing depends on the website, competition and how quickly changes are made. You may see movement after Google recrawls the pages, but sustained growth usually takes longer.'], ['Can you guarantee rankings?', 'No. Rankings also depend on competitors and Google algorithms. I am responsible for the analysis, recommendations, support and checks I provide.'], ['How does reporting work?', 'We agree on a baseline and KPIs, then track implementation, visibility, traffic and conversions.']]
       }
     }
   },
@@ -128,32 +128,32 @@ const services = {
       ru: {
         title: 'SEO-структура и миграция сайта', metaTitle: 'SEO структура сайта и безопасная миграция | Иван Придорожнов',
         description: 'Проектирование SEO-структуры, карта страниц, таксономия и миграция сайта без потери органического трафика.',
-        intro: 'Проектирую архитектуру вокруг поискового спроса и пользовательских задач. При миграции сохраняю ценные URL, сигналы и путь поискового робота.',
+        intro: 'Проектирую разделы и страницы так, чтобы они отвечали поисковым запросам и были удобны посетителям. При переносе сайта готовлю карту редиректов и проверяю, доступны ли важные страницы после запуска.',
         fit: ['Создаётся новый сайт или направление', 'Каталог трудно масштабировать', 'Страницы конкурируют между собой', 'Планируется смена CMS, домена или URL'],
-        deliver: ['Карта спроса и типов страниц', 'Иерархия категорий и таксономия', 'Правила URL, canonical и пагинации', 'Матрица редиректов для миграции', 'Навигация и перелинковка', 'Контроль до и после релиза'],
+        deliver: ['Поисковые запросы и карта страниц', 'Структура разделов и категорий', 'Правила URL, canonical и пагинации', 'Матрица редиректов для миграции', 'Навигация и перелинковка', 'Контроль до и после релиза'],
         outcomes: ['Понятная архитектура', 'Снижение риска потери трафика', 'Основа для масштабирования'],
         cases: [['bursa-muncii', 'Bursa Muncii', '+250% органического трафика'], ['vinrecords', 'VinRecords', '73,2K показов за 5 месяцев']],
-        faq: [['Когда SEO нужно подключать к разработке?', 'До утверждения структуры, URL и шаблонов. Чем позже подключается SEO, тем дороже исправлять архитектурные решения.'], ['Можно полностью исключить просадку при миграции?', 'Нельзя обещать нулевую волатильность, но можно существенно снизить риск подготовкой редиректов, проверок и мониторинга.'], ['Что нужно от команды разработки?', 'Доступ к карте URL, шаблонам, тестовому окружению и ответственному за внедрение.']]
+        faq: [['Когда SEO нужно подключать к разработке?', 'До утверждения структуры, URL и шаблонов. Чем позже подключается SEO, тем дороже исправлять архитектурные решения.'], ['Можно полностью исключить просадку при миграции?', 'Полностью исключить колебания нельзя. Но подготовка редиректов и проверка сайта до и после переноса помогают снизить риск потери трафика.'], ['Что нужно от команды разработки?', 'Карта адресов, информация о шаблонах, доступ к тестовой версии сайта и контакт разработчика, который будет вносить правки.']]
       },
       ro: {
         title: 'Structură SEO și migrare de site', metaTitle: 'Structură SEO și migrare site | Ivan Pridorojnov',
         description: 'Proiectarea structurii SEO, harta paginilor, taxonomie și migrarea site-ului cu protejarea traficului organic.',
-        intro: 'Proiectez arhitectura în jurul cererii de căutare și al sarcinilor utilizatorilor. La migrare păstrez URL-urile valoroase, semnalele și traseul crawlerului.',
-        fit: ['Se lansează un site sau o direcție nouă', 'Catalogul este greu de scalat', 'Paginile concurează între ele', 'Urmează schimbarea CMS-ului, domeniului sau URL-urilor'],
-        deliver: ['Harta cererii și tipurilor de pagini', 'Ierarhie și taxonomie', 'Reguli pentru URL, canonical și paginare', 'Matrice de redirecturi', 'Navigare și legături interne', 'Control înainte și după lansare'],
+        intro: 'Proiectez secțiunile și paginile în funcție de căutările clienților și de felul în care aceștia folosesc site-ul. La migrare pregătesc redirecturile și verific dacă paginile importante rămân accesibile.',
+        fit: ['Pregătiți un site sau o secțiune nouă', 'Catalogul este greu de scalat', 'Paginile concurează între ele', 'Urmează schimbarea CMS-ului, domeniului sau URL-urilor'],
+        deliver: ['Cuvinte-cheie și harta paginilor', 'Ierarhie și taxonomie', 'Reguli pentru URL, canonical și paginare', 'Matrice de redirecturi', 'Navigare și legături interne', 'Control înainte și după lansare'],
         outcomes: ['Arhitectură ușor de înțeles', 'Risc redus la migrare', 'Bază pentru scalare'],
         cases: [['bursa-muncii', 'Bursa Muncii', '+250% trafic organic'], ['vinrecords', 'VinRecords', '73,2K afișări în 5 luni']],
-        faq: [['Când trebuie implicat SEO în dezvoltare?', 'Înainte de aprobarea structurii, URL-urilor și șabloanelor. Corectarea târzie este mai costisitoare.'], ['Poate fi eliminată complet scăderea la migrare?', 'Nu poate fi promisă volatilitate zero, dar riscul poate fi redus semnificativ prin redirecturi, verificări și monitorizare.'], ['Ce este necesar de la dezvoltatori?', 'Acces la harta URL-urilor, șabloane, mediul de testare și o persoană responsabilă de implementare.']]
+        faq: [['Când trebuie implicat SEO în dezvoltare?', 'Înainte de aprobarea structurii, URL-urilor și șabloanelor. Corectarea târzie este mai costisitoare.'], ['Poate fi eliminată complet scăderea la migrare?', 'Nu pot exclude complet fluctuațiile. Redirecturile pregătite corect și verificarea site-ului înainte și după migrare reduc însă riscul pierderii traficului.'], ['De ce aveți nevoie de la dezvoltatori?', 'Acces la harta URL-urilor, șabloane, mediul de testare și o persoană responsabilă de implementare.']]
       },
       en: {
         title: 'SEO site architecture and migration', metaTitle: 'SEO Site Architecture and Migration | Ivan Pridorojnov',
         description: 'SEO site architecture, page mapping, taxonomy and website migration planning that protects valuable organic traffic.',
-        intro: 'I design architecture around search demand and user tasks. During migration, I protect valuable URLs, search signals and crawler paths.',
+        intro: 'I plan sections and pages around what customers search for and how they use the site. For a migration, I prepare redirects and check that important pages remain accessible after launch.',
         fit: ['A new website or business line is launching', 'The catalogue is difficult to scale', 'Pages compete with each other', 'A CMS, domain or URL migration is planned'],
-        deliver: ['Demand and page-type map', 'Category hierarchy and taxonomy', 'URL, canonical and pagination rules', 'Migration redirect matrix', 'Navigation and internal linking', 'Pre-launch and post-launch validation'],
+        deliver: ['Keyword research and page map', 'Category hierarchy and taxonomy', 'URL, canonical and pagination rules', 'Migration redirect matrix', 'Navigation and internal linking', 'Pre-launch and post-launch validation'],
         outcomes: ['Clear site architecture', 'Lower migration risk', 'A scalable search foundation'],
         cases: [['bursa-muncii', 'Bursa Muncii', '+250% organic traffic'], ['vinrecords', 'VinRecords', '73.2K impressions in 5 months']],
-        faq: [['When should SEO join development?', 'Before the structure, URLs and templates are approved. Architecture becomes more expensive to correct later.'], ['Can a migration have zero traffic loss?', 'Zero volatility cannot be promised, but redirect planning, validation and monitoring can materially reduce the risk.'], ['What is needed from developers?', 'Access to the URL map, templates, staging environment and an owner for implementation.']]
+        faq: [['When should SEO join development?', 'Before the structure, URLs and templates are approved. Architecture becomes more expensive to correct later.'], ['Can a migration have zero traffic loss?', 'Some fluctuation is possible. Redirect planning and checks before and after the move help reduce the risk of losing traffic.'], ['What do you need from the developers?', 'Access to the URL map, templates, staging environment and an owner for implementation.']]
       }
     }
   },
@@ -163,19 +163,19 @@ const services = {
       ru: {
         title: 'Локальное SEO и Google Business Profile', metaTitle: 'Локальное SEO продвижение в Google | Иван Придорожнов',
         description: 'Локальное SEO: Google Business Profile, страницы локаций, локальная семантика, отзывы, карты и аналитика обращений.',
-        intro: 'Помогаю локальному бизнесу стать заметнее по запросам с географическим намерением в обычной выдаче и Google Maps.',
+        intro: 'Помогаю клиентам находить вашу компанию в Google и на Картах. Проверяю профиль, подбираю категории и услуги, уточняю данные компании и работаю над страницами сайта.',
         fit: ['Клиенты ищут услугу рядом с собой', 'Карточка компании получает мало обращений', 'Есть несколько филиалов или регионов', 'Сайт не ранжируется по локальным запросам'],
-        deliver: ['Аудит Google Business Profile', 'Локальная семантика и страницы услуг', 'Данные компании и согласованность NAP', 'Категории, услуги, фото и публикации', 'Работа с отзывами и репутацией', 'Отслеживание звонков, маршрутов и заявок'],
-        outcomes: ['Больше локальной видимости', 'Полнее карточка компании', 'Измеримые обращения из поиска'],
+        deliver: ['Аудит Google Business Profile', 'Локальная семантика и страницы услуг', 'Единые адрес, телефон и название компании', 'Категории, услуги, фото и публикации', 'Работа с отзывами и репутацией', 'Отслеживание звонков, маршрутов и заявок'],
+        outcomes: ['Больше локальной видимости', 'Заполненный профиль компании', 'Статистика обращений из поиска'],
         cases: [['loremaesthetic', 'LorEmA Esthetic', '+300% показов и +250% кликов'], ['cetarom', 'CETAROM', 'Видимость выросла в 10 раз']],
-        faq: [['Нужен ли сайт для локального SEO?', 'Google Business Profile может работать самостоятельно, но сайт усиливает релевантность услуг, регионов и доверие пользователя.'], ['Как работать с несколькими филиалами?', 'Для каждой реальной локации нужны корректные данные, уникальная локальная информация и понятная связь с сайтом.'], ['Можно ли быстро получить отзывы?', 'Используется системный запрос отзывов у реальных клиентов. Покупка и публикация фиктивных отзывов не применяются.']]
+        faq: [['Нужен ли сайт для локального SEO?', 'Профиль может привлекать клиентов и без сайта. Сайт позволяет подробнее рассказать об услугах, показать примеры работы и ответить на вопросы перед обращением.'], ['Как работать с несколькими филиалами?', 'Для каждой реальной локации нужны корректные данные, уникальная локальная информация и понятная связь с сайтом.'], ['Можно ли быстро получить отзывы?', 'Можно настроить регулярный сбор отзывов: предложить клиентам поделиться опытом после оказания услуги. Работаю с настоящими отзывами клиентов.']]
       },
       ro: {
         title: 'SEO local și Google Business Profile', metaTitle: 'Servicii SEO local în Google | Ivan Pridorojnov',
         description: 'SEO local: Google Business Profile, pagini pentru locații, semantică locală, recenzii, hărți și măsurarea solicitărilor.',
-        intro: 'Ajut afacerile locale să fie mai vizibile pentru căutările geografice în rezultatele organice și Google Maps.',
+        intro: 'Ajut clienții să găsească afacerea în Google și pe hartă. Verific profilul, categoriile și serviciile, corectez datele companiei și lucrez la paginile site-ului.',
         fit: ['Clienții caută serviciul în apropiere', 'Profilul companiei aduce puține solicitări', 'Există mai multe filiale sau regiuni', 'Site-ul nu se clasează pentru interogări locale'],
-        deliver: ['Audit Google Business Profile', 'Semantică și pagini locale', 'Datele companiei și consistența NAP', 'Categorii, servicii, fotografii și postări', 'Proces pentru recenzii și reputație', 'Măsurarea apelurilor, rutelor și cererilor'],
+        deliver: ['Audit Google Business Profile', 'Cuvinte-cheie locale și pagini de servicii', 'Nume, adresă și telefon corecte peste tot', 'Categorii, servicii, fotografii și postări', 'Colectarea recenziilor și răspunsurile la ele', 'Măsurarea apelurilor, rutelor și cererilor'],
         outcomes: ['Vizibilitate locală mai bună', 'Profil complet și relevant', 'Solicitări măsurabile din căutare'],
         cases: [['loremaesthetic', 'LorEmA Esthetic', '+300% afișări și +250% clicuri'], ['cetarom', 'CETAROM', 'Vizibilitate de 10 ori mai mare']],
         faq: [['Este necesar un site pentru SEO local?', 'Google Business Profile poate funcționa separat, dar site-ul întărește relevanța serviciilor, regiunilor și încrederea.'], ['Cum se lucrează cu mai multe filiale?', 'Fiecare locație reală are nevoie de date corecte, informație locală unică și o legătură clară cu site-ul.'], ['Pot fi obținute rapid recenzii?', 'Se construiește un proces de solicitare de la clienți reali. Recenziile false nu sunt folosite.']]
@@ -183,7 +183,7 @@ const services = {
       en: {
         title: 'Local SEO and Google Business Profile', metaTitle: 'Local SEO Services | Ivan Pridorojnov',
         description: 'Local SEO services covering Google Business Profile, location pages, local keywords, reviews, maps visibility and lead measurement.',
-        intro: 'I help local businesses become more visible for geographic search intent in organic results and Google Maps.',
+        intro: 'I help customers find your business in Google Search and Maps. I review the profile, categories, services and business details, and improve the relevant website pages.',
         fit: ['Customers search for the service nearby', 'The business profile generates few enquiries', 'The company has multiple locations or regions', 'The website does not rank for local searches'],
         deliver: ['Google Business Profile audit', 'Local keyword and service pages', 'Business data and NAP consistency', 'Categories, services, photos and updates', 'Review and reputation process', 'Tracking calls, directions and enquiries'],
         outcomes: ['Greater local visibility', 'A complete and relevant profile', 'Measurable enquiries from search'],
@@ -213,9 +213,9 @@ function render(key, lang) {
   const service = services[key];
   const copy = service.copy[lang];
   const labels = {
-    ru: {output:'Результат и формат работы',inputs:'Что нужно для начала',terms:'Формат и стоимость',employers:'Для работодателей'},
-    ro: {output:'Rezultat și format de lucru',inputs:'Ce este necesar pentru început',terms:'Format și cost',employers:'Pentru angajatori'},
-    en: {output:'Deliverables and working format',inputs:'What I need to get started',terms:'Format and pricing',employers:'For employers'}
+    ru: {output:'Что вы получите',inputs:'Что нужно для начала',terms:'Как работаем и сколько это стоит',employers:'Для работодателей'},
+    ro: {output:'Ce primiți',inputs:'Ce este necesar pentru început',terms:'Colaborare și costuri',employers:'Pentru angajatori'},
+    en: {output:'What you receive',inputs:'What I need to get started',terms:'Working together and pricing',employers:'For employers'}
   }[lang];
   const label = key === 'ads' ? 'Google Ads' : key === 'geo' ? 'GEO / AI Search' : ui.label;
   const privacy = lang === 'ru'
