@@ -95,7 +95,7 @@
                     <li><a href="/index.html">Главная</a></li>
                     <li><a href="/experience.html">Опыт</a></li>
                     <li><a href="/#services">Услуги</a></li>
-                    <li><a href="/projects.html" class="active">Проекты</a></li>
+                    <li><a href="/projects.html" class="active">Кейсы</a></li>
                     <li><a href="/about.html">Обо мне</a></li>
                     <li><a href="/contacts.html">Контакты</a></li>
                 </ul>
@@ -143,8 +143,8 @@
         <!-- ФИЛЬТР КАТЕГОРИЙ -->
         <section class="container ppc-portfolio-feature" aria-labelledby="ppc-feature-title"><a class="ppc-feature-link" href="/projects/ru/google-ads.html"><span class="ppc-eyebrow">PPC-КЕЙС · GOOGLE ADS</span><h2 id="ppc-feature-title">11 проектов: +259,5% конверсий при росте расходов на 42,8%</h2><p>Рекрутинг, транспорт и услуги · сравнение двух двухлетних периодов</p><span class="ppc-cta">Смотреть результаты →</span></a></section>
 <div class="container">
-            <div class="projects-filter">
-                <button class="filter-btn active" aria-pressed="true" data-filter="all">Все проекты</button>
+            <div class="projects-filter"><button class="filter-btn active" aria-pressed="true" data-filter="all">Все проекты</button><button class="filter-btn" aria-pressed="false" data-filter="seo">SEO</button><button class="filter-btn" aria-pressed="false" data-filter="ppc">Google Ads</button>
+
                 <button class="filter-btn" aria-pressed="false" data-filter="media">Медиа</button>
                 <button class="filter-btn" aria-pressed="false" data-filter="recruiting">Рекрутинг</button>
                 <button class="filter-btn" aria-pressed="false" data-filter="ecommerce">E-commerce</button>
@@ -157,10 +157,10 @@
         <!-- СЕТКА КАРТОЧЕК ПРОЕКТОВ -->
         <div class="container">
     
-            <div class="projects-grid" id="projects-grid">
+            <div class="projects-grid" id="projects-grid"><a href="/projects/ru/google-ads.html" class="project-card" data-service="ppc" data-category="ppc"><div class="project-card-image"><img src="/images/og/projects/google-ads.webp" alt="Google Ads" width="1631" height="841" loading="lazy" decoding="async"><div class="project-card-category-badge">Google Ads</div></div><div class="project-card-info"><h3 class="project-card-title">Google Ads — 11 проектов</h3><p class="project-card-description">Настройка и оптимизация рекламы в 11 проектах</p><span class="service-link">Смотреть кейс →</span></div></a>
 
                 <!-- VR, CA -->
-                <a href="/projects/ru/vinrecords.html" class="project-card" data-category="auto">
+                <a href="/projects/ru/vinrecords.html" class="project-card" data-service="seo" data-category="auto">
                     <div class="project-card-image">
                         <img src="/images/projects/vinrecords-main.webp" alt="vinrecords, CA" width="1187" height="1159" decoding="async" loading="lazy">
                         <div class="project-card-category-badge">Авто</div>
@@ -172,7 +172,7 @@
                 </a>
                 
                 <!-- TVN, MD -->
-                <a href="/projects/ru/tvn.html" class="project-card" data-category="media">
+                <a href="/projects/ru/tvn.html" class="project-card" data-service="seo" data-category="media">
                     <div class="project-card-image">
                         <img src="/images/projects/tvn-thumb.webp" alt="TVN, MD" width="1192" height="767" decoding="async" loading="lazy">
                         <div class="project-card-category-badge">Медиа</div>
@@ -184,7 +184,7 @@
                 </a>
 
                 <!-- Bursa Muncii, MD -->
-                <a href="/projects/ru/bursa-muncii.html" class="project-card" data-category="recruiting">
+                <a href="/projects/ru/bursa-muncii.html" class="project-card" data-service="seo" data-category="recruiting">
                     <div class="project-card-image">
                         <img src="/images/projects/bursa-muncii-thumb.webp" alt="Bursa Muncii, MD" width="1190" height="1239" decoding="async" loading="lazy">
                         <div class="project-card-category-badge">Рекрутинг</div>
@@ -196,7 +196,7 @@
                 </a>
 
                 <!-- CETAROM, MD -->
-                <a href="/projects/ru/cetarom.html" class="project-card" data-category="agency">
+                <a href="/projects/ru/cetarom.html" class="project-card" data-service="seo" data-category="agency">
                     <div class="project-card-image">
                         <img src="/images/projects/cetarom-thumb.webp" alt="CETAROM, MD" width="1000" height="1000" decoding="async" loading="lazy">
                         <div class="project-card-category-badge">Юридические услуги</div>
@@ -208,7 +208,7 @@
                 </a>
 
                 <!-- Strand, MD -->
-                <a href="/projects/ru/strand.html" class="project-card" data-category="recruiting">
+                <a href="/projects/ru/strand.html" class="project-card" data-service="seo" data-category="recruiting">
                     <div class="project-card-image">
                         <img src="/images/projects/strand-thumb.webp" alt="Strand, MD" width="1196" height="1167" decoding="async" loading="lazy">
                         <div class="project-card-category-badge">Рекрутинг</div>
@@ -220,7 +220,7 @@
                 </a>
 
                 <!-- Andiva, MD -->
-                <a href="/projects/ru/andiva.html" class="project-card" data-category="recruiting">
+                <a href="/projects/ru/andiva.html" class="project-card" data-service="seo" data-category="recruiting">
                     <div class="project-card-image">
                         <img src="/images/projects/andiva-thumb.webp" alt="Andiva, MD" width="1177" height="1064" decoding="async" loading="lazy">
                         <div class="project-card-category-badge">Рекрутинг</div>
@@ -232,7 +232,7 @@
                 </a>
 
                 <!-- LorEmAEsthetic, MD -->
-                <a href="/projects/ru/loremaesthetic.html" class="project-card" data-category="ecommerce">
+                <a href="/projects/ru/loremaesthetic.html" class="project-card" data-service="seo" data-category="ecommerce">
                     <div class="project-card-image">
                         <img src="/images/projects/loremaesthetic-thumb.webp" alt="LorEmAEsthetic, MD" width="1202" height="1249" decoding="async" loading="lazy">
                         <div class="project-card-category-badge">E-commerce</div>
@@ -244,7 +244,7 @@
                 </a>
 
                 <!-- TaxOnest, MD -->
-                <a href="/projects/ru/taxonest.html" class="project-card" data-category="agency">
+                <a href="/projects/ru/taxonest.html" class="project-card" data-service="seo" data-category="agency">
                     <div class="project-card-image">
                         <img src="/images/projects/taxonest-thumb.webp" alt="TaxOnest, MD" width="1110" height="1193" decoding="async" loading="lazy">
                         <div class="project-card-category-badge">Финансовые услуги</div>
@@ -256,7 +256,7 @@
                 </a>
 
                 <!-- Lista, MD -->
-                <a href="/projects/ru/lista.html" class="project-card" data-category="platform">
+                <a href="/projects/ru/lista.html" class="project-card" data-service="seo" data-category="platform">
                     <div class="project-card-image">
                         <img src="/images/projects/lista-thumb.webp" alt="Lista, MD" width="1113" height="942" decoding="async" loading="lazy">
                         <div class="project-card-category-badge">Платформа</div>
@@ -268,7 +268,7 @@
                 </a>
 
                 <!-- MobileStyles, USA -->
-                <a href="/projects/ru/mobilestyles.html" class="project-card" data-category="platform">
+                <a href="/projects/ru/mobilestyles.html" class="project-card" data-service="seo" data-category="platform">
                     <div class="project-card-image">
                         <img src="/images/projects/mobilestyles-thumb.webp" alt="MobileStyles, USA" width="1138" height="1106" decoding="async" loading="lazy">
                         <div class="project-card-category-badge">Букинг-приложение</div>
@@ -280,7 +280,7 @@
                 </a>
 
                 <!-- ULS, USA -->
-                <a href="/projects/ru/uls.html" class="project-card" data-category="agency">
+                <a href="/projects/ru/uls.html" class="project-card" data-service="seo" data-category="agency">
                     <div class="project-card-image">
                         <img src="/images/projects/uls-thumb.webp" alt="ULS, USA" width="920" height="800" decoding="async" loading="lazy">
                         <div class="project-card-category-badge">Маркетинг-агентство</div>
@@ -292,7 +292,7 @@
                 </a>
 
                 <!-- ExportPortal, Global -->
-                <a href="/projects/ru/exportportal.html" class="project-card" data-category="platform">
+                <a href="/projects/ru/exportportal.html" class="project-card" data-service="seo" data-category="platform">
                     <div class="project-card-image">
                         <img src="/images/projects/exportportal-thumb.webp" alt="ExportPortal, Global" width="934" height="1003" decoding="async" loading="lazy">
                         <div class="project-card-category-badge">Международная платформа</div>
@@ -326,7 +326,7 @@
                 <a href="https://t.me/Iezuit" target="_blank" rel="noopener noreferrer">Telegram</a> |
                 <a href="https://www.linkedin.com/in/ivan-pridorojnov-2197571a7/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </p>
-            <p class="footer-privacy"><a href="/privacy.html">Политика конфиденциальности</a></p>
+            <p class="footer-employers"><a href="/experience.html#employers">Для работодателей</a></p><p class="footer-privacy"><a href="/privacy.html">Политика конфиденциальности</a></p>
         </div>
     </footer>
 
@@ -343,8 +343,10 @@
             button.classList.add('active');
             button.setAttribute('aria-pressed', 'true');
             const filterValue = button.getAttribute('data-filter');
+            const feature = document.querySelector('.ppc-portfolio-feature');
+            if (feature) feature.hidden = filterValue !== 'all' && filterValue !== 'ppc';
             projectCards.forEach(card => {
-                card.hidden = filterValue !== 'all' && card.getAttribute('data-category') !== filterValue;
+                card.hidden = filterValue !== 'all' && (['seo', 'ppc'].includes(filterValue) ? card.dataset.service !== filterValue : card.getAttribute('data-category') !== filterValue);
             });
         });
     });

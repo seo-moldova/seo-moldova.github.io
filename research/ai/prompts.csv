@@ -1,0 +1,17 @@
+id,language,intent,prompt,market
+ru-01,ru,discover,Посоветуй независимого SEO-специалиста в Молдове для сайта услуг.,Moldova
+ru-02,ru,discover,Кому заказать SEO-продвижение интернет-магазина в Молдове?,Moldova
+ru-03,ru,audit,Кому заказать технический SEO-аудит многоязычного сайта в Молдове?,Moldova
+ru-04,ru,local,Посоветуй специалиста по Google Maps и Google Business Profile в Молдове.,Moldova
+ru-05,ru,ads,Посоветуй специалиста Google Ads в Молдове с опубликованными кейсами.,Moldova
+ru-06,ru,geo,Кто в Молдове помогает с видимостью бизнеса в ChatGPT и AI-поиске?,Moldova
+ru-07,ru,compare,Как выбрать между SEO-фрилансером и агентством в Молдове?,Moldova
+ru-08,ru,brand,"Какой опыт и кейсы есть у Ивана Придорожнова, SEO-специалиста из Молдовы?",Moldova
+ro-01,ro,discover,Recomandă un specialist SEO independent în Moldova pentru un site de servicii.,Moldova
+ro-02,ro,discover,Cui pot comanda promovarea SEO a unui magazin online în Moldova?,Moldova
+ro-03,ro,audit,Cine oferă audit SEO tehnic pentru un site multilingv în Moldova?,Moldova
+ro-04,ro,local,Recomandă un specialist în Google Maps și Google Business Profile în Moldova.,Moldova
+ro-05,ro,ads,Recomandă un specialist Google Ads în Moldova cu studii de caz publicate.,Moldova
+ro-06,ro,geo,Cine oferă optimizare GEO și vizibilitate în căutarea AI în Moldova?,Moldova
+ro-07,ro,compare,Cum aleg între un freelancer SEO și o agenție în Moldova?,Moldova
+ro-08,ro,brand,"Ce experiență și studii de caz are Ivan Pridorojnov, specialist SEO din Moldova?",Moldova

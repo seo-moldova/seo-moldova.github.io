@@ -1,3 +1,4 @@
+import { extendServices } from './service-expansion.mjs';
 import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -8,7 +9,7 @@ const origin = 'https://seo-moldova.github.io';
 const locale = {
   ru: {
     htmlLang: 'ru', home: '/', experience: '/experience.html', projects: '/projects.html', about: '/about.html', contacts: '/contacts.html',
-    nav: ['Главная', 'Опыт', 'Услуги', 'Проекты', 'Обо мне', 'Контакты'], servicesHome: '/#services', servicePicker: 'Выберите услугу',
+    nav: ['Главная', 'Опыт', 'Услуги', 'Кейсы', 'Обо мне', 'Контакты'], servicesHome: '/#services', servicePicker: 'Выберите услугу',
     label: 'SEO-услуга', fitTitle: 'Когда эта услуга нужна', deliverTitle: 'Что входит в работу', processTitle: 'Как проходит работа',
     casesTitle: 'Релевантные кейсы', faqTitle: 'Частые вопросы', contactTitle: 'Обсудим задачу вашего сайта',
     contactText: 'Пришлите адрес сайта, регион продвижения и краткое описание задачи. Я отвечу в течение 24 часов и предложу следующий шаг.',
@@ -22,7 +23,7 @@ const locale = {
   },
   ro: {
     htmlLang: 'ro', home: '/ro/index.html', experience: '/ro/experience.html', projects: '/ro/projects.html', about: '/ro/about.html', contacts: '/ro/contacts.html',
-    nav: ['Acasă', 'Experiență', 'Servicii', 'Proiecte', 'Despre mine', 'Contacte'], servicesHome: '/ro/index.html#services', servicePicker: 'Alegeți serviciul',
+    nav: ['Acasă', 'Experiență', 'Servicii', 'Studii de caz', 'Despre mine', 'Contacte'], servicesHome: '/ro/index.html#services', servicePicker: 'Alegeți serviciul',
     label: 'Serviciu SEO', fitTitle: 'Când este potrivit serviciul', deliverTitle: 'Ce include lucrul', processTitle: 'Cum decurge colaborarea',
     casesTitle: 'Studii de caz relevante', faqTitle: 'Întrebări frecvente', contactTitle: 'Să discutăm provocarea site-ului',
     contactText: 'Trimiteți adresa site-ului, regiunea vizată și o scurtă descriere a obiectivului. Voi răspunde în 24 de ore cu următorul pas recomandat.',
@@ -36,7 +37,7 @@ const locale = {
   },
   en: {
     htmlLang: 'en', home: '/en/index.html', experience: '/en/experience.html', projects: '/en/projects.html', about: '/en/about.html', contacts: '/en/contacts.html',
-    nav: ['Home', 'Experience', 'Services', 'Projects', 'About', 'Contact'], servicesHome: '/en/index.html#services', servicePicker: 'Choose a service',
+    nav: ['Home', 'Experience', 'Services', 'Case studies', 'About', 'Contact'], servicesHome: '/en/index.html#services', servicePicker: 'Choose a service',
     label: 'SEO service', fitTitle: 'When this service is a fit', deliverTitle: 'What the work includes', processTitle: 'How the engagement works',
     casesTitle: 'Relevant case studies', faqTitle: 'Common questions', contactTitle: 'Let’s discuss your website challenge',
     contactText: 'Send the website, target market and a short description of the goal. I will reply within 24 hours with a recommended next step.',
@@ -193,6 +194,8 @@ const services = {
   }
 };
 
+extendServices(services);
+
 function escapeJson(value) {
   return JSON.stringify(value).replace(/</g, '\\u003c');
 }
@@ -209,6 +212,12 @@ function render(key, lang) {
   const ui = locale[lang];
   const service = services[key];
   const copy = service.copy[lang];
+  const labels = {
+    ru: {output:'Результат и формат работы',inputs:'Что нужно для начала',terms:'Формат и стоимость',employers:'Для работодателей'},
+    ro: {output:'Rezultat și format de lucru',inputs:'Ce este necesar pentru început',terms:'Format și cost',employers:'Pentru angajatori'},
+    en: {output:'Deliverables and working format',inputs:'What I need to get started',terms:'Format and pricing',employers:'For employers'}
+  }[lang];
+  const label = key === 'ads' ? 'Google Ads' : key === 'geo' ? 'GEO / AI Search' : ui.label;
   const privacy = lang === 'ru'
     ? ['/privacy.html', 'Политика конфиденциальности']
     : lang === 'ro'
@@ -219,6 +228,7 @@ function render(key, lang) {
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
+      { '@type': 'Person', '@id': `${origin}/#person`, name: 'Ivan Pridorojnov', url: `${origin}${ui.about}`, sameAs: ['https://www.linkedin.com/in/ivan-pridorojnov-2197571a7/', 'https://t.me/Iezuit'] },
       { '@type': 'Service', '@id': `${canonical}#service`, name: copy.title, description: copy.description, provider: { '@id': `${origin}/#person` }, areaServed: ['MD', 'EU', 'US', 'CA'], url: canonical },
       { '@type': 'BreadcrumbList', itemListElement: [
         { '@type': 'ListItem', position: 1, name: ui.nav[0], item: `${origin}${ui.home}` },
@@ -283,9 +293,10 @@ ${alternates}
         <section class="service-hero">
             <div class="container">
                 <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="${ui.home}">${ui.nav[0]}</a><span class="separator">/</span><a href="${ui.servicesHome}">${ui.breadcrumb}</a><span class="separator">/</span><span class="current">${copy.title}</span></nav>
-                <span class="section-kicker">${ui.label}</span>
+                <span class="section-kicker">${label}</span>
                 <h1>${copy.title}</h1>
                 <p>${copy.intro}</p>
+                <p class="service-market">${{ru:'Работаю напрямую с клиентами из Молдовы и международными командами. Русский, румынский и английский.',ro:'Lucrez direct cu clienți din Moldova și echipe internaționale, în română, rusă și engleză.',en:'I work directly with businesses in Moldova and international teams, in English, Romanian and Russian.'}[lang]}</p>
                 <div class="hero-buttons"><a href="${ui.contacts}" class="btn btn-primary">${ui.contactButton}</a><a href="${ui.projects}" class="btn btn-outline">${ui.allCases}</a></div>
             </div>
         </section>
@@ -308,23 +319,29 @@ ${alternates}
         </section>
         <section class="container service-process">
             <div class="service-section-title"><span class="section-kicker">03</span><h2>${ui.processTitle}</h2></div>
-            <ol class="process-grid">${ui.process.map(([title, text], index) => `<li><span>${String(index + 1).padStart(2, '0')}</span><h3>${title}</h3><p>${text}</p></li>`).join('')}</ol>
+            <ol class="process-grid">${(copy.process || ui.process).map(([title, text], index) => `<li><span>${String(index + 1).padStart(2, '0')}</span><h3>${title}</h3><p>${text}</p></li>`).join('')}</ol>
+        </section>
+        <section class="container service-scope">
+            <div class="service-section-title"><h2>${labels.output}</h2></div>
+            <div class="scope-grid">${copy.details.map(([title,text]) => `<article><h3>${title}</h3><p>${text}</p></article>`).join('')}</div>
+            <div class="scope-terms"><div><h3>${labels.inputs}</h3><p>${copy.inputs}</p></div><div><h3>${labels.terms}</h3><p>${copy.terms}</p></div></div>
         </section>
         <section class="service-evidence">
             <div class="container">
-                <div class="service-section-title"><span class="section-kicker">04</span><h2>${ui.casesTitle}</h2></div>
-                <div class="evidence-grid">${copy.cases.map(([slug, title, metric]) => `<a href="${projectUrl(slug, lang)}" class="evidence-card"><img src="/images/projects/${slug}-${slug === 'vinrecords' ? 'main' : 'thumb'}.webp" alt="${title}" width="1200" height="900" loading="lazy" decoding="async"><div><span>${ui.result}</span><h3>${title}</h3><strong>${metric}</strong></div></a>`).join('')}</div>
+                <div class="service-section-title"><span class="section-kicker">04</span><h2>${copy.evidenceTitle || ui.casesTitle}</h2></div>
+                ${copy.evidenceText ? `<p class="service-measurement">${copy.evidenceText}</p>` : ''}
+                <div class="evidence-grid${copy.cases.length === 1 ? ' evidence-single' : ''}">${copy.cases.map(([slug, title, metric]) => `<a href="${projectUrl(slug, lang)}" class="evidence-card"><img src="${slug === 'google-ads' ? '/images/og/projects/google-ads.webp' : `/images/projects/${slug}-${slug === 'vinrecords' ? 'main' : 'thumb'}.webp`}" alt="${title}" width="1200" height="900" loading="lazy" decoding="async"><div><span>${ui.result}</span><h3>${title}</h3><strong>${metric}</strong></div></a>`).join('')}</div>
             </div>
         </section>
         <section class="container service-faq">
             <div class="service-section-title"><span class="section-kicker">05</span><h2>${ui.faqTitle}</h2></div>
             <div class="faq-list">${copy.faq.map(([question, answer]) => `<details><summary>${question}</summary><p>${answer}</p></details>`).join('')}</div>
         </section>
-        <section class="container cta-section service-cta"><div class="cta-card"><span class="section-kicker">${ui.label}</span><h2>${ui.contactTitle}</h2><p>${ui.contactText}</p><div class="cta-buttons"><a href="${ui.contacts}" class="btn btn-primary">${ui.contactButton}</a><a href="mailto:ipridorojnov@gmail.com" class="btn btn-outline">ipridorojnov@gmail.com</a></div></div></section>
+        <section class="container cta-section service-cta"><div class="cta-card"><span class="section-kicker">${label}</span><h2>${ui.contactTitle}</h2><p>${ui.contactText}</p><div class="cta-buttons"><a href="${ui.contacts}" class="btn btn-primary">${ui.contactButton}</a><a href="mailto:ipridorojnov@gmail.com" class="btn btn-outline">ipridorojnov@gmail.com</a></div></div></section>
     </main>
-    <footer><div class="container"><p>© 2026 Ivan Pridorojnov · SEO</p><p><a href="mailto:ipridorojnov@gmail.com">ipridorojnov@gmail.com</a> | <a href="https://t.me/Iezuit" target="_blank" rel="noopener noreferrer">Telegram</a> | <a href="https://www.linkedin.com/in/ivan-pridorojnov-2197571a7/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p><p class="footer-privacy"><a href="${privacy[0]}">${privacy[1]}</a></p></div></footer>
+    <footer><div class="container"><p>© 2026 Ivan Pridorojnov · SEO</p><p><a href="mailto:ipridorojnov@gmail.com">ipridorojnov@gmail.com</a> | <a href="https://t.me/Iezuit" target="_blank" rel="noopener noreferrer">Telegram</a> | <a href="https://www.linkedin.com/in/ivan-pridorojnov-2197571a7/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p><p><a href="${ui.experience}#employers">${labels.employers}</a></p><p class="footer-privacy"><a href="${privacy[0]}">${privacy[1]}</a></p></div></footer>
 </body>
-</html>`;
+</html>`.replace(/[ \t]+$/gm, '');
 }
 
 for (const [key, service] of Object.entries(services)) {

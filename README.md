@@ -25,7 +25,7 @@ Open `http://127.0.0.1:8765/`.
 
 ## Service pages
 
-Service pages are generated from localized data:
+Service pages are generated from localized data in `tools/generate-services.mjs` and `tools/service-expansion.mjs`:
 
 ```powershell
 node tools/generate-services.mjs
@@ -54,3 +54,13 @@ node tools/audit-site.mjs
 ```
 
 The audit requires Playwright and a Chromium-based browser. It checks every sitemap URL at desktop and mobile widths, including navigation, filters, forms, consent and FAQ interactions, then writes screenshots plus a report to `.audit/`.
+
+## Approved work and reporting
+
+- `ACTION_PLAN.md`: selected scope and task completion. Only selected IDs may be implemented.
+- `WORK_LOG.md`: per-task results, evidence and unresolved blockers.
+- `research/seo/`: Moldova Keyword Planner data and keyword-to-URL map.
+- `research/ai/`: questions, baseline protocol and access limitations.
+- `reports/`: case review, static checks and responsive QA scope.
+
+Run `python tools/verify-static.py` for local links, anchors, canonical/hreflang, JSON-LD and release checks. Use `python tools/record-progress.py TASK_ID done|blocked|deferred RESULT VERIFICATION` to record a selected task. The existing Playwright audit remains available for environments with a supported browser.
