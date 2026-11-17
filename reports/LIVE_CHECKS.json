@@ -1,0 +1,478 @@
+{
+  "checked_on": "2026-11-17",
+  "release_commit": "90c217ea7ef0025a71485a56756905452d9169d6",
+  "workflow_run": 44178545194,
+  "workflow_conclusion": "success",
+  "urls": 78,
+  "ok": 78,
+  "results": [
+    {
+      "url": "https://seo-moldova.github.io/",
+      "status": 200,
+      "new_main": true,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/experience.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/about.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/contacts.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/cv.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/cv2.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/cv3.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ru/tvn.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ru/bursa-muncii.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ru/cetarom.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ru/strand.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ru/andiva.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ru/loremaesthetic.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ru/taxonest.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ru/lista.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ru/mobilestyles.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ru/uls.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ru/exportportal.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ru/vinrecords.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/ro/index.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/ro/experience.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/ro/projects.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/ro/about.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/ro/contacts.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ro/tvn.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ro/bursa-muncii.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ro/cetarom.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ro/strand.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ro/andiva.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ro/loremaesthetic.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ro/taxonest.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ro/lista.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ro/mobilestyles.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ro/uls.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ro/exportportal.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ro/vinrecords.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/en/index.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/en/experience.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/en/projects.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/en/about.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/en/contacts.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/en/tvn.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/en/bursa-muncii.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/en/cetarom.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/en/strand.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/en/andiva.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/en/loremaesthetic.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/en/taxonest.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/en/lista.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/en/mobilestyles.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/en/uls.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/en/exportportal.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/en/vinrecords.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/services/ru/seo-promotion.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/services/ru/seo-audit.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/services/ru/site-structure.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/services/ru/local-seo.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/services/ro/promovare-seo.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/services/ro/audit-seo.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/services/ro/structura-site.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/services/ro/seo-local.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/services/en/seo-services.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/services/en/technical-seo-audit.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/services/en/site-architecture.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/services/en/local-seo.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/privacy.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/ro/privacy.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/en/privacy.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ru/google-ads.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/ro/google-ads.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/projects/en/google-ads.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/services/ru/google-ads.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/services/ru/geo.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/services/ro/google-ads.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/services/ro/geo.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/services/en/google-ads.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    },
+    {
+      "url": "https://seo-moldova.github.io/services/en/geo.html",
+      "status": 200,
+      "new_main": null,
+      "canonical_present": true
+    }
+  ]
+}
