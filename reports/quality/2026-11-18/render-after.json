@@ -1,0 +1,2336 @@
+[
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/contacts.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "ContactPage"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/google-ads.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/ru/local-seo.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/strand.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/ro/index.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/taxonest.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/ru/seo-promotion.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/vinrecords.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/ru/site-structure.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/en/index.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/ru/geo.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/about.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "ProfilePage"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/ru/google-ads.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/experience.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "ProfilePage"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/privacy.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "CollectionPage"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/ru/seo-audit.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/ro/contacts.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "ContactPage"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/en/contacts.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "ContactPage"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/google-ads.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/google-ads.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/ro/seo-local.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/cetarom.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/en/local-seo.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/loremaesthetic.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/strand.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/strand.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/ro/about.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "ProfilePage"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/ro/promovare-seo.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/taxonest.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/vinrecords.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/ro/audit-seo.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/ro/structura-site.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/ro/privacy.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/ro/google-ads.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/ro/geo.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/ro/experience.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "ProfilePage"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/ro/projects.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "CollectionPage"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/taxonest.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/exportportal.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/en/seo-services.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/vinrecords.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/en/site-architecture.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/bursa-muncii.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/en/experience.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "ProfilePage"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/en/about.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "ProfilePage"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/en/technical-seo-audit.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/en/projects.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "CollectionPage"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/en/privacy.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/en/geo.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/en/google-ads.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/mobilestyles.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/uls.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/tvn.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/lista.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/andiva.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/loremaesthetic.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/cetarom.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/cetarom.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/loremaesthetic.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/exportportal.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/tvn.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/bursa-muncii.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/uls.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/mobilestyles.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/andiva.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/lista.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/exportportal.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/bursa-muncii.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/tvn.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/andiva.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/mobilestyles.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/lista.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/uls.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/cv.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "ProfilePage"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/cv2.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "ProfilePage"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/cv3.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "ProfilePage"
+    ],
+    "width": 350
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/contacts.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "ContactPage"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/google-ads.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/ru/local-seo.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/strand.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/ro/index.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/taxonest.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/ru/seo-promotion.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/vinrecords.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/ru/site-structure.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/en/index.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/ru/geo.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/about.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "ProfilePage"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/ru/google-ads.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/experience.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "ProfilePage"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/privacy.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "CollectionPage"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/ru/seo-audit.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/ro/contacts.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "ContactPage"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/en/contacts.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "ContactPage"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/google-ads.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/google-ads.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/ro/seo-local.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/cetarom.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/en/local-seo.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/loremaesthetic.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/strand.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/strand.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/ro/about.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "ProfilePage"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/ro/promovare-seo.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/taxonest.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/vinrecords.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/ro/audit-seo.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/ro/structura-site.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/ro/privacy.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/ro/google-ads.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/ro/geo.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/ro/experience.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "ProfilePage"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/ro/projects.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "CollectionPage"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/taxonest.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/exportportal.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/en/seo-services.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/vinrecords.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/en/site-architecture.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/bursa-muncii.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/en/experience.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "ProfilePage"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/en/about.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "ProfilePage"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/en/technical-seo-audit.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/en/projects.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "CollectionPage"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/en/privacy.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/en/geo.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/services/en/google-ads.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "Service",
+      "BreadcrumbList"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/mobilestyles.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/uls.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/tvn.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/lista.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ru/andiva.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/loremaesthetic.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/cetarom.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/cetarom.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/loremaesthetic.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/exportportal.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/tvn.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/bursa-muncii.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/uls.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/mobilestyles.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/andiva.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/ro/lista.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/exportportal.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/bursa-muncii.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/tvn.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/andiva.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/mobilestyles.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/lista.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/projects/en/uls.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "WebPage",
+      "CreativeWork"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/cv.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "ProfilePage"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/cv2.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "ProfilePage"
+    ],
+    "width": 1270
+  },
+  {
+    "brokenImages": [],
+    "danglingWebsite": false,
+    "h1": 1,
+    "overflow": 0,
+    "overflowingHeadings": [],
+    "path": "/cv3.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "ProfilePage"
+    ],
+    "width": 1270
+  }
+]

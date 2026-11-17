@@ -41,47 +41,9 @@
 <meta name="twitter:description" content="SEO-поддержка новостного портала: работа с индексацией, ссылками и содержанием публикаций. За показанный период клики выросли на 60%, показы — на 30%, средняя позиция улучшилась с…">
 
 <!-- ===== БАЗОВЫЙ JSON-LD ===== -->
-<script type="application/ld+json" id="jsonld-script">
-{
-    "@context": "https://schema.org",
-    "@graph": [
-        {
-            "@type": "Person",
-            "@id": "https://seo-moldova.github.io/#person",
-            "name": "Иван Придорожнов",
-            "alternateName": "Ivan Pridorojnov",
-            "jobTitle": "SEO специалист",
-            "description": "Независимый SEO-специалист из Бельц, Молдова. 10+ лет опыта: SEO-продвижение сайтов, контент и Google Ads.",
-            "image": "https://seo-moldova.github.io/images/ivan-pridorojnov.webp",
-            "email": "ipridorojnov@gmail.com",
-            "sameAs": [
-                "https://www.linkedin.com/in/ivan-pridorojnov-2197571a7/",
-                "https://t.me/Iezuit"
-            ],
-            "url": "https://seo-moldova.github.io/about.html",
-            "nationality": "Молдова",
-            "homeLocation": {
-                "@type": "City",
-                "name": "Бельцы"
-            }
-        },
-        {
-            "@type": "WebSite",
-            "@id": "https://seo-moldova.github.io/#website",
-            "name": "Иван Придорожнов | SEO специалист",
-            "url": "https://seo-moldova.github.io/",
-            "description": "Профессиональное SEO продвижение сайтов в Молдове. 10+ лет опыта, 20+ проектов.",
-            "author": {
-                "@id": "https://seo-moldova.github.io/#person"
-            },
-            "inLanguage": "ru"
-        }
-    ]
-}
-</script>
+<script type="application/ld+json" id="jsonld-script">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://seo-moldova.github.io/#person","name":"Ivan Pridorojnov","alternateName":"Иван Придорожнов","url":"https://seo-moldova.github.io/about.html","jobTitle":"Independent SEO specialist","image":"https://seo-moldova.github.io/images/ivan-pridorojnov.webp","email":"ipridorojnov@gmail.com","sameAs":["https://www.linkedin.com/in/ivan-pridorojnov-2197571a7/","https://t.me/Iezuit"],"knowsLanguage":["ru","ro","en"],"homeLocation":{"@type":"City","name":"Bălți","containedInPlace":{"@type":"Country","name":"Moldova"}}},{"@type":"WebSite","@id":"https://seo-moldova.github.io/#website","url":"https://seo-moldova.github.io/","name":"Ivan Pridorojnov — SEO, Google Ads & GEO","inLanguage":["ru","ro","en"],"publisher":{"@id":"https://seo-moldova.github.io/#person"}},{"@type":"WebPage","@id":"https://seo-moldova.github.io/projects/ru/tvn.html#webpage","url":"https://seo-moldova.github.io/projects/ru/tvn.html","name":"TVN, MD — SEO-кейс | Иван Придорожнов","description":"SEO-поддержка новостного портала: работа с индексацией, ссылками и содержанием публикаций. За показанный период клики выросли на 60%, показы — на 30%, средняя позиция улучшилась с…","inLanguage":"ru","isPartOf":{"@id":"https://seo-moldova.github.io/#website"},"about":{"@id":"https://seo-moldova.github.io/#person"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://seo-moldova.github.io/images/og/projects/tvn.png"},"mainEntity":{"@id":"https://seo-moldova.github.io/projects/ru/tvn.html#case"}},{"@type":"CreativeWork","@id":"https://seo-moldova.github.io/projects/ru/tvn.html#case","url":"https://seo-moldova.github.io/projects/ru/tvn.html","name":"TVN, MD — SEO-кейс | Иван Придорожнов","description":"SEO-поддержка новостного портала: работа с индексацией, ссылками и содержанием публикаций. За показанный период клики выросли на 60%, показы — на 30%, средняя позиция улучшилась с…","inLanguage":"ru","author":{"@id":"https://seo-moldova.github.io/#person"},"mainEntityOfPage":{"@id":"https://seo-moldova.github.io/projects/ru/tvn.html#webpage"},"image":"https://seo-moldova.github.io/images/og/projects/tvn.png"}]}</script>
 
 <!-- ===== СКРИПТ ДЛЯ ДИНАМИЧЕСКОЙ РАЗМЕТКИ ===== -->
-<script src="/js/seo-schema.js" defer></script>
 <script src="/js/site.js" defer></script>
 </head>
 <body>
@@ -115,7 +77,7 @@
                 <div class="breadcrumbs">
                     <a href="/">Главная</a>
                     <span class="separator">/</span>
-                    <a href="/projects.html">Проекты</a>
+                    <a href="/projects.html">Кейсы</a>
                     <span class="separator">/</span>
                     <span class="current">TVN, MD</span>
                 </div>
@@ -152,7 +114,7 @@
         <div class="goal-description">
             <p>Обеспечить постоянную техническую и семантическую поддержку существующего медиа-сайта, поддерживать качество контента, контролировать состояние ссылок, следить за корректной индексацией и поддерживать стабильную работу и SEO-показатели портала.</p>
         </div>
-        
+
         <div class="challenges-wrapper">
             <div class="section-header-inline">
                 <div class="section-icon-inline" aria-hidden="true">⚠️</div>
@@ -231,7 +193,7 @@
                         <div class="section-icon" aria-hidden="true">📋</div>
                         <h2>Детальный перечень работ</h2>
                     </div>
-                    <div class="tasks-list">
+                    <details class="case-details"><summary>Подробный состав работ</summary><div class="tasks-list">
                         <div class="tasks-column">
                             <h3>Контент и структура</h3>
                             <ul>
@@ -265,7 +227,7 @@
                                 <li>Мониторинг позиций по ключевым запросам</li>
                             </ul>
                         </div>
-                    </div>
+                    </div></details>
                 </div>
 
                 <!-- Результаты + скрин из аналитики -->
@@ -274,7 +236,7 @@
                         <div class="section-icon" aria-hidden="true">📈</div>
                         <h2>Результаты</h2>
                     </div>
-                    
+
                     <!-- Цифровые результаты -->
                     <div class="results-grid">
                         <div class="result-card">
@@ -321,7 +283,7 @@
                             <h3>Ключевые достижения</h3>
                             <p>Основные показатели за период, показанный в кейсе</p>
                         </div>
-                        
+
                         <div class="achievements-final-grid">
                             <div class="achievement-final-card">
                                 <div class="achievement-final-icon" aria-hidden="true">📈</div>
@@ -330,7 +292,7 @@
                                     <div class="achievement-final-text"><strong>49,1 тыс.</strong> кликов за последние 3 месяца против <strong>30,7 тыс.</strong> ранее — рост <strong>+60%</strong></div>
                                 </div>
                             </div>
-                            
+
                             <div class="achievement-final-card">
                                 <div class="achievement-final-icon" aria-hidden="true">👁️</div>
                                 <div class="achievement-final-content">
@@ -338,7 +300,7 @@
                                     <div class="achievement-final-text"><strong>2,19 млн</strong> показов за последние 3 месяца против <strong>1,68 млн</strong> ранее — рост <strong>+30%</strong></div>
                                 </div>
                             </div>
-                            
+
                             <div class="achievement-final-card">
                                 <div class="achievement-final-icon" aria-hidden="true">🎯</div>
                                 <div class="achievement-final-content">
@@ -346,7 +308,7 @@
                                     <div class="achievement-final-text">Кликабельность выросла с <strong>1,8%</strong> до <strong>2,2%</strong> — сниппеты стали привлекательнее</div>
                                 </div>
                             </div>
-                            
+
                             <div class="achievement-final-card">
                                 <div class="achievement-final-icon" aria-hidden="true">📊</div>
                                 <div class="achievement-final-content">
@@ -354,7 +316,7 @@
                                     <div class="achievement-final-text">Средняя позиция в выдаче улучшилась с <strong>15</strong> до <strong>11,2</strong> — подъем на <strong>4 позиции</strong></div>
                                 </div>
                             </div>
-                            
+
                             <div class="achievement-final-card">
                                 <div class="achievement-final-icon" aria-hidden="true">⚡</div>
                                 <div class="achievement-final-content">
@@ -362,7 +324,7 @@
                                     <div class="achievement-final-text">Время попадания новых материалов в выдачу сокращено с <strong>72 до 12 часов</strong></div>
                                 </div>
                             </div>
-                            
+
                             <div class="achievement-final-card">
                                 <div class="achievement-final-icon" aria-hidden="true">✅</div>
                                 <div class="achievement-final-content">
@@ -465,7 +427,7 @@
         // Получить индекс текущего проекта
         function getCurrentProjectIndex() {
             const currentPath = window.location.pathname;
-            
+
             for (let i = 0; i < allProjects.length; i++) {
                 if (currentPath === allProjects[i].url) {
                     return i;
@@ -482,9 +444,9 @@
             const currentIndex = getCurrentProjectIndex();
             const prevLink = document.getElementById('prev-project');
             const nextLink = document.getElementById('next-project');
-            
+
             if (currentIndex === -1) return;
-            
+
             if (currentIndex > 0) {
                 const prevProject = allProjects[currentIndex - 1];
                 prevLink.href = prevProject.url;
@@ -494,8 +456,10 @@
                 prevLink.style.opacity = '0.4';
                 prevLink.style.pointerEvents = 'none';
                 prevLink.href = '#';
+                prevLink.setAttribute('aria-disabled', 'true');
+                prevLink.tabIndex = -1;
             }
-            
+
             if (currentIndex < allProjects.length - 1) {
                 const nextProject = allProjects[currentIndex + 1];
                 nextLink.href = nextProject.url;
@@ -505,6 +469,8 @@
                 nextLink.style.opacity = '0.4';
                 nextLink.style.pointerEvents = 'none';
                 nextLink.href = '#';
+                nextLink.setAttribute('aria-disabled', 'true');
+                nextLink.tabIndex = -1;
             }
         }
 

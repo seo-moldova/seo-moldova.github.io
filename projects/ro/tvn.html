@@ -41,47 +41,9 @@
 <meta name="twitter:description" content="Suport SEO pentru un portal de știri: indexare, linkuri și conținutul publicațiilor. Clicurile au crescut cu 60%, afișările cu 30%, iar poziția medie s-a îmbunătățit de la 15 la 11,2.">
 
 <!-- ===== JSON-LD BAZĂ ===== -->
-<script type="application/ld+json" id="jsonld-script">
-{
-    "@context": "https://schema.org",
-    "@graph": [
-        {
-            "@type": "Person",
-            "@id": "https://seo-moldova.github.io/#person",
-            "name": "Ivan Pridorojnov",
-            "alternateName": "Иван Придорожнов",
-            "jobTitle": "Specialist SEO",
-            "description": "Specialist SEO independent din Bălți, Moldova. Peste 10 ani de experiență în promovare SEO, conținut și Google Ads.",
-            "image": "https://seo-moldova.github.io/images/ivan-pridorojnov.webp",
-            "email": "ipridorojnov@gmail.com",
-            "sameAs": [
-                "https://www.linkedin.com/in/ivan-pridorojnov-2197571a7/",
-                "https://t.me/Iezuit"
-            ],
-            "url": "https://seo-moldova.github.io/ro/about.html",
-            "nationality": "Moldova",
-            "homeLocation": {
-                "@type": "City",
-                "name": "Bălți"
-            }
-        },
-        {
-            "@type": "WebSite",
-            "@id": "https://seo-moldova.github.io/#website",
-            "name": "Ivan Pridorojnov | Specialist SEO",
-            "url": "https://seo-moldova.github.io/ro/",
-            "description": "Servicii profesionale de promovare SEO în Moldova. 10+ ani experiență, 20+ proiecte.",
-            "author": {
-                "@id": "https://seo-moldova.github.io/#person"
-            },
-            "inLanguage": "ro"
-        }
-    ]
-}
-</script>
+<script type="application/ld+json" id="jsonld-script">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://seo-moldova.github.io/#person","name":"Ivan Pridorojnov","alternateName":"Иван Придорожнов","url":"https://seo-moldova.github.io/about.html","jobTitle":"Independent SEO specialist","image":"https://seo-moldova.github.io/images/ivan-pridorojnov.webp","email":"ipridorojnov@gmail.com","sameAs":["https://www.linkedin.com/in/ivan-pridorojnov-2197571a7/","https://t.me/Iezuit"],"knowsLanguage":["ru","ro","en"],"homeLocation":{"@type":"City","name":"Bălți","containedInPlace":{"@type":"Country","name":"Moldova"}}},{"@type":"WebSite","@id":"https://seo-moldova.github.io/#website","url":"https://seo-moldova.github.io/","name":"Ivan Pridorojnov — SEO, Google Ads & GEO","inLanguage":["ru","ro","en"],"publisher":{"@id":"https://seo-moldova.github.io/#person"}},{"@type":"WebPage","@id":"https://seo-moldova.github.io/projects/ro/tvn.html#webpage","url":"https://seo-moldova.github.io/projects/ro/tvn.html","name":"TVN, MD — Studiu de caz SEO | Ivan Pridorojnov","description":"Suport SEO pentru un portal de știri: indexare, linkuri și conținutul publicațiilor. Clicurile au crescut cu 60%, afișările cu 30%, iar poziția medie s-a îmbunătățit de la 15 la 11,2.","inLanguage":"ro","isPartOf":{"@id":"https://seo-moldova.github.io/#website"},"about":{"@id":"https://seo-moldova.github.io/#person"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://seo-moldova.github.io/images/og/projects/tvn.png"},"mainEntity":{"@id":"https://seo-moldova.github.io/projects/ro/tvn.html#case"}},{"@type":"CreativeWork","@id":"https://seo-moldova.github.io/projects/ro/tvn.html#case","url":"https://seo-moldova.github.io/projects/ro/tvn.html","name":"TVN, MD — Studiu de caz SEO | Ivan Pridorojnov","description":"Suport SEO pentru un portal de știri: indexare, linkuri și conținutul publicațiilor. Clicurile au crescut cu 60%, afișările cu 30%, iar poziția medie s-a îmbunătățit de la 15 la 11,2.","inLanguage":"ro","author":{"@id":"https://seo-moldova.github.io/#person"},"mainEntityOfPage":{"@id":"https://seo-moldova.github.io/projects/ro/tvn.html#webpage"},"image":"https://seo-moldova.github.io/images/og/projects/tvn.png"}]}</script>
 
 <!-- ===== SCRIPT PENTRU MARKUP DINAMIC ===== -->
-<script src="/js/seo-schema.js" defer></script>
 <script src="/js/site.js" defer></script>
 </head>
 <body>
@@ -114,7 +76,7 @@
                 <div class="breadcrumbs">
                     <a href="/ro/">Acasă</a>
                     <span class="separator">/</span>
-                    <a href="/ro/projects.html">Proiecte</a>
+                    <a href="/ro/projects.html">Studii de caz</a>
                     <span class="separator">/</span>
                     <span class="current">TVN, MD</span>
                 </div>
@@ -150,7 +112,7 @@
         <div class="goal-description">
             <p>Asigurarea suportului tehnic și semantic continuu pentru un site media existent, menținerea calității conținutului, monitorizarea stării linkurilor, urmărirea indexării corecte și menținerea performanței SEO stabile a portalului.</p>
         </div>
-        
+
         <div class="challenges-wrapper">
             <div class="section-header-inline">
                 <div class="section-icon-inline" aria-hidden="true">⚠️</div>
@@ -226,7 +188,7 @@
                         <div class="section-icon" aria-hidden="true">📋</div>
                         <h2>Lista detaliată a lucrărilor</h2>
                     </div>
-                    <div class="tasks-list">
+                    <details class="case-details"><summary>Lucrările în detaliu</summary><div class="tasks-list">
                         <div class="tasks-column">
                             <h3>Conținut și structură</h3>
                             <ul>
@@ -260,7 +222,7 @@
                                 <li>Monitorizarea pozițiilor pentru cuvintele cheie</li>
                             </ul>
                         </div>
-                    </div>
+                    </div></details>
                 </div>
 
                 <div class="case-section results-section">
@@ -268,7 +230,7 @@
                         <div class="section-icon" aria-hidden="true">📈</div>
                         <h2>Rezultate</h2>
                     </div>
-                    
+
                     <div class="results-grid">
                         <div class="result-card">
                             <div class="result-number">+60%</div>
@@ -311,7 +273,7 @@
                             <h3>Realizări cheie</h3>
                             <p>Indicatori principali pentru perioada prezentată</p>
                         </div>
-                        
+
                         <div class="achievements-final-grid">
                             <div class="achievement-final-card">
                                 <div class="achievement-final-icon" aria-hidden="true">📈</div>
@@ -320,7 +282,7 @@
                                     <div class="achievement-final-text"><strong>49,1 mii</strong> clicuri în ultimele 3 luni față de <strong>30,7 mii</strong> anterior — creștere <strong>+60%</strong></div>
                                 </div>
                             </div>
-                            
+
                             <div class="achievement-final-card">
                                 <div class="achievement-final-icon" aria-hidden="true">👁️</div>
                                 <div class="achievement-final-content">
@@ -328,7 +290,7 @@
                                     <div class="achievement-final-text"><strong>2,19 milioane</strong> afișări în ultimele 3 luni față de <strong>1,68 milioane</strong> anterior — creștere <strong>+30%</strong></div>
                                 </div>
                             </div>
-                            
+
                             <div class="achievement-final-card">
                                 <div class="achievement-final-icon" aria-hidden="true">🎯</div>
                                 <div class="achievement-final-content">
@@ -336,7 +298,7 @@
                                     <div class="achievement-final-text">Rata de clic a crescut de la <strong>1,8%</strong> la <strong>2,2%</strong> — fragmentele sunt mai atractive</div>
                                 </div>
                             </div>
-                            
+
                             <div class="achievement-final-card">
                                 <div class="achievement-final-icon" aria-hidden="true">📊</div>
                                 <div class="achievement-final-content">
@@ -344,7 +306,7 @@
                                     <div class="achievement-final-text">Poziția medie în rezultate s-a îmbunătățit de la <strong>15</strong> la <strong>11,2</strong> — creștere cu <strong>4 poziții</strong></div>
                                 </div>
                             </div>
-                            
+
                             <div class="achievement-final-card">
                                 <div class="achievement-final-icon" aria-hidden="true">⚡</div>
                                 <div class="achievement-final-content">
@@ -352,7 +314,7 @@
                                     <div class="achievement-final-text">Timpul de apariție a materialelor noi în rezultate redus de la <strong>72 la 12 ore</strong></div>
                                 </div>
                             </div>
-                            
+
                             <div class="achievement-final-card">
                                 <div class="achievement-final-icon" aria-hidden="true">✅</div>
                                 <div class="achievement-final-content">
@@ -468,6 +430,8 @@
                 prevLink.style.opacity = '0.4';
                 prevLink.style.pointerEvents = 'none';
                 prevLink.href = '#';
+                prevLink.setAttribute('aria-disabled', 'true');
+                prevLink.tabIndex = -1;
             }
             if (currentIndex < allProjects.length - 1) {
                 nextLink.href = allProjects[currentIndex + 1].url;
@@ -477,6 +441,8 @@
                 nextLink.style.opacity = '0.4';
                 nextLink.style.pointerEvents = 'none';
                 nextLink.href = '#';
+                nextLink.setAttribute('aria-disabled', 'true');
+                nextLink.tabIndex = -1;
             }
         }
         document.addEventListener('DOMContentLoaded', updateNavigation);

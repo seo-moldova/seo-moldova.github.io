@@ -1,3 +1,4 @@
+import { siteGraph } from './structured-data.mjs';
 import { applyEditorialCopy } from './editorial-copy.mjs';
 import { extendServices } from './service-expansion.mjs';
 import { mkdir, writeFile } from 'node:fs/promises';
@@ -227,7 +228,7 @@ function render(key, lang) {
       : ['/en/privacy.html', 'Privacy policy'];
   const canonical = serviceUrl(key, lang);
   const alternates = Object.keys(locale).map(code => `    <link rel="alternate" hreflang="${code}" href="${serviceUrl(key, code)}">`).join('\n');
-  const schema = {
+  const baseSchema = {
     '@context': 'https://schema.org',
     '@graph': [
       { '@type': 'Person', '@id': `${origin}/#person`, name: 'Ivan Pridorojnov', url: `${origin}${ui.about}`, sameAs: ['https://www.linkedin.com/in/ivan-pridorojnov-2197571a7/', 'https://t.me/Iezuit'] },
@@ -239,6 +240,7 @@ function render(key, lang) {
       ] }
     ]
   };
+  const schema = siteGraph({canonical,title:copy.metaTitle,description:copy.description,lang,image:`${origin}/images/${ui.og}`,extra:baseSchema['@graph']});
   const navLinks = [ui.home, ui.experience, ui.servicesHome, ui.projects, ui.about, ui.contacts]
     .map((href, index) => `<li><a href="${href}"${index === 2 ? ' class="active"' : ''}>${ui.nav[index]}</a></li>`).join('\n                    ');
   const langLinks = Object.keys(locale).map(code => `<li><a href="${serviceUrl(key, code).replace(origin, '')}"${code === lang ? ' class="active"' : ''}>${code === 'ru' ? 'РУС' : code.toUpperCase()}</a></li>`).join('\n                    ');
@@ -278,13 +280,13 @@ ${alternates}
     <meta name="twitter:image" content="${origin}/images/${ui.og}">
     <meta name="twitter:image:alt" content="${copy.metaTitle}">
     <script type="application/ld+json" id="jsonld-script">${escapeJson(schema)}</script>
-    <script src="/js/seo-schema.js" defer></script>
+
     <script src="/js/site.js" defer></script>
 </head>
 <body>
     <header>
         <div class="header-container">
-            <div class="logo"><a href="${ui.home}">IVAN PRIDOROJNOV</a></div>
+            <div class="logo"><a href="${ui.home}">${lang === 'ru' ? 'ИВАН ПРИДОРОЖНОВ' : 'IVAN PRIDOROJNOV'}</a></div>
             <nav>
                 <ul class="main-nav">${navLinks}</ul>
                 <ul class="lang-switcher">${langLinks}</ul>

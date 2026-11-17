@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ));
 
     screenshotContainers.forEach((container) => {
+        if (container.querySelector('.screenshot-clickable, .screenshot-container')) return;
         const image = container.querySelector('img');
         if (!image) return;
 

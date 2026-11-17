@@ -1,0 +1,8 @@
+{
+  "selector": ".main-nav a.active",
+  "foreground": "#b92d1d",
+  "background": "#f7f6f0",
+  "ratio": 5.61,
+  "minimum_normal_text": 4.5,
+  "scope": "active navigation text; not a full WCAG conformance audit"
+}

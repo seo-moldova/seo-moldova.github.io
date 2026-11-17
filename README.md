@@ -64,3 +64,9 @@ The audit requires Playwright and a Chromium-based browser. It checks every site
 - `reports/`: case review, static checks and responsive QA scope.
 
 Run `python tools/verify-static.py` for local links, anchors, canonical/hreflang, JSON-LD and release checks. Use `python tools/record-progress.py TASK_ID done|blocked|deferred RESULT VERIFICATION` to record a selected task. The existing Playwright audit remains available for environments with a supported browser.
+
+### Проверка качества
+
+Результаты проверки интерфейса, ссылок, SEO и GEO: [QUALITY_REVIEW](reports/QUALITY_REVIEW.md).
+
+После изменений услуг выполните `node tools/generate-services.mjs`, затем `node tools/structured-data.mjs`. Проверки: `python tools/verify-static.py` и `python tools/verify-quality.py`. Структурированные данные формируются в HTML; старый runtime-файл не должен менять их в браузере.

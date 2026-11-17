@@ -42,6 +42,22 @@ for rel,d in pages.items():
  for raw in d.scripts:
   try:json.loads(raw)
   except Exception as e:errors.append([rel,'invalid JSON-LD',str(e)])
+ if d.scripts:
+  definitions={};refs=[]
+  def walk_schema(value):
+   if isinstance(value,dict):
+    if '@id' in value:
+     if len(value)>1:
+      if value['@id'] in definitions: errors.append([rel,'duplicate schema id',value['@id']])
+      definitions[value['@id']]=value
+     else: refs.append(value['@id'])
+    for child in value.values(): walk_schema(child)
+   elif isinstance(value,list):
+    for child in value: walk_schema(child)
+  for raw in d.scripts: walk_schema(json.loads(raw))
+  for ref in refs:
+   if ref.startswith(origin) and ref not in definitions: errors.append([rel,'unresolved schema reference',ref])
+  if 'noindex' not in d.robots and origin+'/#website' not in definitions: errors.append([rel,'missing WebSite entity'])
  if 'noindex' not in d.robots:
   if not d.canonical:errors.append([rel,'missing canonical'])
   if d.h1!=1:errors.append([rel,'h1 count',d.h1])

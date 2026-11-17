@@ -1,0 +1,1127 @@
+[
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(17, 18, 15)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "30.78px",
+      "margin": "0px 0px 27.2px",
+      "padding": "0px",
+      "size": "32.4px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": false,
+    "p": {
+      "color": "rgb(17, 18, 15)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "24.8px",
+      "margin": "0px 0px 32px",
+      "padding": "0px",
+      "size": "16px"
+    },
+    "path": "/",
+    "schemaTypes": [
+      "Person",
+      "WebSite"
+    ],
+    "scroll": 350,
+    "width": 350
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(17, 18, 15)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "30.78px",
+      "margin": "0px 0px 27.2px",
+      "padding": "0px",
+      "size": "32.4px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": false,
+    "p": {
+      "color": "rgb(17, 18, 15)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "24.8px",
+      "margin": "0px 0px 32px",
+      "padding": "0px",
+      "size": "16px"
+    },
+    "path": "/ro/index.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite"
+    ],
+    "scroll": 350,
+    "width": 350
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(17, 18, 15)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "30.78px",
+      "margin": "0px 0px 27.2px",
+      "padding": "0px",
+      "size": "32.4px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": false,
+    "p": {
+      "color": "rgb(17, 18, 15)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "24.8px",
+      "margin": "0px 0px 32px",
+      "padding": "0px",
+      "size": "16px"
+    },
+    "path": "/en/index.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite"
+    ],
+    "scroll": 350,
+    "width": 350
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(255, 255, 255)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "28.152px",
+      "margin": "16px 0px 22.4px",
+      "padding": "0px",
+      "size": "30.6px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": false,
+    "p": {
+      "color": "rgb(255, 254, 250)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "27.2px",
+      "margin": "0px 0px 32px",
+      "padding": "0px",
+      "size": "17px"
+    },
+    "path": "/services/ru/seo-promotion.html",
+    "schemaTypes": [
+      "Person",
+      "Service",
+      "BreadcrumbList",
+      "WebPage"
+    ],
+    "scroll": 350,
+    "width": 350
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(255, 255, 255)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "28.152px",
+      "margin": "16px 0px 22.4px",
+      "padding": "0px",
+      "size": "30.6px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": false,
+    "p": {
+      "color": "rgb(255, 254, 250)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "27.2px",
+      "margin": "0px 0px 32px",
+      "padding": "0px",
+      "size": "17px"
+    },
+    "path": "/services/ro/geo.html",
+    "schemaTypes": [
+      "Person",
+      "Service",
+      "BreadcrumbList",
+      "WebPage"
+    ],
+    "scroll": 350,
+    "width": 350
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(255, 255, 255)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "28.152px",
+      "margin": "16px 0px 22.4px",
+      "padding": "0px",
+      "size": "30.6px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": false,
+    "p": {
+      "color": "rgb(255, 254, 250)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "27.2px",
+      "margin": "0px 0px 32px",
+      "padding": "0px",
+      "size": "17px"
+    },
+    "path": "/services/en/google-ads.html",
+    "schemaTypes": [
+      "Person",
+      "Service",
+      "BreadcrumbList",
+      "WebPage"
+    ],
+    "scroll": 350,
+    "width": 350
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(255, 255, 255)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "29.808px",
+      "margin": "16px 0px 22.4px",
+      "padding": "0px",
+      "size": "32.4px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": false,
+    "p": {
+      "color": "rgb(255, 255, 255)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "24.8px",
+      "margin": "0px",
+      "padding": "0px",
+      "size": "16px"
+    },
+    "path": "/projects/ru/taxonest.html",
+    "schemaTypes": [
+      "Person",
+      "CreativeWork"
+    ],
+    "scroll": 350,
+    "width": 350
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(17, 18, 15)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "31.464px",
+      "margin": "16px 0px 22.4px",
+      "padding": "0px",
+      "size": "34.2px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": false,
+    "p": {
+      "color": "rgb(17, 18, 15)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "29.44px",
+      "margin": "0px",
+      "padding": "0px",
+      "size": "18.4px"
+    },
+    "path": "/projects.html",
+    "schemaTypes": [
+      "Person",
+      "CollectionPage"
+    ],
+    "scroll": 350,
+    "width": 350
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(17, 18, 15)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "31.464px",
+      "margin": "16px 0px 22.4px",
+      "padding": "0px",
+      "size": "34.2px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": false,
+    "p": {
+      "color": "rgb(17, 18, 15)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "29.44px",
+      "margin": "0px",
+      "padding": "0px",
+      "size": "18.4px"
+    },
+    "path": "/about.html",
+    "schemaTypes": [
+      "Person",
+      "ProfilePage"
+    ],
+    "scroll": 350,
+    "width": 350
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(17, 18, 15)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "31.464px",
+      "margin": "16px 0px 22.4px",
+      "padding": "0px",
+      "size": "34.2px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": false,
+    "p": {
+      "color": "rgb(17, 18, 15)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "29.44px",
+      "margin": "0px",
+      "padding": "0px",
+      "size": "18.4px"
+    },
+    "path": "/experience.html",
+    "schemaTypes": [
+      "Person",
+      "ProfilePage"
+    ],
+    "scroll": 350,
+    "width": 350
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(17, 18, 15)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "31.464px",
+      "margin": "16px 0px 22.4px",
+      "padding": "0px",
+      "size": "34.2px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": false,
+    "p": {
+      "color": "rgb(17, 18, 15)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "29.44px",
+      "margin": "0px",
+      "padding": "0px",
+      "size": "18.4px"
+    },
+    "path": "/contacts.html",
+    "schemaTypes": [
+      "Person",
+      "ContactPage"
+    ],
+    "scroll": 350,
+    "width": 350
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": false,
+    "h1": {
+      "color": "rgb(255, 255, 255)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "55.8px",
+      "margin": "0px 0px 8px",
+      "padding": "0px",
+      "size": "36px"
+    },
+    "headingOverflow": [],
+    "menu": false,
+    "navVisible": false,
+    "p": {
+      "color": "rgb(86, 91, 85)",
+      "font": "Arial, Helvetica, sans-serif",
+      "line": "24.8px",
+      "margin": "0px 0px 8px",
+      "padding": "0px",
+      "size": "16px"
+    },
+    "path": "/cv.html",
+    "schemaTypes": [],
+    "scroll": 350,
+    "width": 350
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(17, 18, 15)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "67.68px",
+      "margin": "0px 0px 27.2px",
+      "padding": "0px",
+      "size": "72px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": true,
+    "p": {
+      "color": "rgb(17, 18, 15)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "29.76px",
+      "margin": "0px 0px 32px",
+      "padding": "0px",
+      "size": "19.2px"
+    },
+    "path": "/",
+    "schemaTypes": [
+      "Person",
+      "WebSite"
+    ],
+    "scroll": 810,
+    "width": 810
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(17, 18, 15)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "67.68px",
+      "margin": "0px 0px 27.2px",
+      "padding": "0px",
+      "size": "72px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": true,
+    "p": {
+      "color": "rgb(17, 18, 15)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "29.76px",
+      "margin": "0px 0px 32px",
+      "padding": "0px",
+      "size": "19.2px"
+    },
+    "path": "/ro/index.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite"
+    ],
+    "scroll": 810,
+    "width": 810
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(17, 18, 15)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "67.68px",
+      "margin": "0px 0px 27.2px",
+      "padding": "0px",
+      "size": "72px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": true,
+    "p": {
+      "color": "rgb(17, 18, 15)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "29.76px",
+      "margin": "0px 0px 32px",
+      "padding": "0px",
+      "size": "19.2px"
+    },
+    "path": "/en/index.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite"
+    ],
+    "scroll": 810,
+    "width": 810
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(255, 255, 255)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "50.5448px",
+      "margin": "16px 0px 22.4px",
+      "padding": "0px",
+      "size": "54.94px"
+    },
+    "headingOverflow": [
+      {
+        "scroll": 177,
+        "text": "Что вы получите",
+        "width": 90
+      }
+    ],
+    "menu": true,
+    "navVisible": true,
+    "p": {
+      "color": "rgb(255, 254, 250)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "31.28px",
+      "margin": "0px 0px 32px",
+      "padding": "0px",
+      "size": "18.4px"
+    },
+    "path": "/services/ru/seo-promotion.html",
+    "schemaTypes": [
+      "Person",
+      "Service",
+      "BreadcrumbList",
+      "WebPage"
+    ],
+    "scroll": 810,
+    "width": 810
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(255, 255, 255)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "50.5448px",
+      "margin": "16px 0px 22.4px",
+      "padding": "0px",
+      "size": "54.94px"
+    },
+    "headingOverflow": [
+      {
+        "scroll": 117,
+        "text": "Ce primiți",
+        "width": 90
+      }
+    ],
+    "menu": true,
+    "navVisible": true,
+    "p": {
+      "color": "rgb(255, 254, 250)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "31.28px",
+      "margin": "0px 0px 32px",
+      "padding": "0px",
+      "size": "18.4px"
+    },
+    "path": "/services/ro/geo.html",
+    "schemaTypes": [
+      "Person",
+      "Service",
+      "BreadcrumbList",
+      "WebPage"
+    ],
+    "scroll": 810,
+    "width": 810
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(255, 255, 255)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "50.5448px",
+      "margin": "16px 0px 22.4px",
+      "padding": "0px",
+      "size": "54.94px"
+    },
+    "headingOverflow": [
+      {
+        "scroll": 132,
+        "text": "What you receive",
+        "width": 90
+      }
+    ],
+    "menu": true,
+    "navVisible": true,
+    "p": {
+      "color": "rgb(255, 254, 250)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "31.28px",
+      "margin": "0px 0px 32px",
+      "padding": "0px",
+      "size": "18.4px"
+    },
+    "path": "/services/en/google-ads.html",
+    "schemaTypes": [
+      "Person",
+      "Service",
+      "BreadcrumbList",
+      "WebPage"
+    ],
+    "scroll": 810,
+    "width": 810
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(255, 255, 255)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "50.5448px",
+      "margin": "16px 0px 22.4px",
+      "padding": "0px",
+      "size": "54.94px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": true,
+    "p": {
+      "color": "rgb(255, 255, 255)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "26.784px",
+      "margin": "0px",
+      "padding": "0px",
+      "size": "17.28px"
+    },
+    "path": "/projects/ru/taxonest.html",
+    "schemaTypes": [
+      "Person",
+      "CreativeWork"
+    ],
+    "scroll": 810,
+    "width": 810
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(17, 18, 15)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "50.5448px",
+      "margin": "16px 0px 22.4px",
+      "padding": "0px",
+      "size": "54.94px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": true,
+    "p": {
+      "color": "rgb(17, 18, 15)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "29.44px",
+      "margin": "0px",
+      "padding": "0px",
+      "size": "18.4px"
+    },
+    "path": "/projects.html",
+    "schemaTypes": [
+      "Person",
+      "CollectionPage"
+    ],
+    "scroll": 810,
+    "width": 810
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(17, 18, 15)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "50.5448px",
+      "margin": "16px 0px 22.4px",
+      "padding": "0px",
+      "size": "54.94px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": true,
+    "p": {
+      "color": "rgb(17, 18, 15)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "29.44px",
+      "margin": "0px",
+      "padding": "0px",
+      "size": "18.4px"
+    },
+    "path": "/about.html",
+    "schemaTypes": [
+      "Person",
+      "ProfilePage"
+    ],
+    "scroll": 810,
+    "width": 810
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(17, 18, 15)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "50.5448px",
+      "margin": "16px 0px 22.4px",
+      "padding": "0px",
+      "size": "54.94px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": true,
+    "p": {
+      "color": "rgb(17, 18, 15)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "29.44px",
+      "margin": "0px",
+      "padding": "0px",
+      "size": "18.4px"
+    },
+    "path": "/experience.html",
+    "schemaTypes": [
+      "Person",
+      "ProfilePage"
+    ],
+    "scroll": 810,
+    "width": 810
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(17, 18, 15)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "50.5448px",
+      "margin": "16px 0px 22.4px",
+      "padding": "0px",
+      "size": "54.94px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": true,
+    "p": {
+      "color": "rgb(17, 18, 15)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "29.44px",
+      "margin": "0px",
+      "padding": "0px",
+      "size": "18.4px"
+    },
+    "path": "/contacts.html",
+    "schemaTypes": [
+      "Person",
+      "ContactPage"
+    ],
+    "scroll": 810,
+    "width": 810
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": false,
+    "h1": {
+      "color": "rgb(255, 255, 255)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "74.4px",
+      "margin": "0px 0px 8px",
+      "padding": "0px",
+      "size": "48px"
+    },
+    "headingOverflow": [],
+    "menu": false,
+    "navVisible": false,
+    "p": {
+      "color": "rgb(86, 91, 85)",
+      "font": "Arial, Helvetica, sans-serif",
+      "line": "24.8px",
+      "margin": "0px 0px 8px",
+      "padding": "0px",
+      "size": "16px"
+    },
+    "path": "/cv.html",
+    "schemaTypes": [],
+    "scroll": 810,
+    "width": 810
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(17, 18, 15)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "63.7696px",
+      "margin": "0px 0px 27.2px",
+      "padding": "0px",
+      "size": "67.84px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": true,
+    "p": {
+      "color": "rgb(17, 18, 15)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "29.76px",
+      "margin": "0px 0px 32px",
+      "padding": "0px",
+      "size": "19.2px"
+    },
+    "path": "/",
+    "schemaTypes": [
+      "Person",
+      "WebSite"
+    ],
+    "scroll": 1270,
+    "width": 1270
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(17, 18, 15)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "63.7696px",
+      "margin": "0px 0px 27.2px",
+      "padding": "0px",
+      "size": "67.84px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": true,
+    "p": {
+      "color": "rgb(17, 18, 15)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "29.76px",
+      "margin": "0px 0px 32px",
+      "padding": "0px",
+      "size": "19.2px"
+    },
+    "path": "/ro/index.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite"
+    ],
+    "scroll": 1270,
+    "width": 1270
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(17, 18, 15)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "63.7696px",
+      "margin": "0px 0px 27.2px",
+      "padding": "0px",
+      "size": "67.84px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": true,
+    "p": {
+      "color": "rgb(17, 18, 15)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "29.76px",
+      "margin": "0px 0px 32px",
+      "padding": "0px",
+      "size": "19.2px"
+    },
+    "path": "/en/index.html",
+    "schemaTypes": [
+      "Person",
+      "WebSite"
+    ],
+    "scroll": 1270,
+    "width": 1270
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(255, 255, 255)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "78.8992px",
+      "margin": "16px 0px 22.4px",
+      "padding": "0px",
+      "size": "85.76px"
+    },
+    "headingOverflow": [
+      {
+        "scroll": 177,
+        "text": "Что вы получите",
+        "width": 90
+      }
+    ],
+    "menu": true,
+    "navVisible": true,
+    "p": {
+      "color": "rgb(255, 254, 250)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "31.28px",
+      "margin": "0px 0px 32px",
+      "padding": "0px",
+      "size": "18.4px"
+    },
+    "path": "/services/ru/seo-promotion.html",
+    "schemaTypes": [
+      "Person",
+      "Service",
+      "BreadcrumbList",
+      "WebPage"
+    ],
+    "scroll": 1270,
+    "width": 1270
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(255, 255, 255)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "78.8992px",
+      "margin": "16px 0px 22.4px",
+      "padding": "0px",
+      "size": "85.76px"
+    },
+    "headingOverflow": [
+      {
+        "scroll": 117,
+        "text": "Ce primiți",
+        "width": 90
+      }
+    ],
+    "menu": true,
+    "navVisible": true,
+    "p": {
+      "color": "rgb(255, 254, 250)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "31.28px",
+      "margin": "0px 0px 32px",
+      "padding": "0px",
+      "size": "18.4px"
+    },
+    "path": "/services/ro/geo.html",
+    "schemaTypes": [
+      "Person",
+      "Service",
+      "BreadcrumbList",
+      "WebPage"
+    ],
+    "scroll": 1270,
+    "width": 1270
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(255, 255, 255)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "78.8992px",
+      "margin": "16px 0px 22.4px",
+      "padding": "0px",
+      "size": "85.76px"
+    },
+    "headingOverflow": [
+      {
+        "scroll": 132,
+        "text": "What you receive",
+        "width": 90
+      }
+    ],
+    "menu": true,
+    "navVisible": true,
+    "p": {
+      "color": "rgb(255, 254, 250)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "31.28px",
+      "margin": "0px 0px 32px",
+      "padding": "0px",
+      "size": "18.4px"
+    },
+    "path": "/services/en/google-ads.html",
+    "schemaTypes": [
+      "Person",
+      "Service",
+      "BreadcrumbList",
+      "WebPage"
+    ],
+    "scroll": 1270,
+    "width": 1270
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(255, 255, 255)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "78.8992px",
+      "margin": "16px 0px 22.4px",
+      "padding": "0px",
+      "size": "85.76px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": true,
+    "p": {
+      "color": "rgb(255, 255, 255)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "26.784px",
+      "margin": "0px",
+      "padding": "0px",
+      "size": "17.28px"
+    },
+    "path": "/projects/ru/taxonest.html",
+    "schemaTypes": [
+      "Person",
+      "CreativeWork"
+    ],
+    "scroll": 1270,
+    "width": 1270
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(17, 18, 15)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "78.8992px",
+      "margin": "16px 0px 22.4px",
+      "padding": "0px",
+      "size": "85.76px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": true,
+    "p": {
+      "color": "rgb(17, 18, 15)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "29.44px",
+      "margin": "0px",
+      "padding": "0px",
+      "size": "18.4px"
+    },
+    "path": "/projects.html",
+    "schemaTypes": [
+      "Person",
+      "CollectionPage"
+    ],
+    "scroll": 1270,
+    "width": 1270
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(17, 18, 15)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "78.8992px",
+      "margin": "16px 0px 22.4px",
+      "padding": "0px",
+      "size": "85.76px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": true,
+    "p": {
+      "color": "rgb(17, 18, 15)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "29.44px",
+      "margin": "0px",
+      "padding": "0px",
+      "size": "18.4px"
+    },
+    "path": "/about.html",
+    "schemaTypes": [
+      "Person",
+      "ProfilePage"
+    ],
+    "scroll": 1270,
+    "width": 1270
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(17, 18, 15)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "78.8992px",
+      "margin": "16px 0px 22.4px",
+      "padding": "0px",
+      "size": "85.76px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": true,
+    "p": {
+      "color": "rgb(17, 18, 15)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "29.44px",
+      "margin": "0px",
+      "padding": "0px",
+      "size": "18.4px"
+    },
+    "path": "/experience.html",
+    "schemaTypes": [
+      "Person",
+      "ProfilePage"
+    ],
+    "scroll": 1270,
+    "width": 1270
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": true,
+    "h1": {
+      "color": "rgb(17, 18, 15)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "78.8992px",
+      "margin": "16px 0px 22.4px",
+      "padding": "0px",
+      "size": "85.76px"
+    },
+    "headingOverflow": [],
+    "menu": true,
+    "navVisible": true,
+    "p": {
+      "color": "rgb(17, 18, 15)",
+      "font": "Georgia, \"Times New Roman\", serif",
+      "line": "29.44px",
+      "margin": "0px",
+      "padding": "0px",
+      "size": "18.4px"
+    },
+    "path": "/contacts.html",
+    "schemaTypes": [
+      "Person",
+      "ContactPage"
+    ],
+    "scroll": 1270,
+    "width": 1270
+  },
+  {
+    "brokenImages": 0,
+    "danglingWebsite": false,
+    "h1": {
+      "color": "rgb(255, 255, 255)",
+      "font": "\"Arial Narrow\", Arial, Helvetica, sans-serif",
+      "line": "74.4px",
+      "margin": "0px 0px 8px",
+      "padding": "0px",
+      "size": "48px"
+    },
+    "headingOverflow": [],
+    "menu": false,
+    "navVisible": false,
+    "p": {
+      "color": "rgb(86, 91, 85)",
+      "font": "Arial, Helvetica, sans-serif",
+      "line": "24.8px",
+      "margin": "0px 0px 8px",
+      "padding": "0px",
+      "size": "16px"
+    },
+    "path": "/cv.html",
+    "schemaTypes": [],
+    "scroll": 1270,
+    "width": 1270
+  }
+]

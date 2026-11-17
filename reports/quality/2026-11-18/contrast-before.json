@@ -1,0 +1,104 @@
+[
+  {
+    "issues": [
+      {
+        "bg": [
+          247,
+          246,
+          240
+        ],
+        "fg": "rgb(230, 58, 36)",
+        "ratio": 3.88,
+        "selector": "active",
+        "size": "12px",
+        "text": "Главная"
+      }
+    ],
+    "path": "/"
+  },
+  {
+    "issues": [
+      {
+        "bg": [
+          247,
+          246,
+          240
+        ],
+        "fg": "rgb(230, 58, 36)",
+        "ratio": 3.88,
+        "selector": "active",
+        "size": "12px",
+        "text": "Услуги"
+      }
+    ],
+    "path": "/services/ru/seo-promotion.html"
+  },
+  {
+    "issues": [
+      {
+        "bg": [
+          247,
+          246,
+          240
+        ],
+        "fg": "rgb(230, 58, 36)",
+        "ratio": 3.88,
+        "selector": "active",
+        "size": "12px",
+        "text": "Кейсы"
+      }
+    ],
+    "path": "/projects/ru/taxonest.html"
+  },
+  {
+    "issues": [
+      {
+        "bg": [
+          247,
+          246,
+          240
+        ],
+        "fg": "rgb(230, 58, 36)",
+        "ratio": 3.88,
+        "selector": "active",
+        "size": "12px",
+        "text": "Кейсы"
+      }
+    ],
+    "path": "/projects.html"
+  },
+  {
+    "issues": [
+      {
+        "bg": [
+          247,
+          246,
+          240
+        ],
+        "fg": "rgb(230, 58, 36)",
+        "ratio": 3.88,
+        "selector": "active",
+        "size": "12px",
+        "text": "Обо мне"
+      }
+    ],
+    "path": "/about.html"
+  },
+  {
+    "issues": [
+      {
+        "bg": [
+          247,
+          246,
+          240
+        ],
+        "fg": "rgb(230, 58, 36)",
+        "ratio": 3.88,
+        "selector": "active",
+        "size": "12px",
+        "text": "Контакты"
+      }
+    ],
+    "path": "/contacts.html"
+  }
+]

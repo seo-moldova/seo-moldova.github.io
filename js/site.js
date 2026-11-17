@@ -44,6 +44,10 @@
             toggle.setAttribute('aria-label', isOpen ? currentLabels[0] : currentLabels[1]);
         });
 
+        document.addEventListener('click', event => {
+            if (!header.contains(event.target)) closeMenu();
+        });
+
         nav.addEventListener('click', event => {
             if (event.target.closest('a')) {
                 closeMenu();
@@ -58,7 +62,7 @@
         });
 
         window.addEventListener('resize', () => {
-            if (window.innerWidth > 800) {
+            if (window.innerWidth > 960) {
                 closeMenu();
             }
         });
@@ -69,8 +73,10 @@
 
         document.querySelectorAll('header nav a[href]').forEach(link => {
             const linkPath = new URL(link.href, window.location.origin).pathname.replace(/\/index\.html$/, '/');
-            if (linkPath === currentPath) {
+            if (!link.hash && linkPath === currentPath) {
                 link.setAttribute('aria-current', 'page');
+            } else if (link.classList.contains('active')) {
+                link.setAttribute('aria-current', 'location');
             }
         });
     }
@@ -341,6 +347,15 @@
         });
     }
 
+    const main = document.querySelector('main');
+    if (main) {
+        if (!main.id) main.id = 'main-content';
+        const skip = document.createElement('a');
+        skip.className = 'skip-link';
+        skip.href = '#' + main.id;
+        skip.textContent = {ru:'Перейти к содержанию',ro:'Salt la conținut',en:'Skip to content'}[language] || 'Skip to content';
+        document.body.prepend(skip);
+    }
     setupNavigation();
     markCurrentNavigation();
     enhanceProjectCards();

@@ -1,0 +1,36 @@
+[
+  {
+    "test": "tablet menu opens",
+    "expanded": "true"
+  },
+  {
+    "test": "Escape closes menu",
+    "expanded": "false"
+  },
+  {
+    "count": 1,
+    "test": "Ads filter"
+  },
+  {
+    "count": 12,
+    "test": "SEO filter"
+  },
+  {
+    "open": true,
+    "scopeTitleWidth": 762,
+    "test": "FAQ opens"
+  },
+  {
+    "nestedScreenshotButtons": 0,
+    "open": true,
+    "test": "work detail opens"
+  },
+  {
+    "test": "screenshot keyboard open",
+    "hidden": "false"
+  },
+  {
+    "test": "screenshot keyboard close",
+    "hidden": "true"
+  }
+]
