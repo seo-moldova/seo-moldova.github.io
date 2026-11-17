@@ -1,3 +1,4 @@
+import { applyEditorialCopy } from './editorial-copy.mjs';
 import { extendServices } from './service-expansion.mjs';
 import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -93,7 +94,7 @@ const services = {
       ru: {
         title: 'Комплексное SEO-продвижение', metaTitle: 'SEO продвижение сайта под ключ | Иван Придорожнов',
         description: 'Комплексное SEO-продвижение: стратегия, семантика, контент, техническая оптимизация, аналитика и регулярная работа над ростом органического трафика.',
-        intro: 'Занимаюсь продвижением сайта в Google: изучаю спрос и конкурентов, подбираю запросы, работаю над структурой и содержанием страниц. Готовлю задания разработчикам и авторам, проверяю изменения и слежу за трафиком и заявками.',
+        intro: 'Занимаюсь продвижением сайта в Google: изучаю спрос и конкурентов, подбираю запросы, работаю над структурой и содержанием страниц. Пишу контент и готовлю задания разработчикам, проверяю изменения и слежу за трафиком и заявками.',
         fit: ['Хотите получать больше клиентов из поиска', 'Сайт получает показы, но мало целевых переходов', 'Работы по SEO ведутся без понятного плана', 'Хотите продвигать новые услуги или разделы сайта'],
         deliver: ['Исследование спроса и конкурентов', 'Поисковые запросы и подходящие для них страницы', 'Список технических доработок', 'План материалов и оптимизация страниц', 'Внутренняя перелинковка', 'GA4, GSC и регулярная отчётность'],
         outcomes: ['Расширение поискового спроса', 'Рост целевого трафика', 'Понятная система управления SEO'],
@@ -103,7 +104,7 @@ const services = {
       ro: {
         title: 'Promovare SEO completă', metaTitle: 'Promovare SEO site-uri | Ivan Pridorojnov',
         description: 'Promovare SEO completă: strategie, semantică, conținut, optimizare tehnică, analiză și lucru continuu pentru creșterea traficului organic.',
-        intro: 'Mă ocup de promovarea site-ului în Google: analizez căutările și concurenții, aleg cuvintele-cheie și îmbunătățesc structura și conținutul. Pregătesc cerințe pentru dezvoltatori și autori, verific modificările și urmăresc traficul și cererile primite.',
+        intro: 'Mă ocup de promovarea site-ului în Google: analizez căutările și concurenții, aleg cuvintele-cheie și îmbunătățesc structura și conținutul. Pregătesc cerințe pentru dezvoltatori; textele le scriu personal, verific modificările și urmăresc traficul și cererile primite.',
         fit: ['Doriți mai mulți clienți din căutările Google', 'Site-ul are afișări, dar puține vizite relevante', 'Lipsește strategia și ordinea priorităților', 'Doriți să promovați servicii sau secțiuni noi'],
         deliver: ['Cercetarea cererii și concurenților', 'Cuvinte-cheie grupate și paginile potrivite', 'Lista modificărilor tehnice', 'Plan de conținut și optimizarea paginilor', 'Legături interne', 'GA4, GSC și raportare regulată'],
         outcomes: ['Acoperire mai mare a cererii', 'Creșterea traficului relevant', 'Sistem clar de administrare SEO'],
@@ -113,7 +114,7 @@ const services = {
       en: {
         title: 'Ongoing SEO services', metaTitle: 'Ongoing SEO Services | Ivan Pridorojnov',
         description: 'Ongoing SEO services covering strategy, keyword research, content, technical optimization, analytics and continuous organic traffic growth.',
-        intro: 'I handle the work needed to improve your visibility in Google: keyword and competitor research, site structure, content and technical fixes. I prepare tasks for developers and writers, review the changes and track traffic and enquiries.',
+        intro: 'I handle the work needed to improve your visibility in Google: keyword and competitor research, site structure, content and technical fixes. I prepare tasks for developers and write the copy myself, review the changes and track traffic and enquiries.',
         fit: ['You want more customers to find you through Google', 'The site earns impressions but few qualified visits', 'There is no shared SEO strategy or priority order', 'You want to promote new services or website sections'],
         deliver: ['Demand and competitor research', 'Keywords, clusters and page map', 'Technical improvements', 'Content plan and on-page optimization', 'Internal linking', 'GA4, GSC and regular reporting'],
         outcomes: ['Broader search demand coverage', 'More qualified organic traffic', 'An organized SEO plan'],
@@ -195,6 +196,7 @@ const services = {
 };
 
 extendServices(services);
+applyEditorialCopy(services, locale);
 
 function escapeJson(value) {
   return JSON.stringify(value).replace(/</g, '\\u003c');

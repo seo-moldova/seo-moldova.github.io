@@ -202,12 +202,10 @@
             <div class="og-label">SEO Specialist</div>
             <div class="og-name">Ivan<br>Pridorojnov</div>
             <div class="og-title">Professional SEO Promotion</div>
-            <div class="og-description">
-                SEO promotion of websites in search engines, content management and analytics. 7+ years of experience, 20+ successful projects.
-            </div>
+            <div class="og-description">SEO, content and Google Ads for service businesses, online stores and platforms.</div>
             <div class="og-stats">
                 <div class="og-stat">
-                    <span class="og-stat-number">7+</span>
+                    <span class="og-stat-number">10+</span>
                     <span class="og-stat-label">years exp.</span>
                 </div>
                 <div class="og-stat">
@@ -231,5 +229,19 @@
             </div>
         </div>
     </div>
-</body>
+<script>
+const language = new URLSearchParams(location.search).get('lang') || 'en';
+const copy = {
+ru:['Независимый SEO-специалист','Иван<br>Придорожнов','SEO-продвижение сайтов в Молдове','SEO, контент и Google Ads для сайтов услуг, интернет-магазинов и порталов.','лет опыта','проектов','рабочих языка','Посмотреть кейсы →','seo-moldova.github.io'],
+ro:['Specialist SEO independent','Ivan<br>Pridorojnov','Promovare SEO în Moldova','SEO, conținut și Google Ads pentru servicii, magazine online și portaluri.','ani experiență','proiecte','limbi de lucru','Studii de caz →','seo-moldova.github.io/ro/'],
+en:['Independent SEO specialist','Ivan<br>Pridorojnov','SEO services in Moldova','SEO, content and Google Ads for service businesses, online stores and platforms.','years in SEO','projects','working languages','View case studies →','seo-moldova.github.io/en/']
+}[language] || null;
+if(copy){
+ document.documentElement.lang=language;
+ ['.og-label','.og-name','.og-title','.og-description'].forEach((selector,i)=>document.querySelector(selector).innerHTML=copy[i]);
+ document.querySelectorAll('.og-stat-label').forEach((e,i)=>e.textContent=copy[i+4]);
+ document.querySelectorAll('.og-stat-number')[2].textContent='3';
+ document.querySelector('.og-button').textContent=copy[7];document.querySelector('.og-site').textContent=copy[8];
+}
+</script></body>
 </html>

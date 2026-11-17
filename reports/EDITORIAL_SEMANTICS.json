@@ -1,0 +1,22 @@
+{
+  "source_files": [
+    {
+      "file": "research/seo/keyword-source.json",
+      "sha256": "18cb3400ff60d7ae86bb2ebd1b6541b88521f524f1ba2e4d783c177280178d47",
+      "unchanged": true
+    },
+    {
+      "file": "research/seo/keyword-map.csv",
+      "sha256": "7702b089c658e0f36c39de3c282dbfff1ae5ae780b421325ce85fe036413e49c",
+      "unchanged": true
+    },
+    {
+      "file": "research/seo/README.md",
+      "sha256": "d4f2007d4d7829df2c193125402807cc2fe13902f549e8e9e143bd87e2e84974",
+      "unchanged": true
+    }
+  ],
+  "rows": 105,
+  "positive_demand_rows": 84,
+  "zero_demand_rows": 21
+}
